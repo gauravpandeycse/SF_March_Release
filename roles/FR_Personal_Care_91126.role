@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>FR Personal Care (91126)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>FR Personal Care (91126)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>FR_Personal_Care_Manager</parentRole>
+</Role>

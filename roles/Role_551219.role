@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>US Coatings Inside Sales (551219)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>US Coatings Inside Sales (551219)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>US_BUM_Coatings_US</parentRole>
+</Role>

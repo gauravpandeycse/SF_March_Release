@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Iberia Direct from Supplier Samples</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Sample_IB_Algeria</publicGroup>
+            <publicGroup>Sample_IB_Morocco</publicGroup>
+            <publicGroup>Sample_IB_Portugal</publicGroup>
+            <publicGroup>Sample_IB_Spain</publicGroup>
+            <publicGroup>Sample_IB_Tunesia</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

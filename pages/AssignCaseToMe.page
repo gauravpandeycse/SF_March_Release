@@ -1,0 +1,7 @@
+<!--
+ - Created by garth.james on 03/05/2018.
+ -->
+
+<apex:page id="AssignCaseToMe" standardController="Case" recordSetVar="cases" extensions="AssignCaseToMeController" tabStyle="Case" lightningStylesheets="true" action="{!updateCases}">
+        <apex:pageMessages />
+</apex:page>

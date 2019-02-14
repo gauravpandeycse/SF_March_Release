@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This custom metadata contains a mapping of the IMCD Company Sample Stores and the names of the Queues that they need to be assigned to.  This will be used in assigning sample requests to the correct country co-ordinators. 
+MasterLabel = Sample Store name
+QueueName__c = Name of the Queue</description>
+    <fields>
+        <fullName>QueueName__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Queue Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Company Country Queue Mapping</label>
+    <pluralLabel>Company Country Queue Mappings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

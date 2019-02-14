@@ -1,0 +1,5 @@
+<apex:page standardController="MarketInfoMarket__c" docType="html-5.0" title="Webmerge Market Info Market: {!MarketInfoMarket__c.Name}">
+
+    <webm:WebmergeWizard record="{!MarketInfoMarket__c}" nameField="Name" />
+
+</apex:page>

@@ -1,0 +1,355 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" description="AccountSummaryComp">
+
+    <aura:attribute name="sections" type="List" default="[{'label': 'Opportunity'           , 'value': 'oppty'}
+                                                        , {'label': 'Opportunity Quote'     , 'value': 'opptyQuote'}
+                                                        , {'label': 'Single &amp; Renewal Quote', 'value': 'custQuote'}
+                                                        , {'label': 'Contracted Prices'     , 'value': 'contractedPrice'}
+                                                        , {'label': 'Sales Order'           , 'value': 'soLine'}
+                                                        , {'label': 'Visit Report'          , 'value': 'visitReport'}
+                                                        , {'label': 'Sample Request'        , 'value': 'sampleRequest'}
+                                                        , {'label': 'Technical Request'     , 'value': 'technicalRequest'}
+                                                        , {'label': 'NCR'                   , 'value': 'ncr'}]"
+    />
+    <aura:attribute name="sectionValue" type="String" default=""/>
+    <aura:attribute name="oppty" type="boolean" default="false"/>
+    <aura:attribute name="opptyQuote" type="boolean" default="false"/>
+    <aura:attribute name="custQuote" type="boolean" default="false"/>
+    <aura:attribute name="contractedPrice" type="boolean" default="false"/>
+    <aura:attribute name="soLine" type="boolean" default="false"/>
+    <aura:attribute name="visitReport" type="boolean" default="false"/>
+    <aura:attribute name="sampleRequest" type="boolean" default="false"/>
+    <aura:attribute name="technicalRequest" type="boolean" default="false"/>
+    <aura:attribute name="ncr" type="boolean" default="false"/>
+
+    <aura:attribute name="numrows" type="integer" access="global" default="3"/>
+
+    <aura:attribute name="filter10" type="string" default=""/> <!-- Filters 10-19 for Opportunity queries -->
+    <aura:attribute name="filter11" type="string" default=""/>
+    <aura:attribute name="filter20" type="string" default=""/> <!-- Filters 20-29 for Opportunity Quote Line  queries -->
+    <aura:attribute name="filter30" type="string" default=""/> <!-- Filters 30-39 for Sample Request  queries -->
+    <aura:attribute name="filter40" type="string" default=""/> <!-- Filters 40-49 for NCR  queries -->
+    <aura:attribute name="filter50" type="string" default=""/> <!-- Filters 50-59 for Visit Report queries -->
+    <aura:attribute name="filter60" type="string" default=""/> <!-- Filters 60-59 for Single and Renewal quote queries -->
+    <aura:attribute name="filter70" type="string" default=""/> <!-- Filters 70-79 for Technical request queries -->
+    <aura:attribute name="filter71" type="string" default=""/>
+    <aura:attribute name="filter80" type="string" default=""/> <!-- Filters 80-89 for Contracted Prices queries -->
+    <aura:attribute name="filter90" type="string" default=""/> <!-- Filters 90-99 for Sales Order Line queries -->
+
+    <lightning:card variant="base" title="How do you want to search?" iconName="standard:search">
+        <aura:set attribute="actions">
+            <lightning:buttonGroup>
+                <lightning:button variant="neutral" disabled="{!false}" onclick="{!c.searchAction}" label="Search"/>
+                <lightning:button variant="neutral" class="{!v.numrows=='50'?'slds-hide':'slds-show'}" disabled="{!false}" onclick="{!c.printPageAction}" label="Printable page"/>
+                <lightning:button variant="neutral" class="{!v.numrows=='50'?'slds-show':'slds-hide'}" disabled="{!false}" onclick="{!c.printAction}" label="Print"/>
+            </lightning:buttonGroup>
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+           <lightning:layout multipleRows="true">
+               <lightning:layoutItem size="9" >
+                   <lightning:layout multipleRows="true">
+                       <lightning:layoutItem size="3" padding="around-small">
+                           <c:PicklistSelect
+                                   aura:id="primaryLob1"
+                                   objectName="Account"
+                                   fieldName="Primary_LOB1__c"
+                           />
+                       </lightning:layoutItem>
+                       <lightning:layoutItem size="3" padding="around-small">
+                           <lightning:input
+                                   aura:id="startDt"
+                                   label="Start"
+                                   type="date"
+                           />
+                       </lightning:layoutItem>
+                       <lightning:layoutItem size="3" padding="around-small">
+                           <lightning:input
+                                        aura:id="endDt"
+                                        label="End"
+                                        type="date"
+                           />
+                       </lightning:layoutItem>
+                       <lightning:layoutItem size="3" padding="around-small">
+                           <lightning:input
+                                   aura:id="keyOpportunity"
+                                   label="Key opportunities"
+                                   type="checkbox"
+                                   variant="label-stacked"
+                           />
+                       </lightning:layoutItem>
+
+                       <lightning:layoutItem size="6" padding="around-small">
+                           <l_lookup:Lookup label="Select a principal"
+                                            objectType="Account"
+                                            queryCondition="RecordType.DeveloperName = 'Principal_Global'"
+                                            showFiveRecent="true"
+                                            mainField="Name"
+                                            pluralLabel="Principals"
+                                            aura:id="principal"
+                           />
+                       </lightning:layoutItem>
+
+                       <lightning:layoutItem size="6" padding="around-small">
+                           <l_lookup:Lookup label="Select a product"
+                                            objectType="Product2"
+                                            queryCondition="isActive = true"
+                                            showFiveRecent="true"
+                                            additionalField="SearchResult__c"
+                                            pluralLabel="Specific product"
+                                            aura:id="product"
+                           />
+                       </lightning:layoutItem>
+                   </lightning:layout>
+               </lightning:layoutItem>
+
+               <lightning:layoutItem size="3" padding="around-small">
+                   <lightning:checkboxGroup aura:id="displaySections"
+                                            label="Which sections to display?"
+                                            options="{!v.sections}"
+                                            value="{!v.sectionValue}"
+                   />
+                </lightning:layoutItem>
+
+           </lightning:layout>
+
+        </p>
+    </lightning:card>
+
+    <aura:if isTrue="{!v.oppty}">
+        <lightning:helptext
+            content="{!'Opportunity SOQL = ' + v.filter10}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="oppty1"
+                objectAPIName="Opportunity"
+                relatedListName="Opportunities"
+                parentField="AccountId"
+                parentId="{!v.recordId}"
+                filter="{!v.filter10}"
+                title="Open Opportunities with Close date in the past (Sorted by Close Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="CloseDate DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:opportunity"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+        <lightning:helptext
+                content="{!'Opportunity SOQL = ' + v.filter11}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="oppty1"
+                objectAPIName="Opportunity"
+                relatedListName="Opportunities"
+                parentField="AccountId"
+                parentId="{!v.recordId}"
+                filter="{!v.filter11}"
+                title="Open Opportunities (Sorted by Close Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="CloseDate DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:opportunity"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.opptyQuote}">
+        <lightning:helptext
+                content="{!'Opportunity Quote Line SOQL = ' + v.filter20}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="opptyQuote1"
+                objectAPIName="SBQQ__QuoteLine__c"
+                relatedListName="OppQuoteLines"
+                parentField="SBQQ__Quote__r.SBQQ__Account__c"
+                parentId="{!v.recordId}"
+                filter="{!v.filter20}"
+                title="Primary Opportunity Quote Lines (Sorted by Product)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="SBQQ__Product__r.Name ASC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:opportunity"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.custQuote}">
+        <lightning:helptext
+                content="{!'Single and Renewal Quote SOQL = ' + v.filter60}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="custQuote_1"
+                objectAPIName="SBQQ__Quote__c"
+                relatedListName="CustomerQuotes"
+                parentField="SBQQ__Account__c"
+                parentId="{!v.recordId}"
+                filter="{!v.filter60}"
+                title="Single and Renewal Quotes (Sorted by Quote Expiration Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="QuoteExpirationDate__c DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:quotes"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.contractedPrice}">
+        <lightning:helptext
+                content="{!'Contracted Price SOQL = ' + v.filter80}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="contractedPrice_1"
+                objectAPIName="SBQQ__ContractedPrice__c"
+                relatedListName="ContractedPrices"
+                parentField="SBQQ__Account__c"
+                parentId="{!v.recordId}"
+                filter="{!v.filter80}"
+                title="Contracted Prices (Sorted by Product and Validity Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="UniqueKey__c ASC, SBQQ__EffectiveDate__c DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:endorsement"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.soLine}">
+        <lightning:helptext
+                content="{!'Sales Order Line SOQL = ' + v.filter90}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="soLine_1"
+                objectAPIName="SalesOrderLine__c"
+                relatedListName="SalesOrderLines"
+                parentField="Account__c"
+                parentId="{!v.recordId}"
+                filter="{!v.filter90}"
+                title="Sales Order Lines (Sorted by  Order Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="OrderDate__c DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:orders"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.visitReport}">
+        <lightning:helptext
+                content="{!'Visit Report SOQL = ' + v.filter50}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="visitReport_1"
+                objectAPIName="VisitReport__c"
+                relatedListName="VisitReports"
+                parentField="Account__c"
+                parentId="{!v.recordId}"
+                filter="{!v.filter50}"
+                title="Visit Reports (Sorted by Visit Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="Visit_Date__c DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:log_a_call"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.technicalRequest}">
+        <lightning:helptext
+                content="{!'Technical Request SOQL = ' + v.filter70}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="technicalRequest_1"
+                objectAPIName="Case"
+                relatedListName="TechRequests"
+                parentField="AccountId"
+                parentId="{!v.recordId}"
+                filter="{!v.filter70}"
+                title="Technical Requests (Sorted by Due Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="DueDate__c DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:maintenance_plan"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.technicalRequest}">
+        <lightning:helptext
+                content="{!'Technical Request SOQL = ' + v.filter71}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="technicalRequest_2"
+                objectAPIName="Case"
+                relatedListName="TechRequests"
+                parentField="AccountId"
+                parentId="{!v.recordId}"
+                filter="{!v.filter71}"
+                title="Closed Technical Requests (Sorted by Closed Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="ClosedDate DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:maintenance_plan"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.sampleRequest}">
+        <lightning:helptext
+                content="{!'Sample Request SOQL = ' + v.filter30}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="sampleRequest_1"
+                objectAPIName="Case"
+                relatedListName="SamleRequests"
+                parentField="AccountId"
+                parentId="{!v.recordId}"
+                filter="{!v.filter30}"
+                title="Sample Requests (Sorted by Case Open Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="CreatedDate DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:case"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!v.ncr}">
+        <lightning:helptext
+                content="{!'NCR SOQL = ' + v.filter40}"
+        />
+        <CMTD:EnhancedRelatedList
+                aura:id="ncr_1"
+                objectAPIName="Case"
+                relatedListName="Ncr"
+                parentField="AccountId"
+                parentId="{!v.recordId}"
+                filter="{!v.filter40}"
+                title="Non-conformance reports (Sorted by Case Open Date)"
+                displayType="List"
+                layoutType="1 Column"
+                sort="CreatedDate DESC"
+                defaultNumberofRecordsToDisplay="{!v.numrows}"
+                iconName="standard:case"
+                showHeader="true"
+                showRefreshButton="true"
+        />
+    </aura:if>
+</aura:component>

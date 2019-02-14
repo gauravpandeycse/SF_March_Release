@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>JEBU/SF/21NOV18 - Created permission set for B2B Marketing analytics</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Use Analytics</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>InsightsAppUser</name>
+    </userPermissions>
+</PermissionSet>

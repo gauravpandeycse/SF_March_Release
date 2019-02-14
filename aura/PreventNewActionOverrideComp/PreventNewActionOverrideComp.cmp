@@ -1,0 +1,17 @@
+<aura:component implements="lightning:actionOverride" description="QuoteNewActionOverrideComp">
+
+    <article class="slds-card">
+        <div class="slds-grid slds-einstein-header slds-card__header">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-grid slds-grid_vertical-align-center slds-size_3-of-4 slds-medium-size_2-of-3">
+                </div>
+                <div class="slds-einstein-header__figure slds-size_1-of-4 slds-medium-size_1-of-3"></div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">Sorry, it's not allowed to create a record from here.</div>
+        <footer class="slds-card__footer">
+            <a onclick="{!c.goBack}">Go back</a>
+        </footer>
+    </article>
+
+</aura:component>

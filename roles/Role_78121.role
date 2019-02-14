@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>SBU IMCD VIETNAM COMPANY LTD (78121)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>SBU IMCD VIETNAM COMPANY LTD (78121)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>BUM_SBU_IMCD_VIETNAM_COMPANY_LTD</parentRole>
+</Role>

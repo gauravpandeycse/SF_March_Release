@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>TN IMCD Tunisia SARL (44100)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>TN IMCD Tunisia SARL (44100)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>TN_BUM_IMCD_Tunisia_SARL</parentRole>
+</Role>

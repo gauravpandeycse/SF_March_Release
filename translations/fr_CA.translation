@@ -1,0 +1,1965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Price Renewal Campaign --></label>
+        <name>Price_Renewal_Campaign</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- Account object Name --></label>
+        <name>Account_object_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot Change Account --></label>
+        <name>Cannot_Change_Account</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Contract Manager Profile Name --></label>
+        <name>Contract_Manager_Profile_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CouldNotCreateRequest --></label>
+        <name>CouldNotCreateRequest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CouldNotFindQueue --></label>
+        <name>CouldNotFindQueue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CreatedSample --></label>
+        <name>CreatedSample</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Customer Sold To Account Record Type --></label>
+        <name>Customer_Sold_To_Account_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DirectFromSupplier --></label>
+        <name>DirectFromSupplier</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_CANT_DELETE_PRIMARY --></label>
+        <name>ERROR_CANT_DELETE_PRIMARY</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ERROR_LOB_MUST_BE_PRIMARY --></label>
+        <name>ERROR_LOB_MUST_BE_PRIMARY</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FailedToAssignCase --></label>
+        <name>FailedToAssignCase</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Global Principa Account Recordtype --></label>
+        <name>Global_Principa_Account_Recordtype</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCDCompany Field Name --></label>
+        <name>IMCDCompany_Field_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_HELP_ShipToAddress --></label>
+        <name>IMCD_HELP_ShipToAddress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_BannerSubTitle_QuoteVerification --></label>
+        <name>IMCD_LC_BannerSubTitle_QuoteVerification</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_BannerTitle_QuoteVerification --></label>
+        <name>IMCD_LC_BannerTitle_QuoteVerification</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_CloneQuote --></label>
+        <name>IMCD_LC_CloneQuote</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_CloseWindow --></label>
+        <name>IMCD_LC_CloseWindow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_CreateRenewalQuote --></label>
+        <name>IMCD_LC_CreateRenewalQuote</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_ActiveIntegration --></label>
+        <name>IMCD_LC_MSG_ActiveIntegration</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CanCloneQuote --></label>
+        <name>IMCD_LC_MSG_CanCloneQuote</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CanCreateManualRenewal --></label>
+        <name>IMCD_LC_MSG_CanCreateManualRenewal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotCloneQuote --></label>
+        <name>IMCD_LC_MSG_CannotCloneQuote</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotCloneQuoteOpptyLocked --></label>
+        <name>IMCD_LC_MSG_CannotCloneQuoteOpptyLocked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotCreateManualRenewal --></label>
+        <name>IMCD_LC_MSG_CannotCreateManualRenewal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotRenewExistingPRC --></label>
+        <name>IMCD_LC_MSG_CannotRenewExistingPRC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotRenewExistingQuoteLine --></label>
+        <name>IMCD_LC_MSG_CannotRenewExistingQuoteLine</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotRenewMixedIncoterms --></label>
+        <name>IMCD_LC_MSG_CannotRenewMixedIncoterms</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotRenewMixedLobs --></label>
+        <name>IMCD_LC_MSG_CannotRenewMixedLobs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CannotRenewMixedShipToAddresses --></label>
+        <name>IMCD_LC_MSG_CannotRenewMixedShipToAddresses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CloneQuoteError --></label>
+        <name>IMCD_LC_MSG_CloneQuoteError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_CloneQuoteSuccess --></label>
+        <name>IMCD_LC_MSG_CloneQuoteSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_ConvertProspect --></label>
+        <name>IMCD_LC_MSG_ConvertProspect</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_ConvertProspectSuccess --></label>
+        <name>IMCD_LC_MSG_ConvertProspectSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_ExpirationDtValidation --></label>
+        <name>IMCD_LC_MSG_ExpirationDtValidation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_LobValidation --></label>
+        <name>IMCD_LC_MSG_LobValidation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_ManualRenewalDisabled --></label>
+        <name>IMCD_LC_MSG_ManualRenewalDisabled</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_RenewalQuoteError --></label>
+        <name>IMCD_LC_MSG_RenewalQuoteError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_RenewalQuoteSuccess --></label>
+        <name>IMCD_LC_MSG_RenewalQuoteSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_RenewalWithFutureContractedPrices --></label>
+        <name>IMCD_LC_MSG_RenewalWithFutureContractedPrices</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_RequiredBusinessUnit --></label>
+        <name>IMCD_LC_MSG_RequiredBusinessUnit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_RequiredMainAddress --></label>
+        <name>IMCD_LC_MSG_RequiredMainAddress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_RequiredPrimaryLob --></label>
+        <name>IMCD_LC_MSG_RequiredPrimaryLob</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_SubmitProspect --></label>
+        <name>IMCD_LC_MSG_SubmitProspect</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_SubmitProspectError --></label>
+        <name>IMCD_LC_MSG_SubmitProspectError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_SubmitProspectSuccess --></label>
+        <name>IMCD_LC_MSG_SubmitProspectSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_TooManyProductsSelected --></label>
+        <name>IMCD_LC_MSG_TooManyProductsSelected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_MSG_ValidityDtValidation --></label>
+        <name>IMCD_LC_MSG_ValidityDtValidation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_ManualRenewalMaxSelection --></label>
+        <name>IMCD_LC_ManualRenewalMaxSelection</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_Title_CloneCustomerQuote --></label>
+        <name>IMCD_LC_Title_CloneCustomerQuote</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_Title_CreateManualRenewal --></label>
+        <name>IMCD_LC_Title_CreateManualRenewal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_LC_Title_SubmitProspect --></label>
+        <name>IMCD_LC_Title_SubmitProspect</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_OPPTY_CLOSING_STAGE --></label>
+        <name>IMCD_OPPTY_CLOSING_STAGE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_OPPTY_END_STAGES --></label>
+        <name>IMCD_OPPTY_END_STAGES</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_OPPTY_INVALID_STAGE_MSG --></label>
+        <name>IMCD_OPPTY_INVALID_STAGE_MSG</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_OPPTY_LOST_STAGE --></label>
+        <name>IMCD_OPPTY_LOST_STAGE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_OPPTY_TEMP_PROD_MSG1 --></label>
+        <name>IMCD_OPPTY_TEMP_PROD_MSG1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_OPPTY_TEMP_PROD_MSG2 --></label>
+        <name>IMCD_OPPTY_TEMP_PROD_MSG2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD_OPPTY_WON_STAGE --></label>
+        <name>IMCD_OPPTY_WON_STAGE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IMCD Standard Profile --></label>
+        <name>IMCD_Standard_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Name of IMCD User Profile --></label>
+        <name>IMCD_User</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LOB1 Field Name --></label>
+        <name>LOB1_Field_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MANUAL_RAW_CAUSE --></label>
+        <name>MANUAL_RAW_CAUSE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NO_ACCESS --></label>
+        <name>NO_ACCESS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NoSysAdminQueue --></label>
+        <name>NoSysAdminQueue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Principal Regional Account Record Type --></label>
+        <name>Principal_Regional_Account_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ProcessingRequest --></label>
+        <name>ProcessingRequest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Profile IMCD Standard Profile --></label>
+        <name>Profile_IMCD_Standard_Profile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- READ ACCESS --></label>
+        <name>READ_ACCESS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- READ_WRITE_ACCESS --></label>
+        <name>READ_WRITE_ACCESS</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Regional Account Record Type --></label>
+        <name>Regional_Account_Record_Type</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SampleRequestPrimaryQuote --></label>
+        <name>SampleRequestPrimaryQuote</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Standard User Profile Name --></label>
+        <name>Standard_User_Profile_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SystemAdminQueueName --></label>
+        <name>SystemAdminQueueName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- System Admin Profile Name --></label>
+        <name>System_Admin_Profile_Name</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TestSystemAdminQueueName --></label>
+        <name>TestSystemAdminQueueName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- prevent delete of Quote Line Case scenario --></label>
+        <name>prevent_delete_of_Quote_Line_Case_scenario</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Delete not possible, contracted price exists --></label>
+        <name>prevent_delete_of_Quote_Line_ContPrice_Scenario</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- prevent delete of Quote Line FReports scenario --></label>
+        <name>prevent_delete_of_Quote_Line_FReports_scenario</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- prevent delete of Quote Line MInfo scenario --></label>
+        <name>prevent_delete_of_Quote_Line_MInfo_scenario</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Sharing Access --></label>
+        <name>Sharing_Access</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Training --></label>
+        <name>Training</name>
+    </customTabs>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_QuoteDocument-1</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_QuoteDocument</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Create_and_Send_Document_Flow-1</fullName>
+            <screens>
+                <fields>
+                    <name>msgDone</name>
+                </fields>
+                <name>showDone</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoAction</name>
+                </fields>
+                <name>showNoAction</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgError</name>
+                </fields>
+                <fields>
+                    <name>msgFault</name>
+                </fields>
+                <name>showError</name>
+            </screens>
+        </flows>
+        <fullName>Create_and_Send_Document_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>choiceDefaultCountryOfOrigin</name>
+            </choices>
+            <choices>
+                <name>choiceDefaultProductStatus</name>
+            </choices>
+            <fullName>Create_Temp_Product_Flow-1</fullName>
+            <screens>
+                <fields>
+                    <name>Trade_Name_Initial</name>
+                </fields>
+                <fields>
+                    <name>lookupPrincipal</name>
+                </fields>
+                <fields>
+                    <name>msgSelectPrincipal</name>
+                </fields>
+                <name>showSelectPrincipal</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>checkboxExistingProduct</name>
+                </fields>
+                <fields>
+                    <name>lcShowPrincipalProducts</name>
+                </fields>
+                <fields>
+                    <name>msgPrincipalProductsBr</name>
+                </fields>
+                <fields>
+                    <name>msgSimilarProducts</name>
+                </fields>
+                <name>showPrincipalProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgPleaseSelectPrincipal</name>
+                </fields>
+                <name>showPleaseSelectPrincipal</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoSimilarProducts</name>
+                </fields>
+                <name>showNoSimilarProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgLookupFieldNotSelected</name>
+                </fields>
+                <name>showNeedToSelectLookupValue</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSuccessfullyCreated</name>
+                </fields>
+                <name>showFinalMessage</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgExistingProduct</name>
+                </fields>
+                <name>showExistingProduct</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>inputProductTradeGrade</name>
+                </fields>
+                <fields>
+                    <name>msgEnterProductTradeGrade</name>
+                </fields>
+                <name>showEnterProductTradeGrade</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>Country_of_Origin</name>
+                </fields>
+                <fields>
+                    <name>Product_Status</name>
+                </fields>
+                <fields>
+                    <name>Supplier_Item_Number</name>
+                </fields>
+                <fields>
+                    <name>Trade_Grade</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>Trade_Name</name>
+                </fields>
+                <fields>
+                    <name>Unit_of_Measure</name>
+                </fields>
+                <fields>
+                    <name>inputPackageDesc</name>
+                </fields>
+                <fields>
+                    <name>lookupProductManager</name>
+                </fields>
+                <fields>
+                    <name>lookupSelectedPrincipal</name>
+                </fields>
+                <fields>
+                    <name>msgCreateNewTempProduct</name>
+                </fields>
+                <name>showCreateProductInput</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgFault</name>
+                </fields>
+                <fields>
+                    <name>msgFaultDetails</name>
+                </fields>
+                <name>faultCreateProduct</name>
+            </screens>
+        </flows>
+        <fullName>Create_Temp_Product_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Create_Principal_Summary_Flow-1</fullName>
+            <screens>
+                <fields>
+                    <name>checboxBoType</name>
+                </fields>
+                <fields>
+                    <name>checboxExcludeLostLines</name>
+                </fields>
+                <fields>
+                    <name>checkboxExcludeColdOppty</name>
+                </fields>
+                <fields>
+                    <name>checkboxKeyOppty</name>
+                </fields>
+                <fields>
+                    <name>dateEnd</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>dateStart</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>lcPicklistLob</name>
+                </fields>
+                <fields>
+                    <name>msgInputParams</name>
+                </fields>
+                <fields>
+                    <name>msgKeyOppty</name>
+                </fields>
+                <fields>
+                    <name>msgLob</name>
+                </fields>
+                <fields>
+                    <name>msgPeriod</name>
+                </fields>
+                <name>showInputParams</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgExceededNumQuotelines</name>
+                </fields>
+                <name>showExceededNumQuotelines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgExceededNumMimProducts</name>
+                </fields>
+                <name>showExceededNumMimProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoSelectedMimProducts</name>
+                </fields>
+                <name>showNoSelectedMimProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoSelectedMim</name>
+                </fields>
+                <name>showNoSelectedMim</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoProducts</name>
+                </fields>
+                <name>showNoProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoPrincipal</name>
+                </fields>
+                <name>showNoPrincipal</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoMimProducts</name>
+                </fields>
+                <name>showNoMimProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>checkboxMimo</name>
+                </fields>
+                <fields>
+                    <name>msgMimQueryParams</name>
+                </fields>
+                <name>showMimQueryParams</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowUniqueMimProducts</name>
+                </fields>
+                <fields>
+                    <name>msgMimProducts</name>
+                </fields>
+                <name>showMimProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowMarketInfoMarket</name>
+                </fields>
+                <fields>
+                    <name>msgMarketInfoMarket</name>
+                </fields>
+                <name>showMarketInfoMarket</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowUniqueProducts</name>
+                </fields>
+                <fields>
+                    <name>msgUniqueProducts</name>
+                </fields>
+                <name>showUniqueProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowSelectedQuotelines</name>
+                </fields>
+                <fields>
+                    <name>msgSelectedQuotelines</name>
+                </fields>
+                <name>showSelectedQuotelines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowSelectedProducts</name>
+                </fields>
+                <fields>
+                    <name>msgSelectedProducts</name>
+                </fields>
+                <name>showSelectedProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowSelectedMimProducts</name>
+                </fields>
+                <fields>
+                    <name>msgSelectedMimProducts</name>
+                </fields>
+                <name>showSelectedMimProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowSelectedMim</name>
+                </fields>
+                <fields>
+                    <name>msgSelectedMim</name>
+                </fields>
+                <name>showSelectedMim</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcQuoteLines</name>
+                </fields>
+                <fields>
+                    <name>msgQuoteLines</name>
+                </fields>
+                <name>showQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoSelectedQuotelines</name>
+                </fields>
+                <name>showNoSelectedQuotelines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoSelectedProducts</name>
+                </fields>
+                <name>showNoSelectedProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgExceededNumProducts</name>
+                </fields>
+                <name>showExcceededNumProducts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgShowConfirmation</name>
+                </fields>
+                <fields>
+                    <name>reportDate</name>
+                </fields>
+                <name>showConfirmation</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>datePickerWrapper</name>
+                </fields>
+                <fields>
+                    <name>msgWelcome</name>
+                </fields>
+                <name>showWelcome</name>
+            </screens>
+        </flows>
+        <fullName>Create_Principal_Summary_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Monitor_Renewal_Quote_Document_and_Email_Flow-1</fullName>
+        </flows>
+        <fullName>Monitor_Renewal_Quote_Document_and_Email_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Create_Followup_Report_From_Opportunity_Flow-3</fullName>
+            <screens>
+                <fields>
+                    <name>lcShowQuoteLines</name>
+                </fields>
+                <fields>
+                    <name>msgShowQuoteLines</name>
+                </fields>
+                <name>showQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoQuoteLinesFound</name>
+                </fields>
+                <name>showNoQuoteLinesFound</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoQuoteLineSelected</name>
+                </fields>
+                <name>showNoQuoteLineSelected</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgShowIncorrectData</name>
+                </fields>
+                <name>showIncorrecData</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>inputExternalComments</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>inputInternalComments</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>lcShowSelectedQuoteLines</name>
+                </fields>
+                <fields>
+                    <name>msgFollowupInputs</name>
+                </fields>
+                <fields>
+                    <name>msgInExternalComments</name>
+                </fields>
+                <name>showFollowupInputs</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgShowConfirmation</name>
+                </fields>
+                <name>showConfirmation</name>
+            </screens>
+        </flows>
+        <fullName>Create_Followup_Report_From_Opportunity_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Add_Ncr_Product_Flow-1</fullName>
+            <screens>
+                <fields>
+                    <name>msgFault</name>
+                </fields>
+                <name>showFault</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgDone</name>
+                </fields>
+                <name>showDone</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcLookupProduct</name>
+                </fields>
+                <fields>
+                    <name>msgInfo</name>
+                </fields>
+                <name>showAddNcrProduct</name>
+            </screens>
+        </flows>
+        <fullName>Add_Ncr_Product_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Direct_Selling_Relationship-1</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Direct_Selling_Relationship</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Discount_Schedule-10</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Discount_Schedule</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Opportunity-18</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Opportunity</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Opportunity_Products-2</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Opportunity_Products</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Price_Renewal_Campaign_Item-2</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Price_Renewal_Campaign_Item</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Product-36</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Product</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Quote-120</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Quote</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Quote_Line-9</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Quote_Line</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Update_Follow_up_Report_Summary_Flow-1</fullName>
+        </flows>
+        <fullName>Update_Follow_up_Report_Summary_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Follow_up_Report-1</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Follow_up_Report</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <choices>
+                <name>defaultCountry</name>
+            </choices>
+            <choices>
+                <name>defaultUnit</name>
+            </choices>
+            <fullName>Create_Sample_Request_Flow-4</fullName>
+            <screens>
+                <fields>
+                    <name>confirmAddress</name>
+                </fields>
+                <fields>
+                    <name>lcShiptoCity</name>
+                </fields>
+                <fields>
+                    <name>lcShiptoCountry</name>
+                </fields>
+                <fields>
+                    <name>lcShiptoPostalcode</name>
+                </fields>
+                <fields>
+                    <name>lcShiptoState</name>
+                </fields>
+                <fields>
+                    <name>lcShiptoStreet</name>
+                </fields>
+                <fields>
+                    <name>msgFinalShipToAddress</name>
+                </fields>
+                <name>showFinalShiptoAddress</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgFaultCreateCase</name>
+                </fields>
+                <name>showCreateError</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgContactRequired</name>
+                </fields>
+                <name>showContactRequired</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgAccountWithoutShipto</name>
+                </fields>
+                <name>showAccountWithoutShipto</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>LoadPopupCSSStaticResource</name>
+                </fields>
+                <fields>
+                    <name>accountContactRelations</name>
+                </fields>
+                <fields>
+                    <name>msgSelectContact</name>
+                </fields>
+                <name>showAccountContactRelations</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>alternativeCity</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>alternativeCountry</name>
+                </fields>
+                <fields>
+                    <name>alternativePostalcode</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>alternativeState</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>alternativeStreet</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>msgAlternativeShipto</name>
+                </fields>
+                <name>overrideShiptoAddress</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>LightningDatatableWrapper</name>
+                </fields>
+                <fields>
+                    <name>msgSelectedQuoteLines</name>
+                </fields>
+                <name>Create_Sample_Request</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgConfirmCreateSampleRequests</name>
+                </fields>
+                <fields>
+                    <name>showNewCaseDisplay</name>
+                </fields>
+                <name>confirmCreateSampleRequests</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgUseAccountShipToAddress</name>
+                </fields>
+                <fields>
+                    <name>useAccountShiptoFlag</name>
+                </fields>
+                <name>useOverrideAddress</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgUseMainAddress</name>
+                </fields>
+                <fields>
+                    <name>useMainAddressFlag</name>
+                </fields>
+                <name>useMainAddress</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>LightingDatatableWrapper</name>
+                </fields>
+                <fields>
+                    <name>msgConfirmSelectedLines</name>
+                </fields>
+                <name>showSelectedQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoQuoteLines</name>
+                </fields>
+                <name>showNoQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoLInesSelected</name>
+                </fields>
+                <name>showNoLinesSelected</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoContacts</name>
+                </fields>
+                <name>showNoContacts</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoAccountShipTo</name>
+                </fields>
+                <name>showNoAccountShipTo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgCreateCaseSuccess</name>
+                </fields>
+                <name>showFinalStep</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectAccountShipto</name>
+                </fields>
+                <fields>
+                    <name>showShippingAddresses</name>
+                </fields>
+                <name>useShippingAddress</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>externalComments</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>internalCommencts</name>
+                </fields>
+                <fields>
+                    <name>literatureRequested</name>
+                </fields>
+                <fields>
+                    <name>msgProvideAdditionalData</name>
+                </fields>
+                <fields>
+                    <name>quantityRequested</name>
+                </fields>
+                <fields>
+                    <name>unitOfMeasure</name>
+                </fields>
+                <fields>
+                    <name>warehouseCode</name>
+                    <validationRule/>
+                </fields>
+                <fields>
+                    <name>warehouseInstruction</name>
+                    <validationRule/>
+                </fields>
+                <name>collectAdditionalCaseInfo</name>
+            </screens>
+        </flows>
+        <fullName>Create_Sample_Request_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Create_Customer_Summary_Flow-5</fullName>
+            <screens>
+                <fields>
+                    <name>msgNoOpportunitySelected</name>
+                </fields>
+                <name>showNoOpportunitySelected</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoOpportunities</name>
+                </fields>
+                <name>showNoOpportunities</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoAccount</name>
+                </fields>
+                <name>showNoAccount</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgMarketinfoMarket</name>
+                </fields>
+                <fields>
+                    <name>showMarketinfoMarketLC</name>
+                </fields>
+                <name>showMarketinfoMarket</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgMarketinfoBo</name>
+                </fields>
+                <fields>
+                    <name>showMarketinfoBoLC</name>
+                </fields>
+                <name>showMarketinfoBo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>checboxExcludeLostLines</name>
+                </fields>
+                <fields>
+                    <name>checkboxBoType</name>
+                </fields>
+                <fields>
+                    <name>checkboxExcludeColdOppty</name>
+                </fields>
+                <fields>
+                    <name>checkboxKeyOppty</name>
+                </fields>
+                <fields>
+                    <name>dateEnd</name>
+                </fields>
+                <fields>
+                    <name>dateStart</name>
+                </fields>
+                <fields>
+                    <name>dummyBreak</name>
+                </fields>
+                <fields>
+                    <name>lcPicklistLob</name>
+                </fields>
+                <fields>
+                    <name>msgInputParams</name>
+                </fields>
+                <fields>
+                    <name>msgLob</name>
+                </fields>
+                <fields>
+                    <name>msgPeriod</name>
+                </fields>
+                <name>showInputParams</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectFollowupReports</name>
+                </fields>
+                <fields>
+                    <name>showFollowupReportsLC</name>
+                </fields>
+                <name>showFollowupReports</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgFault</name>
+                </fields>
+                <fields>
+                    <name>msgFinishFlow</name>
+                </fields>
+                <name>finishFlow</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>dateEndVisit</name>
+                </fields>
+                <fields>
+                    <name>dateStartVisit</name>
+                </fields>
+                <fields>
+                    <name>msgUnrelatedVisitReports</name>
+                </fields>
+                <name>showQueryUnrelatedVisitReports</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>inputPurpose</name>
+                </fields>
+                <fields>
+                    <name>inputReportdate</name>
+                </fields>
+                <fields>
+                    <name>msgPurpose</name>
+                </fields>
+                <name>showPurposeOfCall</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgPrincipalReportFinish</name>
+                </fields>
+                <name>showPrincipalReportFinish</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectOpportunities</name>
+                </fields>
+                <fields>
+                    <name>showOpportunitiesLC</name>
+                </fields>
+                <name>showOpportunties</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoVisitReports</name>
+                </fields>
+                <name>showNoVisitReports</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgNoSelectedUnrelatedVisitReport</name>
+                </fields>
+                <name>showNoSelectedUnrelatedVisitReport</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>messageNoSelectedQuoteLines</name>
+                </fields>
+                <name>showNoSelectedQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>messageNoQuoteLines</name>
+                </fields>
+                <name>showNoQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectedOpportunities</name>
+                </fields>
+                <fields>
+                    <name>showSelectedOpportuntiesLC</name>
+                </fields>
+                <name>showSelectedOpportunities</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectedMarketinfoMarket</name>
+                </fields>
+                <fields>
+                    <name>selectedMarketInfoMarketLC</name>
+                </fields>
+                <name>showSelectedMarketinfoMarket</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectedMarketinfoBo</name>
+                </fields>
+                <fields>
+                    <name>showSelectedMarketinfoBoLC</name>
+                </fields>
+                <name>showSelectedMarketinfoBo</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgShowSelectedFollowupReports</name>
+                </fields>
+                <fields>
+                    <name>showSelectedFollowupReportsLC</name>
+                </fields>
+                <name>showSelectedFollowupReports</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectQuoteLines</name>
+                </fields>
+                <fields>
+                    <name>showQuoteLinesLC</name>
+                </fields>
+                <name>showQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgVisitreportOppty</name>
+                </fields>
+                <fields>
+                    <name>showVisitreportOpptyLC</name>
+                </fields>
+                <name>showVisitreportOppty</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowUnrelatedVisitReports</name>
+                </fields>
+                <fields>
+                    <name>msgShowUnrelatedVisitReports</name>
+                </fields>
+                <name>showUnrelatedVisitReports</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectedVisitreportOppty</name>
+                </fields>
+                <fields>
+                    <name>showSelectedVisitreportOpptyLC</name>
+                </fields>
+                <name>showSelectedVisitreportOppty</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcShowSelectedUnrelatedVisitReports</name>
+                </fields>
+                <fields>
+                    <name>msgShowSelectedUnrelatedVisitReports</name>
+                </fields>
+                <name>showSelectedUnrelatedVisitReports</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>msgSelectedQuoteLines</name>
+                </fields>
+                <fields>
+                    <name>showSelectedQuoteLinesLC</name>
+                </fields>
+                <name>showSelectedQuoteLines</name>
+            </screens>
+            <screens>
+                <fields>
+                    <name>lcPeriodSelector</name>
+                </fields>
+                <fields>
+                    <name>msgWelcome</name>
+                </fields>
+                <name>showWelcome</name>
+            </screens>
+        </flows>
+        <fullName>Create_Customer_Summary_Flow</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Contracted_Price-8</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Contracted_Price</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_For_Account-11</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_For_Account</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Case-65</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Case</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>DefaultProcessBuilderForTask-1</fullName>
+        </flows>
+        <fullName>DefaultProcessBuilderForTask</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_Contact-9</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_Contact</fullName>
+    </flowDefinitions>
+    <flowDefinitions>
+        <flows>
+            <fullName>Default_Process_Builder_for_IMCD_Company-1</fullName>
+        </flows>
+        <fullName>Default_Process_Builder_for_IMCD_Company</fullName>
+    </flowDefinitions>
+    <quickActions>
+        <label><!-- Follow Up --></label>
+        <name>Follow_Up</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Guest Community Case --></label>
+        <name>GuestCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Community Case --></label>
+        <name>NewCommunityCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Account with Quotes and Quote Lines --></description>
+        <label><!-- Account with Quotes and Quote Lines --></label>
+        <name>Account_with_Quotes_and_Quote_Lines</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts and visit reports --></description>
+        <label><!-- Accounts and visit reports --></label>
+        <name>Accounts_and_visit_reports</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Visit Reports --></label>
+            <name>Visit Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Market info Market --></description>
+        <label><!-- Accounts with Market info Market --></label>
+        <name>Accounts_with_Market_info_Market</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Market Info Market --></label>
+            <name>Market Info Market</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Quotes, Quote Lines and Follow-Ups --></description>
+        <label><!-- Accounts with Quotes, Quote Lines and Follow-Ups --></label>
+        <name>Accounts_with_Quotes_Quote_Lines_and_Follow_Ups</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with Sales Orders and Sales Order Lines --></description>
+        <label><!-- Accounts with Sales Orders and Sales Order Lines --></label>
+        <name>Accounts_with_Sales_Orders_and_Sales_Oder_Lines</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order Lines --></label>
+            <name>Sales Order Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Orders --></label>
+            <name>Sales Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Accounts with visit reports --></description>
+        <label><!-- Accounts with visit reports --></label>
+        <name>Accounts_with_visit_reports</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Visit Reports --></label>
+            <name>Visit Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Account with Related Contacts --></description>
+        <label><!-- Account with Related Contacts --></label>
+        <name>AccwithRelContacts</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Contact Relationships --></label>
+            <name>Contact Relationships</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Case NCR Custom --></description>
+        <label><!-- Case NCR Custom --></label>
+        <name>Case_Custom</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Purchase Order --></label>
+            <name>Purchase Order</name>
+        </sections>
+        <sections>
+            <label><!-- Purchase Order Line --></label>
+            <name>Purchase Order Line</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order --></label>
+            <name>Sales Order</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Order Line --></label>
+            <name>Sales Order Line</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Case with tasks --></description>
+        <label><!-- Case with tasks --></label>
+        <name>Case_with_tasks</name>
+        <sections>
+            <label><!-- Activities --></label>
+            <name>Activities</name>
+        </sections>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases with Line Items and Quotes --></description>
+        <label><!-- Cases with Line Items and Quotes --></label>
+        <name>Cases_with_Line_Items_and_Quotes</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Cases with Quote line and Product info --></description>
+        <label><!-- Cases with Quote line and Product info --></label>
+        <name>Cases_with_Quote_line_and_Product_info</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contacts Custom --></description>
+        <label><!-- Contacts Custom --></label>
+        <name>Contacts_Custom</name>
+        <sections>
+            <label><!-- Contacts --></label>
+            <name>Contacts</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Contracted Prices with Integration Logs --></description>
+        <label><!-- Contracted Prices with Integration Logs --></label>
+        <name>Contracted_Prices_with_Integration_Logs</name>
+        <sections>
+            <label><!-- Contracted Prices --></label>
+            <name>Contracted Prices</name>
+        </sections>
+        <sections>
+            <label><!-- Integration Logs --></label>
+            <name>Integration Logs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Follow-Up Reports --></description>
+        <label><!-- Follow-Up Reports --></label>
+        <name>Follow_Up_Reports</name>
+        <sections>
+            <label><!-- Follow-up Reports --></label>
+            <name>Follow-up Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Lead Custom --></description>
+        <label><!-- Lead Custom --></label>
+        <name>Lead_Custom</name>
+        <sections>
+            <label><!-- Leads --></label>
+            <name>Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- OppCustom --></description>
+        <label><!-- OppCustom --></label>
+        <name>OppCustom</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunites with Quotes_QuoteLines_MarketInfoBO --></description>
+        <label><!-- Opportunites with Quotes_QuoteLines_MarketInfoBO --></label>
+        <name>OpportunitesWithQuotes_QuoteLines_MarketInfoBO</name>
+        <sections>
+            <label><!-- Market info BO --></label>
+            <name>Market info BO</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- OpportunitiesPriceBooks --></description>
+        <label><!-- OpportunitiesPriceBooks --></label>
+        <name>OpportunitiesPriceBooks</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities Quotes Quote Lines --></description>
+        <label><!-- Opportunities Quotes Quote Lines --></label>
+        <name>Opportunities_Quotes_Quote_Lines</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quote Lines and Market Info --></description>
+        <label><!-- Opportunities with Quote Lines and Market Info --></label>
+        <name>Opportunities_with_Quote_Lines_and_Market_Info</name>
+        <sections>
+            <label><!-- Market Info BO --></label>
+            <name>Market Info BO</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quote Lines and Sample Request --></description>
+        <label><!-- Opportunities with Quote Lines and Sample Request --></label>
+        <name>Opportunities_with_Quote_Lines_and_Sample_Request</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Quote --></label>
+            <name>Quote</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Line --></label>
+            <name>Quote Line</name>
+        </sections>
+        <sections>
+            <label><!-- cases --></label>
+            <name>cases</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes, Quote Lines, Follow-Ups --></description>
+        <label><!-- Opportunities with Quotes, Quote Lines, Follow-Ups --></label>
+        <name>Opportunities_with_Quotes_Quote_Lines_Follow_Ups</name>
+        <sections>
+            <label><!-- Account --></label>
+            <name>Account</name>
+        </sections>
+        <sections>
+            <label><!-- Follow-up Reports --></label>
+            <name>Follow-up Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities with Quotes and Quote Lines Custom --></description>
+        <label><!-- Opportunities with Quotes and Quote Lines Custom --></label>
+        <name>Opportunities_with_Quotes_and_Quote_Lines_Custom</name>
+        <sections>
+            <label><!-- Account --></label>
+            <name>Account</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunities and Quote Lines and FUR Summary --></description>
+        <label><!-- Opportunities and Quote Lines and FUR Summary --></label>
+        <name>Opportunity_Quote_Lines_and_Follow_up_Summary</name>
+        <sections>
+            <columns>
+                <label><!-- External Comments --></label>
+                <name>External Comments</name>
+            </columns>
+            <label><!-- Follow-up Report Summaries --></label>
+            <name>Follow-up Report Summaries</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- External Comments (Formatted) --></label>
+                <name>External Comments (Formatted)</name>
+            </columns>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunity with Quote Lines and Follow up Summary --></description>
+        <label><!-- Opportunity with Quote Lines and Follow up Summary --></label>
+        <name>Opportunity_with_Quote_Lines_and_Follow_up_Summary</name>
+        <sections>
+            <columns>
+                <label><!-- External Comments --></label>
+                <name>External Comments</name>
+            </columns>
+            <label><!-- Follow-up Report Summaries --></label>
+            <name>Follow-up Report Summaries</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- External Comments (Formatted) --></label>
+                <name>External Comments (Formatted)</name>
+            </columns>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Products with Cases --></description>
+        <label><!-- Products with Cases --></label>
+        <name>ProductsCases</name>
+        <sections>
+            <label><!-- Cases --></label>
+            <name>Cases</name>
+        </sections>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Products with user details --></description>
+        <label><!-- Products with user details --></label>
+        <name>Products_with_user_details</name>
+        <sections>
+            <label><!-- Products --></label>
+            <name>Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Projects with Opportunities --></description>
+        <label><!-- Projects with Opportunities --></label>
+        <name>Projects_with_Opportunities</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Projects --></label>
+            <name>Projects</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Quote Lines --></description>
+        <label><!-- Quote Lines --></label>
+        <name>Quote_Lines</name>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Quote Lines With or Without Follow Up Rep Custom --></description>
+        <label><!-- Quote Lines With or Without Follow Up Rep Custom --></label>
+        <name>Quote_Lines_With_or_Without_Follow_Up_Reports</name>
+        <sections>
+            <label><!-- Follow-up Reports --></label>
+            <name>Follow-up Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Quote Lines with Follow Up Reports --></description>
+        <label><!-- Quote Lines with Follow Up Reports --></label>
+        <name>Quote_Lines_with_Follow_Up_Reports</name>
+        <sections>
+            <label><!-- Follow-up Reports --></label>
+            <name>Follow-up Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Quote and Quote Line Custom --></description>
+        <label><!-- Quote and Quote Line Custom --></label>
+        <name>Quote_and_Quote_Line_Custom</name>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Quote with Quote Lines (JB) --></description>
+        <label><!-- Quote with Quote Lines (JB) --></label>
+        <name>Quote_with_Quote_Lines_JEBU</name>
+        <sections>
+            <label><!-- Quote Lines --></label>
+            <name>Quote Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Quotes --></label>
+            <name>Quotes</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Sales Orders with Sales Order Lines --></description>
+        <label><!-- Sales Orders with Sales Order Lines --></label>
+        <name>Sales_Orders_with_Sales_Order_Lines</name>
+        <sections>
+            <label><!-- Sales Order Lines --></label>
+            <name>Sales Order Lines</name>
+        </sections>
+        <sections>
+            <label><!-- Sales Orders --></label>
+            <name>Sales Orders</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- VisitReport_IMCDparticipants --></description>
+        <label><!-- VisitReport_IMCDparticipants --></label>
+        <name>VisitReport_IMCDparticipants</name>
+        <sections>
+            <label><!-- Account --></label>
+            <name>Account</name>
+        </sections>
+        <sections>
+            <label><!-- IMCD Attendees --></label>
+            <name>IMCD Attendees</name>
+        </sections>
+        <sections>
+            <label><!-- Visit Reports --></label>
+            <name>Visit Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Visit Report Attendees --></description>
+        <label><!-- Visit Report Attendees --></label>
+        <name>Visit_Report_Attendees</name>
+        <sections>
+            <label><!-- Account --></label>
+            <name>Account</name>
+        </sections>
+        <sections>
+            <label><!-- Visit Report --></label>
+            <name>Visit Report</name>
+        </sections>
+        <sections>
+            <label><!-- Visit Report Attendees --></label>
+            <name>Visit Report Attendees</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Visit Report Opportunities --></description>
+        <label><!-- Visit Report Opportunities --></label>
+        <name>Visit_Report_Opportunities</name>
+        <sections>
+            <label><!-- Visit Report Opportunities --></label>
+            <name>Visit Report Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Visit Reports --></description>
+        <label><!-- Visit Reports --></label>
+        <name>Visit_Reports</name>
+        <sections>
+            <label><!-- Visit Reports --></label>
+            <name>Visit Reports</name>
+        </sections>
+    </reportTypes>
+</Translations>

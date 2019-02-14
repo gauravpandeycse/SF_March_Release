@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>IN Textiles  (72122)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>IN Textiles  (72122)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>IN_BUM_Textiles</parentRole>
+</Role>

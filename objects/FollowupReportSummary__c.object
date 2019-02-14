@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>https://imcdgroup.atlassian.net/browse/SFDP-2223
+
+Master-detail from SBQQ__QuoteLine__c holding max a single record per Quote line. 
+FollowupReportSummary__c will contain concatenated FollowupReport__c records (via automation)
+Object not exposed to user, only through Reporting
+Name will contain related SBQQ__QuoteLine__c 
+Validation rule to ensure uniqueness of Name</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>CreatedByAudit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Instead of CreatedById, this field identifies the User who created the most recent Follow-up report against the Quote Line.</description>
+        <externalId>false</externalId>
+        <label>Created By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>CreatedByFollowupReportSummaries</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalCommentUnformatted__c</fullName>
+        <description>Hold the same data as the ExternalComments__c field, but a regular long text field without Rich text/HTML formatting.</description>
+        <externalId>false</externalId>
+        <label>External Comments (Unformatted)</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ExternalComments__c</fullName>
+        <externalId>false</externalId>
+        <label>External Comments</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>InternalComments__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Comments</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>LastFollowupReport__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Last Follow-up Report</label>
+        <referenceTo>FollowUpReport__c</referenceTo>
+        <relationshipLabel>Follow-up Report Summaries</relationshipLabel>
+        <relationshipName>Follow_up_Report_Summaries</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LastModifiedByAudit__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Instead of LastModifiedById, this field identifies the User who updated one of the Follow-up reports consistituating this Follow-up ReportSummary.</description>
+        <externalId>false</externalId>
+        <label>Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>LastModifedByFollowupReportSummaries</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.Opportunity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuoteId__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.SBQQ__Quote__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quote Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuoteLine__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Line</label>
+        <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+        <relationshipLabel>Follow-up Report Summaries</relationshipLabel>
+        <relationshipName>FollowupReportSummaries</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Follow-up Report Summary</label>
+    <nameField>
+        <label>Follow-up Report Summary Quote Line Id</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Follow-up Report Summaries</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <description>Standard Record Type</description>
+        <label>Standard</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>requiredFields</fullName>
+        <active>true</active>
+        <description>Name
+QuoteLine__c
+CreatedByAudit__c
+LastModifiedByAudit__c</description>
+        <errorConditionFormula>AND (
+   $Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c 
+   , OR (
+      ISBLANK(CreatedByAudit__c)
+      , ISBLANK(LastModifiedByAudit__c)
+      , ISBLANK(QuoteLine__c)
+   )
+)</errorConditionFormula>
+        <errorMessage>Required fields are QuoteLine__c, CreatedByAudit__c and LastModifiedByAudit__c</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>uniqueFollowupReportSummary</fullName>
+        <active>true</active>
+        <description>Only one Follow-up Report Summary allowed for a given Quote Line (Error: the Name is not unique)</description>
+        <errorConditionFormula>AND (
+    $Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c 
+				, VLOOKUP ($ObjectType.FollowupReportSummary__c.Fields.Name
+												, $ObjectType.FollowupReportSummary__c.Fields.Name
+												, Name) = Name
+				, OR (
+								ISNEW()
+								, ISCHANGED(Name)
+				)
+)</errorConditionFormula>
+        <errorMessage>Only a single Follow-up Report Summary record allowed for a Quote Line.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>unmatchedNameAndQuoteLine</fullName>
+        <active>true</active>
+        <description>Name and QuoteLine__c should be equal</description>
+        <errorConditionFormula>AND (
+   $Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c 
+   , CASESAFEID(QuoteLine__c) &lt;&gt;  CASESAFEID(Name)
+)</errorConditionFormula>
+        <errorMessage>The Follow-up Summary&apos;s Name should be identical to it&apos;s parent Quote Line Id.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create Follow-up Reports for Quote Lines related with this Project</description>
+    <flowDefinition>Create_Followup_Report_From_Opportunity_Flow</flowDefinition>
+    <label>Create Follow-up Reports</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

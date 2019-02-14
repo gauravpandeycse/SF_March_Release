@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Visit_Report_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Visit_Report_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Account__c</fields>
+        <fields>Subject__c</fields>
+        <fields>Visit_Date__c</fields>
+        <label>Visit Report Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFDP-265: Created (09/05/2018). Used to store details of a visit to a customer. The chief value comes from being able to associate many opportunities with the visit report. Its a bit like the &apos;log a call&apos; OOTB functionality but ended up being a custom object instead of a task/event because of the M:M need between Visit Report and Opportunity</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDP-265: Created. Visit Reports are &apos;owned&apos; by Accounts.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Visit Reports</relationshipLabel>
+        <relationshipName>Visit_Reports</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AlternativeAddressDetail__c</fullName>
+        <description>SFDP-265. Created.</description>
+        <externalId>false</externalId>
+        <formula>if(LEN(AlternativeAddress__r.Street__c)&gt;0, AlternativeAddress__r.Street__c&amp; &quot; &quot; , &quot;&quot; ) &amp; BR() &amp;
+if(LEN(AlternativeAddress__r.City__c)&gt;0, AlternativeAddress__r.City__c&amp; &quot;, &quot; , &quot;&quot; )&amp;
+if(LEN(AlternativeAddress__r.State__c)&gt;0, AlternativeAddress__r.State__c&amp; &quot; &quot; , &quot;&quot; )&amp;
+if(LEN(AlternativeAddress__r.PostalCode__c)&gt;0, AlternativeAddress__r.PostalCode__c,&quot;&quot;) &amp; BR() &amp;
+If(LEN(TEXT(AlternativeAddress__r.Country__c)) &gt;0, TEXT(AlternativeAddress__r.Country__c),&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alternative Address Detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AlternativeAddress__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>SFDP-265. Created.</description>
+        <externalId>false</externalId>
+        <label>Alternative Address</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.Account__c</field>
+                <operation>equals</operation>
+                <valueField>AccountShiptoAddress__c.Account__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>AccountShiptoAddress__c</referenceTo>
+        <relationshipLabel>Visit Reports</relationshipLabel>
+        <relationshipName>VisitReports</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>SFDP-265. Created.</description>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>HelixId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>HelixId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ImcdBusinessUnit__c</fullName>
+        <description>SFDP-265 - Created.</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.ImcdBusinessUnit__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IMCD Business Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MainAddress__c</fullName>
+        <description>SFDP-265. Created.</description>
+        <externalId>false</externalId>
+        <formula>if(LEN(Account__r.ShippingStreet)&gt;0, Account__r.ShippingStreet&amp; &quot; &quot; , &quot;&quot; ) &amp; BR() &amp;
+if(LEN(Account__r.ShippingCity)&gt;0, Account__r.ShippingCity&amp; &quot;, &quot; , &quot;&quot; )&amp;
+if(LEN(Account__r.ShippingState)&gt;0, Account__r.ShippingState&amp; &quot; &quot; , &quot;&quot; )&amp;
+if(LEN(Account__r.ShippingPostalCode)&gt;0, Account__r.ShippingPostalCode,&quot;&quot;) &amp; BR() &amp;
+If(LEN(Account__r.ShippingCountry) &gt;0, Account__r.ShippingCountry,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Main Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerFullName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.FirstName &amp; &apos; &apos; &amp; Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Full Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <description>An optional field for a short summary of the visit report</description>
+        <externalId>false</externalId>
+        <label>Subject</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Field to define if it was a call or a visit</description>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <label>Call</label>
+                </value>
+                <value>
+                    <fullName>Visit</fullName>
+                    <default>true</default>
+                    <label>Visit</label>
+                </value>
+                <value>
+                    <fullName>Event/Trade Show</fullName>
+                    <default>false</default>
+                    <label>Event/Trade Show</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Visit_Date__c</fullName>
+        <defaultValue>NOW()</defaultValue>
+        <description>SFDP-265. Created.</description>
+        <externalId>false</externalId>
+        <label>Visit Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Visit Report</label>
+    <nameField>
+        <displayFormat>VRE-{000000000}</displayFormat>
+        <label>Visit Report Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Visit Reports</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <description>A standard record type</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Visit</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Visit_Date__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Subject__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Visit_Date__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Subject__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Visit_Date__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Subject__c</searchFilterFields>
+        <searchResultsAdditionalFields>Subject__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Visit_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

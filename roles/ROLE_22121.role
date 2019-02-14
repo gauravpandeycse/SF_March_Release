@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>BE Coatings, Adhives, Inks, Found (22121)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>BE Coatings, Adhives, Inks, Found (22121)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>BE_Coatings_Adhives_Inks_Found_Management</parentRole>
+</Role>

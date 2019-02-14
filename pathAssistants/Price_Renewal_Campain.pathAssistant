@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>PriceRenewalCampaign__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>Price Renewal Campain</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Ready. All done&lt;/p&gt;</info>
+        <picklistValueName>Processed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Processing in progress&lt;/p&gt;</info>
+        <picklistValueName>Queued</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Ready. Records will be ready to be processed in the night.&lt;/p&gt;</info>
+        <picklistValueName>Ready</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Update individual records &lt;/p&gt;</info>
+        <picklistValueName>Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Prices are searched and collected&lt;/p&gt;</info>
+        <picklistValueName>Select</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Enter Search criteria&lt;/p&gt;</info>
+        <picklistValueName>Setup</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

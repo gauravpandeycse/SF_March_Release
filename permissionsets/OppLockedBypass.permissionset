@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>OppLockedBypass</name>
+    </customPermissions>
+    <description>If qoute is locked, this enabled to bypass the lock. Used for migration</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>OppLockedBypass</label>
+</PermissionSet>

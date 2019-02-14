@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Consumer and Professional</fullName>
+        <default>false</default>
+        <label>Consumer and Professional</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial</fullName>
+        <default>false</default>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Label &amp; Tape</fullName>
+        <default>false</default>
+        <label>Label &amp; Tape</label>
+    </customValue>
+    <customValue>
+        <fullName>Packaging</fullName>
+        <default>false</default>
+        <label>Packaging</label>
+    </customValue>
+    <customValue>
+        <fullName>Bitumen Applications</fullName>
+        <default>false</default>
+        <label>Bitumen Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Concrete Technologies</fullName>
+        <default>false</default>
+        <label>Concrete Technologies</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Mortars</fullName>
+        <default>false</default>
+        <label>Dry Mortars</label>
+    </customValue>
+    <customValue>
+        <fullName>Floor Coverings</fullName>
+        <default>false</default>
+        <label>Floor Coverings</label>
+    </customValue>
+    <customValue>
+        <fullName>Masonry &amp; Wall Products</fullName>
+        <default>false</default>
+        <label>Masonry &amp; Wall Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Can &amp; Coil</fullName>
+        <default>false</default>
+        <label>Can &amp; Coil</label>
+    </customValue>
+    <customValue>
+        <fullName>Metal</fullName>
+        <default>false</default>
+        <label>Metal</label>
+    </customValue>
+    <customValue>
+        <fullName>Plastics</fullName>
+        <default>false</default>
+        <label>Plastics</label>
+    </customValue>
+    <customValue>
+        <fullName>Powder</fullName>
+        <default>false</default>
+        <label>Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Wood</fullName>
+        <default>false</default>
+        <label>Wood</label>
+    </customValue>
+    <customValue>
+        <fullName>Flexo &amp; Gravure</fullName>
+        <default>false</default>
+        <label>Flexo &amp; Gravure</label>
+    </customValue>
+    <customValue>
+        <fullName>Inkjet &amp; Digital</fullName>
+        <default>false</default>
+        <label>Inkjet &amp; Digital</label>
+    </customValue>
+    <customValue>
+        <fullName>Offset</fullName>
+        <default>false</default>
+        <label>Offset</label>
+    </customValue>
+    <customValue>
+        <fullName>Overprint Varnish</fullName>
+        <default>false</default>
+        <label>Overprint Varnish</label>
+    </customValue>
+    <customValue>
+        <fullName>Screen Printing</fullName>
+        <default>false</default>
+        <label>Screen Printing</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors &amp; Traders</fullName>
+        <default>false</default>
+        <label>Distributors &amp; Traders</label>
+    </customValue>
+    <customValue>
+        <fullName>Feed</fullName>
+        <default>false</default>
+        <label>Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>Pet Food</fullName>
+        <default>false</default>
+        <label>Pet Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Blenders &amp; Improvers</fullName>
+        <default>false</default>
+        <label>Blenders &amp; Improvers</label>
+    </customValue>
+    <customValue>
+        <fullName>Bread</fullName>
+        <default>false</default>
+        <label>Bread</label>
+    </customValue>
+    <customValue>
+        <fullName>Cereals &amp; Bar</fullName>
+        <default>false</default>
+        <label>Cereals &amp; Bar</label>
+    </customValue>
+    <customValue>
+        <fullName>Fine Bakery</fullName>
+        <default>false</default>
+        <label>Fine Bakery</label>
+    </customValue>
+    <customValue>
+        <fullName>Milling &amp; Flour</fullName>
+        <default>false</default>
+        <label>Milling &amp; Flour</label>
+    </customValue>
+    <customValue>
+        <fullName>Beer &amp; Brewing</fullName>
+        <default>false</default>
+        <label>Beer &amp; Brewing</label>
+    </customValue>
+    <customValue>
+        <fullName>Powder Drinks</fullName>
+        <default>false</default>
+        <label>Powder Drinks</label>
+    </customValue>
+    <customValue>
+        <fullName>Soft Drinks &amp; Fruit Juices</fullName>
+        <default>false</default>
+        <label>Soft Drinks &amp; Fruit Juices</label>
+    </customValue>
+    <customValue>
+        <fullName>Spirits &amp; Liquors &amp; Alcopops</fullName>
+        <default>false</default>
+        <label>Spirits &amp; Liquors &amp; Alcopops</label>
+    </customValue>
+    <customValue>
+        <fullName>Tea &amp; Coffee</fullName>
+        <default>false</default>
+        <label>Tea &amp; Coffee</label>
+    </customValue>
+    <customValue>
+        <fullName>Wine</fullName>
+        <default>false</default>
+        <label>Wine</label>
+    </customValue>
+    <customValue>
+        <fullName>Chewing Gum</fullName>
+        <default>false</default>
+        <label>Chewing Gum</label>
+    </customValue>
+    <customValue>
+        <fullName>Chocolate</fullName>
+        <default>false</default>
+        <label>Chocolate</label>
+    </customValue>
+    <customValue>
+        <fullName>Gums &amp; Jellies</fullName>
+        <default>false</default>
+        <label>Gums &amp; Jellies</label>
+    </customValue>
+    <customValue>
+        <fullName>Hard-Boiled Sweets</fullName>
+        <default>false</default>
+        <label>Hard-Boiled Sweets</label>
+    </customValue>
+    <customValue>
+        <fullName>Toffee &amp; Caramels</fullName>
+        <default>false</default>
+        <label>Toffee &amp; Caramels</label>
+    </customValue>
+    <customValue>
+        <fullName>Blends</fullName>
+        <default>false</default>
+        <label>Blends</label>
+    </customValue>
+    <customValue>
+        <fullName>Butter &amp; Cream</fullName>
+        <default>false</default>
+        <label>Butter &amp; Cream</label>
+    </customValue>
+    <customValue>
+        <fullName>Cheese &amp; Cheese Analogues</fullName>
+        <default>false</default>
+        <label>Cheese &amp; Cheese Analogues</label>
+    </customValue>
+    <customValue>
+        <fullName>Desserts &amp; Puddings</fullName>
+        <default>false</default>
+        <label>Desserts &amp; Puddings</label>
+    </customValue>
+    <customValue>
+        <fullName>Drinks &amp; Milk</fullName>
+        <default>false</default>
+        <label>Drinks &amp; Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Fermented Products &amp; Yoghurt</fullName>
+        <default>false</default>
+        <label>Fermented Products &amp; Yoghurt</label>
+    </customValue>
+    <customValue>
+        <fullName>Ice Cream &amp; Frozen Novelties</fullName>
+        <default>false</default>
+        <label>Ice Cream &amp; Frozen Novelties</label>
+    </customValue>
+    <customValue>
+        <fullName>Milk Powder &amp; Whiteners</fullName>
+        <default>false</default>
+        <label>Milk Powder &amp; Whiteners</label>
+    </customValue>
+    <customValue>
+        <fullName>Animal &amp; Fish Oils</fullName>
+        <default>false</default>
+        <label>Animal &amp; Fish Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Margarine &amp; Shortenings</fullName>
+        <default>false</default>
+        <label>Margarine &amp; Shortenings</label>
+    </customValue>
+    <customValue>
+        <fullName>Nut &amp; Seed Oils</fullName>
+        <default>false</default>
+        <label>Nut &amp; Seed Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Olive Oil</fullName>
+        <default>false</default>
+        <label>Olive Oil</label>
+    </customValue>
+    <customValue>
+        <fullName>Dried Fruits &amp; Vegetables</fullName>
+        <default>false</default>
+        <label>Dried Fruits &amp; Vegetables</label>
+    </customValue>
+    <customValue>
+        <fullName>Fresh Preparations</fullName>
+        <default>false</default>
+        <label>Fresh Preparations</label>
+    </customValue>
+    <customValue>
+        <fullName>Fruit Preparations</fullName>
+        <default>false</default>
+        <label>Fruit Preparations</label>
+    </customValue>
+    <customValue>
+        <fullName>Jams &amp; Jellies</fullName>
+        <default>false</default>
+        <label>Jams &amp; Jellies</label>
+    </customValue>
+    <customValue>
+        <fullName>Powder Fruits &amp; Vegetables</fullName>
+        <default>false</default>
+        <label>Powder Fruits &amp; Vegetables</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotechnology</fullName>
+        <default>false</default>
+        <label>Biotechnology</label>
+    </customValue>
+    <customValue>
+        <fullName>Colour</fullName>
+        <default>false</default>
+        <label>Colour</label>
+    </customValue>
+    <customValue>
+        <fullName>Emulsifiers</fullName>
+        <default>false</default>
+        <label>Emulsifiers</label>
+    </customValue>
+    <customValue>
+        <fullName>Flavour Houses</fullName>
+        <default>false</default>
+        <label>Flavour Houses</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Starch</fullName>
+        <default>false</default>
+        <label>Starch</label>
+    </customValue>
+    <customValue>
+        <fullName>Clinical Nutrition</fullName>
+        <default>false</default>
+        <label>Clinical Nutrition</label>
+    </customValue>
+    <customValue>
+        <fullName>Dietary Supplements</fullName>
+        <default>false</default>
+        <label>Dietary Supplements</label>
+    </customValue>
+    <customValue>
+        <fullName>Infant Formula &amp; Baby Food</fullName>
+        <default>false</default>
+        <label>Infant Formula &amp; Baby Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Sport Nutrition</fullName>
+        <default>false</default>
+        <label>Sport Nutrition</label>
+    </customValue>
+    <customValue>
+        <fullName>Weight Management</fullName>
+        <default>false</default>
+        <label>Weight Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Compounds &amp; Spice Blends</fullName>
+        <default>false</default>
+        <label>Compounds &amp; Spice Blends</label>
+    </customValue>
+    <customValue>
+        <fullName>Fish</fullName>
+        <default>false</default>
+        <label>Fish</label>
+    </customValue>
+    <customValue>
+        <fullName>Meat &amp; Poultry</fullName>
+        <default>false</default>
+        <label>Meat &amp; Poultry</label>
+    </customValue>
+    <customValue>
+        <fullName>Noodles &amp; Pasta</fullName>
+        <default>false</default>
+        <label>Noodles &amp; Pasta</label>
+    </customValue>
+    <customValue>
+        <fullName>Ready Meals</fullName>
+        <default>false</default>
+        <label>Ready Meals</label>
+    </customValue>
+    <customValue>
+        <fullName>Sauces &amp; Dressings</fullName>
+        <default>false</default>
+        <label>Sauces &amp; Dressings</label>
+    </customValue>
+    <customValue>
+        <fullName>Snacks</fullName>
+        <default>false</default>
+        <label>Snacks</label>
+    </customValue>
+    <customValue>
+        <fullName>Soups &amp; Bouillons</fullName>
+        <default>false</default>
+        <label>Soups &amp; Bouillons</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Care</fullName>
+        <default>false</default>
+        <label>Air Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive Care</fullName>
+        <default>false</default>
+        <label>Automotive Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Cleaning &amp; Surface Care</fullName>
+        <default>false</default>
+        <label>Cleaning &amp; Surface Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Dishwash</fullName>
+        <default>false</default>
+        <label>Dishwash</label>
+    </customValue>
+    <customValue>
+        <fullName>Laundry Care</fullName>
+        <default>false</default>
+        <label>Laundry Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Automatic Transmission oils</fullName>
+        <default>false</default>
+        <label>Automatic Transmission oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Axle oils</fullName>
+        <default>false</default>
+        <label>Axle oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Manual Transmission oils</fullName>
+        <default>false</default>
+        <label>Manual Transmission oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Heavy Duty Engine oils</fullName>
+        <default>false</default>
+        <label>Heavy Duty Engine oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Marine oils</fullName>
+        <default>false</default>
+        <label>Marine oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural Gas EO</fullName>
+        <default>false</default>
+        <label>Natural Gas EO</label>
+    </customValue>
+    <customValue>
+        <fullName>Passenger Car Motor oils</fullName>
+        <default>false</default>
+        <label>Passenger Car Motor oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Engines oils</fullName>
+        <default>false</default>
+        <label>Small Engines oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Diesel additives</fullName>
+        <default>false</default>
+        <label>Diesel additives</label>
+    </customValue>
+    <customValue>
+        <fullName>Gasoline additives</fullName>
+        <default>false</default>
+        <label>Gasoline additives</label>
+    </customValue>
+    <customValue>
+        <fullName>Heavy fuel additives</fullName>
+        <default>false</default>
+        <label>Heavy fuel additives</label>
+    </customValue>
+    <customValue>
+        <fullName>Compressor oils</fullName>
+        <default>false</default>
+        <label>Compressor oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical oils</fullName>
+        <default>false</default>
+        <label>Electrical oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Greases</fullName>
+        <default>false</default>
+        <label>Greases</label>
+    </customValue>
+    <customValue>
+        <fullName>Heat Transfer fluids</fullName>
+        <default>false</default>
+        <label>Heat Transfer fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>Hydraulic oils</fullName>
+        <default>false</default>
+        <label>Hydraulic oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Gear oils</fullName>
+        <default>false</default>
+        <label>Industrial Gear oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Mould release agent</fullName>
+        <default>false</default>
+        <label>Mould release agent</label>
+    </customValue>
+    <customValue>
+        <fullName>MWF - Cleaning fluids</fullName>
+        <default>false</default>
+        <label>MWF - Cleaning fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>MWF - Forming oils</fullName>
+        <default>false</default>
+        <label>MWF - Forming oils</label>
+    </customValue>
+    <customValue>
+        <fullName>MWF - Protecting oils</fullName>
+        <default>false</default>
+        <label>MWF - Protecting oils</label>
+    </customValue>
+    <customValue>
+        <fullName>MWF - Quenching fluids</fullName>
+        <default>false</default>
+        <label>MWF - Quenching fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>MWF - Removal oils</fullName>
+        <default>false</default>
+        <label>MWF - Removal oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Process oils</fullName>
+        <default>false</default>
+        <label>Process oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Turbine oils</fullName>
+        <default>false</default>
+        <label>Turbine oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Gear Oils</fullName>
+        <default>false</default>
+        <label>Gear Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Hydraulics</fullName>
+        <default>false</default>
+        <label>Hydraulics</label>
+    </customValue>
+    <customValue>
+        <fullName>Metalworking Fluid</fullName>
+        <default>false</default>
+        <label>Metalworking Fluid</label>
+    </customValue>
+    <customValue>
+        <fullName>Rolling Oils</fullName>
+        <default>false</default>
+        <label>Rolling Oils</label>
+    </customValue>
+    <customValue>
+        <fullName>ShortT Rust Prev.</fullName>
+        <default>false</default>
+        <label>ShortT Rust Prev.</label>
+    </customValue>
+    <customValue>
+        <fullName>Traders</fullName>
+        <default>false</default>
+        <label>Traders</label>
+    </customValue>
+    <customValue>
+        <fullName>Traders and Distributors</fullName>
+        <default>false</default>
+        <label>Traders and Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors</fullName>
+        <default>false</default>
+        <label>Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>PCB Assembly</fullName>
+        <default>false</default>
+        <label>PCB Assembly</label>
+    </customValue>
+    <customValue>
+        <fullName>Photonics &amp; Lighting</fullName>
+        <default>false</default>
+        <label>Photonics &amp; Lighting</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiconductor</fullName>
+        <default>false</default>
+        <label>Semiconductor</label>
+    </customValue>
+    <customValue>
+        <fullName>Sensor</fullName>
+        <default>false</default>
+        <label>Sensor</label>
+    </customValue>
+    <customValue>
+        <fullName>Solar Panels</fullName>
+        <default>false</default>
+        <label>Solar Panels</label>
+    </customValue>
+    <customValue>
+        <fullName>Specialist Applications</fullName>
+        <default>false</default>
+        <label>Specialist Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport</fullName>
+        <default>false</default>
+        <label>Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Abrasives</fullName>
+        <default>false</default>
+        <label>Abrasives</label>
+    </customValue>
+    <customValue>
+        <fullName>Friction</fullName>
+        <default>false</default>
+        <label>Friction</label>
+    </customValue>
+    <customValue>
+        <fullName>Glass</fullName>
+        <default>false</default>
+        <label>Glass</label>
+    </customValue>
+    <customValue>
+        <fullName>Refractories</fullName>
+        <default>false</default>
+        <label>Refractories</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Ceramics</fullName>
+        <default>false</default>
+        <label>Technical Ceramics</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Ceramics</fullName>
+        <default>false</default>
+        <label>Traditional Ceramics</label>
+    </customValue>
+    <customValue>
+        <fullName>Air &amp; Gas Treatment</fullName>
+        <default>false</default>
+        <label>Air &amp; Gas Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>Refineries &amp; Petrochemicals</fullName>
+        <default>false</default>
+        <label>Refineries &amp; Petrochemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Coating</fullName>
+        <default>false</default>
+        <label>Coating</label>
+    </customValue>
+    <customValue>
+        <fullName>Pulp</fullName>
+        <default>false</default>
+        <label>Pulp</label>
+    </customValue>
+    <customValue>
+        <fullName>Carpets</fullName>
+        <default>false</default>
+        <label>Carpets</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Printing</fullName>
+        <default>false</default>
+        <label>Digital Printing</label>
+    </customValue>
+    <customValue>
+        <fullName>Dyeing incl. Bleaching</fullName>
+        <default>false</default>
+        <label>Dyeing incl. Bleaching</label>
+    </customValue>
+    <customValue>
+        <fullName>Finishing-Impregnation</fullName>
+        <default>false</default>
+        <label>Finishing-Impregnation</label>
+    </customValue>
+    <customValue>
+        <fullName>Formulator</fullName>
+        <default>false</default>
+        <label>Formulator</label>
+    </customValue>
+    <customValue>
+        <fullName>Leather</fullName>
+        <default>false</default>
+        <label>Leather</label>
+    </customValue>
+    <customValue>
+        <fullName>Nonwovens</fullName>
+        <default>false</default>
+        <label>Nonwovens</label>
+    </customValue>
+    <customValue>
+        <fullName>Printing</fullName>
+        <default>false</default>
+        <label>Printing</label>
+    </customValue>
+    <customValue>
+        <fullName>Ropes-Nets-Scrims</fullName>
+        <default>false</default>
+        <label>Ropes-Nets-Scrims</label>
+    </customValue>
+    <customValue>
+        <fullName>Silk Screen</fullName>
+        <default>false</default>
+        <label>Silk Screen</label>
+    </customValue>
+    <customValue>
+        <fullName>Spinning Fiber-Filament-Yarn</fullName>
+        <default>false</default>
+        <label>Spinning Fiber-Filament-Yarn</label>
+    </customValue>
+    <customValue>
+        <fullName>Weaving-Knitting</fullName>
+        <default>false</default>
+        <label>Weaving-Knitting</label>
+    </customValue>
+    <customValue>
+        <fullName>Drinkable Water</fullName>
+        <default>false</default>
+        <label>Drinkable Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Waste Water</fullName>
+        <default>false</default>
+        <label>Industrial Waste Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Waste Water</fullName>
+        <default>false</default>
+        <label>Public Waste Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Swimming Pool</fullName>
+        <default>false</default>
+        <label>Swimming Pool</label>
+    </customValue>
+    <customValue>
+        <fullName>Dental</fullName>
+        <default>false</default>
+        <label>Dental</label>
+    </customValue>
+    <customValue>
+        <fullName>Hair Care</fullName>
+        <default>false</default>
+        <label>Hair Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Make-up</fullName>
+        <default>false</default>
+        <label>Make-up</label>
+    </customValue>
+    <customValue>
+        <fullName>Raw Materials</fullName>
+        <default>false</default>
+        <label>Raw Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Skin Care</fullName>
+        <default>false</default>
+        <label>Skin Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Toiletries</fullName>
+        <default>false</default>
+        <label>Toiletries</label>
+    </customValue>
+    <customValue>
+        <fullName>Adjuvants</fullName>
+        <default>false</default>
+        <label>Adjuvants</label>
+    </customValue>
+    <customValue>
+        <fullName>Biopestcides &amp; Biostimulants</fullName>
+        <default>false</default>
+        <label>Biopestcides &amp; Biostimulants</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract Research &amp; Manufacturing</fullName>
+        <default>false</default>
+        <label>Contract Research &amp; Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental Science</fullName>
+        <default>false</default>
+        <label>Environmental Science</label>
+    </customValue>
+    <customValue>
+        <fullName>Generic</fullName>
+        <default>false</default>
+        <label>Generic</label>
+    </customValue>
+    <customValue>
+        <fullName>Innovator</fullName>
+        <default>false</default>
+        <label>Innovator</label>
+    </customValue>
+    <customValue>
+        <fullName>Plant Nutrition</fullName>
+        <default>false</default>
+        <label>Plant Nutrition</label>
+    </customValue>
+    <customValue>
+        <fullName>Seed &amp; Fruit Treatment</fullName>
+        <default>false</default>
+        <label>Seed &amp; Fruit Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>Lab. Chemicals</fullName>
+        <default>false</default>
+        <label>Lab. Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Equipment</fullName>
+        <default>false</default>
+        <label>Medical Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Biotech.</fullName>
+        <default>false</default>
+        <label>Other Biotech.</label>
+    </customValue>
+    <customValue>
+        <fullName>Test Kits</fullName>
+        <default>false</default>
+        <label>Test Kits</label>
+    </customValue>
+    <customValue>
+        <fullName>Vaccines</fullName>
+        <default>false</default>
+        <label>Vaccines</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospitals and Universities</fullName>
+        <default>false</default>
+        <label>Hospitals and Universities</label>
+    </customValue>
+    <customValue>
+        <fullName>Nutraceutical</fullName>
+        <default>false</default>
+        <label>Nutraceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmacy Specials</fullName>
+        <default>false</default>
+        <label>Pharmacy Specials</label>
+    </customValue>
+    <customValue>
+        <fullName>Veterinary</fullName>
+        <default>false</default>
+        <label>Veterinary</label>
+    </customValue>
+    <customValue>
+        <fullName>Blow Moulding</fullName>
+        <default>false</default>
+        <label>Blow Moulding</label>
+    </customValue>
+    <customValue>
+        <fullName>Cable Extrusion</fullName>
+        <default>false</default>
+        <label>Cable Extrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Compounder</fullName>
+        <default>false</default>
+        <label>Compounder</label>
+    </customValue>
+    <customValue>
+        <fullName>Filament Extrusion</fullName>
+        <default>false</default>
+        <label>Filament Extrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Film Extrusion</fullName>
+        <default>false</default>
+        <label>Film Extrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Injection Moulding</fullName>
+        <default>false</default>
+        <label>Injection Moulding</label>
+    </customValue>
+    <customValue>
+        <fullName>Lamination</fullName>
+        <default>false</default>
+        <label>Lamination</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipe Extrusion</fullName>
+        <default>false</default>
+        <label>Pipe Extrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Profile Extrusion</fullName>
+        <default>false</default>
+        <label>Profile Extrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>Rotational Moulding</fullName>
+        <default>false</default>
+        <label>Rotational Moulding</label>
+    </customValue>
+    <customValue>
+        <fullName>Sheet Extrusion</fullName>
+        <default>false</default>
+        <label>Sheet Extrusion</label>
+    </customValue>
+    <customValue>
+        <fullName>ETP Compounders</fullName>
+        <default>false</default>
+        <label>ETP Compounders</label>
+    </customValue>
+    <customValue>
+        <fullName>High Performance</fullName>
+        <default>false</default>
+        <label>High Performance</label>
+    </customValue>
+    <customValue>
+        <fullName>Masterbatch Producer</fullName>
+        <default>false</default>
+        <label>Masterbatch Producer</label>
+    </customValue>
+    <customValue>
+        <fullName>PO Compounders</fullName>
+        <default>false</default>
+        <label>PO Compounders</label>
+    </customValue>
+    <customValue>
+        <fullName>PVC Compounders</fullName>
+        <default>false</default>
+        <label>PVC Compounders</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-Compounders</fullName>
+        <default>false</default>
+        <label>Re-Compounders</label>
+    </customValue>
+    <customValue>
+        <fullName>TPE Compounders</fullName>
+        <default>false</default>
+        <label>TPE Compounders</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemicals</fullName>
+        <default>false</default>
+        <label>Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Dyestuffs</fullName>
+        <default>false</default>
+        <label>Dyestuffs</label>
+    </customValue>
+    <customValue>
+        <fullName>Pigments</fullName>
+        <default>false</default>
+        <label>Pigments</label>
+    </customValue>
+    <customValue>
+        <fullName>Bioactives</fullName>
+        <default>false</default>
+        <label>Bioactives</label>
+    </customValue>
+    <customValue>
+        <fullName>Cell Culture</fullName>
+        <default>false</default>
+        <label>Cell Culture</label>
+    </customValue>
+    <customValue>
+        <fullName>Purification &amp; Formulation</fullName>
+        <default>false</default>
+        <label>Purification &amp; Formulation</label>
+    </customValue>
+    <customValue>
+        <fullName>Biosynthesis</fullName>
+        <default>false</default>
+        <label>Biosynthesis</label>
+    </customValue>
+    <masterLabel>LOB3</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

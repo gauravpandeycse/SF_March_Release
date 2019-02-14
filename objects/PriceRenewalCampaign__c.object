@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Price_Renewal_Campaign</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Account type Customer sold to</inlineHelpText>
+        <label>Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Cannot find Account type Sold To</errorMessage>
+            <filterItems>
+                <field>Account.TF_RecordTypeDeveloperName__c</field>
+                <operation>equals</operation>
+                <value>Customer_Sold_To</value>
+            </filterItems>
+            <infoMessage>Search for Sold to customer only</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Price Renewal Campaigns (Account)</relationshipLabel>
+        <relationshipName>Price_Renewal_Campaigns</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractedPriceIncrease__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Percent increase of contracted prices</inlineHelpText>
+        <label>Contracted Price Increase</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ContractedPriceValidDate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Contracted price is valid until. Used to select contacted prices.</inlineHelpText>
+        <label>Contracted Price Valid Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ContractedUntilFrom__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From what expiration date</inlineHelpText>
+        <label>Contracted Until From</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ContractedUntilTo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>To what expiration date</inlineHelpText>
+        <label>Contracted Until To</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CustomerInfoDate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Ultimate date to inform the customer.</inlineHelpText>
+        <label>Customer Info Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Free description of campain</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>EffectiveDate__c</fullName>
+        <defaultValue>today()</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when new purchase prices will be activated. Leave empty or &apos;today&apos; for renewals to be processed direct.</inlineHelpText>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>EmailTemplate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The template used to send the quote with the new price</inlineHelpText>
+        <label>Email Template</label>
+        <referenceTo>EmailTemplatePRC__c</referenceTo>
+        <relationshipLabel>Price Renewal Campaigns</relationshipLabel>
+        <relationshipName>Price_Renewal_Campaigns</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EmailText__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Text</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ImcdBusinessUnit__c</fullName>
+        <externalId>false</externalId>
+        <label>Imcd Business Unit</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IMCDBusinessUnit</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOB1__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB1</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LOB1</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOB2__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB2</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LOB2</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PriceBook__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The pricebook of the related Quotes or the Purchage prices</inlineHelpText>
+        <label>Price Book</label>
+        <referenceTo>Pricebook2</referenceTo>
+        <relationshipLabel>Price Renewal Campaigns</relationshipLabel>
+        <relationshipName>Price_Campaigns</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PricesToProcess__c</fullName>
+        <externalId>false</externalId>
+        <label>Prices To Process</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Purchase</fullName>
+                    <default>false</default>
+                    <label>Purchase</label>
+                </value>
+                <value>
+                    <fullName>Contracted</fullName>
+                    <default>false</default>
+                    <label>Contracted</label>
+                </value>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Principal__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Principal</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Principal Global</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Price Renewal Campaigns (Principal)</relationshipLabel>
+        <relationshipName>Price_Campaigns</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductManager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Responsible Product manager</inlineHelpText>
+        <label>Product Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Price_Campaigns</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PurchasePriceIncrease__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Percent of increase for purchase Prices</inlineHelpText>
+        <label>Purchase Price Increase</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ReportingLine__c</fullName>
+        <externalId>false</externalId>
+        <label>ReportingLine</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SalesRep__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Sales rep of related customers</inlineHelpText>
+        <label>Sales Rep</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>PriceRenewalCampaigns</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Stage of campain.</inlineHelpText>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Setup</fullName>
+                    <color>#999999</color>
+                    <default>true</default>
+                    <label>Setup</label>
+                </value>
+                <value>
+                    <fullName>Select</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>Select</label>
+                </value>
+                <value>
+                    <fullName>Review</fullName>
+                    <color>#3366FF</color>
+                    <default>false</default>
+                    <label>Review</label>
+                </value>
+                <value>
+                    <fullName>Ready</fullName>
+                    <color>#FFCC66</color>
+                    <default>false</default>
+                    <label>Ready</label>
+                </value>
+                <value>
+                    <fullName>Queued</fullName>
+                    <color>#FF0000</color>
+                    <default>false</default>
+                    <label>Queued</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <color>#33FF33</color>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TF_TemplateId__c</fullName>
+        <externalId>false</externalId>
+        <formula>EmailTemplate__r.EmailTemplateID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TF_TemplateId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TradeName__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Trade Name of product</inlineHelpText>
+        <label>Trade Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ValidFrom__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when new contracted prices will be acitve</inlineHelpText>
+        <label>Valid From</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ValidTo__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date until price is active</inlineHelpText>
+        <label>Valid To</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Price Renewal Campaign</label>
+    <nameField>
+        <displayFormat>PRC-{000000}</displayFormat>
+        <label>Price Renewal Campaign Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Price Renewal Campaigns</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Principal__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ProductManager__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PriceBook__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Stage__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Date_check_End_before_From_not_allowed</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND 
+($Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c 
+, 
+ISBLANK(ContractedUntilTo__c) = false 
+, 
+ISBLANK(ContractedUntilFrom__c) = false 
+, 
+ 
+(ContractedUntilFrom__c &gt; ContractedUntilTo__c
+|| 
+ContractedUntilTo__c &lt; TODAY() 
+) 
+)</errorConditionFormula>
+        <errorMessage>Invalid contracted dates</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Emailtemplate_is_required_for_Contracted</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( 
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c, 
+
+
+
+
+if (TEXT(PricesToProcess__c) != &apos;Purchase&apos; &amp;&amp;
+ ISBLANK(EmailTemplate__c), true, false)
+
+)</errorConditionFormula>
+        <errorDisplayField>EmailTemplate__c</errorDisplayField>
+        <errorMessage>Missing Email Template</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRC_Contracted_Price_need_Validity_Dates</fullName>
+        <active>true</active>
+        <description>Contracted Price PRC need validity dates</description>
+        <errorConditionFormula>AND ( 
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c, 
+
+If (TEXT(PricesToProcess__c) != &apos;Purchase&apos; = true,
+
+IF (ISBLANK(ValidFrom__c)||
+    ISBLANK(ValidTo__c), true, false), false)
+
+)</errorConditionFormula>
+        <errorDisplayField>ValidFrom__c</errorDisplayField>
+        <errorMessage>A contracted price PRC needs validity dates.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Processed_campaign_is_end_stage</fullName>
+        <active>true</active>
+        <description>Once it is &apos;Processed&apos; on change possible</description>
+        <errorConditionFormula>AND ( 
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c, 
+
+
+ISPICKVAL(PRIORVALUE(Stage__c  ),&quot;Processed&quot;)
+)</errorConditionFormula>
+        <errorMessage>Processed stage has been reached. Stage cannot go back anymore</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Wrong_validity_dates</fullName>
+        <active>true</active>
+        <description>Validity dates are not right</description>
+        <errorConditionFormula>AND 
+($Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c 
+, 
+ISBLANK(ValidFrom__c) = false 
+, 
+ISBLANK(ValidTo__c) = false 
+, 
+(ISCHANGED(ValidFrom__c) || 
+ISCHANGED(ValidTo__c) ) 
+, 
+(ValidFrom__c &gt; ValidTo__c|| 
+ValidTo__c &lt; TODAY() 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>ValidFrom__c</errorDisplayField>
+        <errorMessage>The &quot;Valid from&quot; date needs to be before the &quot;Valid to&quot; date and  the &quot;Valid to&quot; date cannot be in the past.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

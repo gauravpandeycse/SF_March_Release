@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>fake@fake.com</email>
+    <name>US Samples</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Sample_US</publicGroup>
+            <publicGroup>Sample_US_MJS_Sales</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>fake@fake.com</email>
+    <name>Food - Westknollendam Tech Lab</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Tech_Lab_Food_Westknollendam</publicGroup>
+        </publicGroups>
+        <users>
+            <user>henk.dejager@imcd.nl</user>
+            <user>jelle.groen@imcd.nl</user>
+            <user>linde.schreurs@imcd.be</user>
+            <user>nadine.depre@imcd.be</user>
+            <user>ronald.figee@imcd.nl</user>
+            <user>tim.vandegehuchte@imcd.nl</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

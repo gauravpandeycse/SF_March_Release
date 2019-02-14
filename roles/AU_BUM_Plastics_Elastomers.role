@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>AU BUM_Plastics &amp; Elastomers (61125)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>AU BUM_Plastics &amp; Elastomers (61125)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>AU_BUM_Manager</parentRole>
+</Role>

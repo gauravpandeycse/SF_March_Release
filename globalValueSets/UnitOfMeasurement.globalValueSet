@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>KG</fullName>
+        <default>false</default>
+        <label>KG - Kilogram</label>
+    </customValue>
+    <customValue>
+        <fullName>HJ</fullName>
+        <default>false</default>
+        <label>HJ - box</label>
+    </customValue>
+    <customValue>
+        <fullName>00</fullName>
+        <default>false</default>
+        <label>00 - centimetre</label>
+    </customValue>
+    <customValue>
+        <fullName>M3</fullName>
+        <default>false</default>
+        <label>M3 - cubic metre</label>
+    </customValue>
+    <customValue>
+        <fullName>01</fullName>
+        <default>false</default>
+        <label>01 - each</label>
+    </customValue>
+    <customValue>
+        <fullName>QA</fullName>
+        <default>false</default>
+        <label>QA - feet</label>
+    </customValue>
+    <customValue>
+        <fullName>GL</fullName>
+        <default>false</default>
+        <label>GL - US Gallon</label>
+    </customValue>
+    <customValue>
+        <fullName>GM</fullName>
+        <default>false</default>
+        <label>GM - Gram</label>
+    </customValue>
+    <customValue>
+        <fullName>LT</fullName>
+        <default>false</default>
+        <label>LT - litre</label>
+    </customValue>
+    <customValue>
+        <fullName>M1</fullName>
+        <default>false</default>
+        <label>M1 - metre</label>
+    </customValue>
+    <customValue>
+        <fullName>MT</fullName>
+        <default>false</default>
+        <label>MT - metric ton</label>
+    </customValue>
+    <customValue>
+        <fullName>LB</fullName>
+        <default>false</default>
+        <label>LB - pounds</label>
+    </customValue>
+    <customValue>
+        <fullName>P2</fullName>
+        <default>false</default>
+        <label>P2 - roll</label>
+    </customValue>
+    <customValue>
+        <fullName>S7</fullName>
+        <default>false</default>
+        <label>S7 - set</label>
+    </customValue>
+    <customValue>
+        <fullName>M2</fullName>
+        <default>false</default>
+        <label>M2 - square metre</label>
+    </customValue>
+    <customValue>
+        <fullName>UN</fullName>
+        <default>false</default>
+        <label>UN - unit</label>
+    </customValue>
+    <masterLabel>Unit of Measurement</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

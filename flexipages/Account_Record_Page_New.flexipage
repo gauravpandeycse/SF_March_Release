@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>collapsed</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentName>force:highlightsPanel</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>force:detailPanel</componentName>
+        </componentInstances>
+        <name>Facet-4f0cd769-8324-43d1-98d6-4ea171cea70a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>runtime_sales_activities:activityPanel</componentName>
+        </componentInstances>
+        <name>Facet-7371a938-c34b-437e-8992-701cf7a19d2c</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;span style=&quot;color:#696969;&quot;&gt;&lt;span style=&quot;font-size:14px;&quot;&gt;&lt;font face=&quot;arial, helvetica, sans-serif&quot;&gt;Welcome to the new Account 360 view which allows you to review Account related data, and query the data using different parameters. This feature is currently in beta, meaning that you can use it, but it will be further enriched and improved. We warmly welcome feedback through the usual channels!&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>Facet-4a3ccb2d-9ee7-4475-a295-87269f3d5b12</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>decorate</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;span style=&quot;color:#FF0000;&quot;&gt;&lt;b&gt;Beware&lt;/b&gt;&lt;/span&gt;&amp;nbsp;this might sound complicated at first but once you&amp;#39;ll get the hang of it, it will be easy to use.
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;There are a&amp;nbsp;number&amp;nbsp;of&amp;nbsp;different&amp;nbsp;objects which you can filter on. These are selectable under&amp;nbsp;&lt;b&gt;Which sections to display?&amp;nbsp;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;One&amp;nbsp;&lt;span style=&quot;color:#FF0000;&quot;&gt;&lt;b&gt;caution&lt;/b&gt;&lt;/span&gt;: the more sections you select, the more time it will take to load.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;The data filter works slightly&amp;nbsp;different&amp;nbsp;for each&amp;nbsp;object. For example: the&amp;nbsp;&lt;b&gt;Start Date&lt;/b&gt;&amp;nbsp;for Opportunity queries to the&amp;nbsp;&lt;b&gt;Close Date&lt;/b&gt;&amp;nbsp;of the record. A&amp;nbsp;&lt;b&gt;Start Date&amp;nbsp;&lt;/b&gt;is&amp;nbsp;&amp;#39;&lt;b&gt;01-Nov-2018&lt;/b&gt;&amp;#39; would result in Opportunities with a&amp;nbsp;&lt;b&gt;Close Date&lt;/b&gt;&amp;nbsp;of &amp;#39;&lt;b&gt;01-Nov-2018&amp;#39; or later&lt;/b&gt;. Pretty straightforward. To the same extent an&amp;nbsp;&lt;b&gt;End Date&lt;/b&gt;&amp;nbsp;set to&amp;nbsp;&lt;b&gt;&amp;#39;31-Dec-2018&lt;/b&gt;&amp;#39; would constrain the results where the&amp;nbsp;&lt;b&gt;Close Date&lt;/b&gt;&amp;nbsp;is &amp;#39;&lt;b&gt;31-Dec-2018&amp;#39; or earlier&lt;/b&gt;. None, either or both could be set. If not set it means, there&amp;#39;s no constraint on the results.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;When filtering on&lt;b&gt;&amp;nbsp;Opportunity Quotes&lt;/b&gt;, the&amp;nbsp;&lt;b&gt;Start&lt;/b&gt;&amp;nbsp;or&amp;nbsp;&lt;b&gt;End Date&lt;/b&gt;&amp;nbsp;would apply again to the&amp;nbsp;&lt;b&gt;Close&lt;/b&gt;&amp;nbsp;&lt;b&gt;Date&lt;/b&gt;&amp;nbsp;of the parent Opportunity.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;But when querying&amp;nbsp;&lt;b&gt;Single &amp;amp; Renewal Quotes&lt;/b&gt;, which don&amp;#39;t have a parent Opportunity, the results will be limited based on the Single or Renewal quote&amp;#39;s&amp;nbsp;&lt;b&gt;Expiration Date&amp;nbsp;&lt;/b&gt;instead.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Right, so what about the LOB? Very similar it applies to the LOB of the&amp;nbsp;&lt;b&gt;Opportunity&lt;/b&gt;,&amp;nbsp;&lt;b&gt;Quote&lt;/b&gt;,&amp;nbsp;&lt;b&gt;Contra&lt;wbr /&gt;cted&lt;/b&gt;&amp;nbsp;&lt;b&gt;Price&lt;/b&gt;&amp;nbsp;or even&amp;nbsp;&lt;b&gt;Sample&lt;/b&gt;&amp;nbsp;&lt;b&gt;Request&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;The&amp;nbsp;&lt;b&gt;Key&lt;/b&gt;&amp;nbsp;&lt;b&gt;Opportunity&lt;/b&gt;&amp;nbsp;check will constrain queries based on whether&amp;nbsp;&lt;b&gt;all&lt;/b&gt;&amp;nbsp;or&amp;nbsp;&lt;b&gt;only the&amp;nbsp;Key Opportunities&amp;nbsp;&lt;/b&gt;should be shown.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;The&amp;nbsp;&lt;b&gt;Principal&lt;/b&gt;&amp;nbsp;and&amp;nbsp;&lt;b&gt;Product&lt;/b&gt;&amp;nbsp;&lt;wbr /&gt;parameters constrain&amp;nbsp;object, which has a&amp;nbsp;&lt;b&gt;Product&lt;/b&gt;&amp;nbsp;such as&amp;nbsp;&lt;b&gt;Opportunity&lt;/b&gt;&amp;nbsp;&lt;b&gt;Lines&lt;/b&gt;,&amp;nbsp;&lt;b&gt;Quote&lt;/b&gt;&amp;nbsp;&lt;b&gt;Li&lt;wbr /&gt;nes&lt;/b&gt;,&amp;nbsp;&lt;b&gt;Sample&lt;/b&gt;&amp;nbsp;&lt;b&gt;Requests&lt;/b&gt;,&amp;nbsp;&lt;b&gt;Sales&lt;/b&gt;&amp;nbsp;&lt;b&gt;Or&lt;wbr /&gt;ders&lt;/b&gt;. The Product constrain is for a specific product (e.g. a product with a given Pack size, identified by its&amp;nbsp;&lt;b&gt;Full SegmentsNumber&lt;/b&gt;).&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Happy querying!&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:richText</componentName>
+        </componentInstances>
+        <name>Facet-9fbd2eba-7ba3-4a00-8c31-999dad8a2a34</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-4a3ccb2d-9ee7-4475-a295-87269f3d5b12</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>Welcome</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-9fbd2eba-7ba3-4a00-8c31-999dad8a2a34</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>label</name>
+                <value>How-to</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>name</name>
+                <value>accordionSection--ffyel1tyei7</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordionSection</componentName>
+        </componentInstances>
+        <name>Facet-191ba0c5-4cdd-478a-9f94-688a52b19ac6</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>accordionSections</name>
+                <value>Facet-191ba0c5-4cdd-478a-9f94-688a52b19ac6</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>defaultSectionName</name>
+                <value>accordionSection1</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:accordion</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>AccountSummaryComp</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>defaultNumberofRecordsToDisplay</name>
+                <value>2</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>displayType</name>
+                <value>List</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filter</name>
+                <value>CloseDate &lt; TODAY AND isClosed = false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>iconName</name>
+                <value>standard:opportunity</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>layoutType</name>
+                <value>1 Column</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>newRecord</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>objectAPIName</name>
+                <value>Opportunity</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>parentField</name>
+                <value>AccountId</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListName</name>
+                <value>Opportunities</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showHeader</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showRefreshButton</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>sort</name>
+                <value>CloseDate DESC</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Open Opportunities with Close date in the past</value>
+            </componentInstanceProperties>
+            <componentName>CMTD:EnhancedRelatedList</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.ABCRating__c}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>A</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>defaultNumberofRecordsToDisplay</name>
+                <value>3</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>displayType</name>
+                <value>List</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filter</name>
+                <value>RecordType.DeveloperName &lt;&gt; &apos;OpportunityQuote&apos; AND SBQQ__Status__c IN (&apos;Draft&apos;,&apos;Presented&apos;)</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>iconName</name>
+                <value>standard:related_list</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>layoutType</name>
+                <value>1 Column</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>newRecord</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>objectAPIName</name>
+                <value>SBQQ__Quote__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>parentField</name>
+                <value>SBQQ__Account__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListName</name>
+                <value>CustomerQuotes</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showHeader</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showRefreshButton</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>sort</name>
+                <value>Name DESC</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Open Customer Quotes</value>
+            </componentInstanceProperties>
+            <componentName>CMTD:EnhancedRelatedList</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.ABCRating__c}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>A</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>defaultNumberofRecordsToDisplay</name>
+                <value>6</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>displayType</name>
+                <value>List</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filter</name>
+                <value>Stage__c &lt;&gt; &apos;Won&apos; AND Stage__c &lt;&gt; &apos;Lost&apos; AND KeyOpportunity__c = true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>iconName</name>
+                <value>standard:opportunity</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>layoutType</name>
+                <value>1 Column</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>newRecord</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>objectAPIName</name>
+                <value>SBQQ__QuoteLine__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>parentField</name>
+                <value>SBQQ__Quote__r.SBQQ__Account__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListName</name>
+                <value>OppQuoteLines</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showHeader</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showRefreshButton</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>sort</name>
+                <value>Name DESC</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Open Key Opportunity Lines (&lt;&gt; Won/Lost)</value>
+            </componentInstanceProperties>
+            <componentName>CMTD:EnhancedRelatedList</componentName>
+            <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.ABCRating__c}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>A</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <name>Facet-cd525dda-fcbf-4f1a-9e78-cfefe8d65cea</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-4f0cd769-8324-43d1-98d6-4ea171cea70a</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Standard.Tab.detail</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-7371a938-c34b-437e-8992-701cf7a19d2c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Standard.Tab.activity</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>body</name>
+                <value>Facet-cd525dda-fcbf-4f1a-9e78-cfefe8d65cea</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Account 360</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tab</componentName>
+        </componentInstances>
+        <name>Facet-8267aaba-2df0-4bd4-b8fb-41c593dfeaee</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>force:relatedListQuickLinksContainer</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>tabs</name>
+                <value>Facet-8267aaba-2df0-4bd4-b8fb-41c593dfeaee</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:tabset</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentName>RefreshCmp</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentName>VerifyAccountComp</componentName>
+            <visibilityRule>
+                <booleanFilter>1 OR 2</booleanFilter>
+                <criteria>
+                    <leftValue>{!Record.TF_RecordTypeDeveloperName__c}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Customer_Sold_To</rightValue>
+                </criteria>
+                <criteria>
+                    <leftValue>{!Record.TF_RecordTypeDeveloperName__c}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Customer_Prospect</rightValue>
+                </criteria>
+            </visibilityRule>
+        </componentInstances>
+        <componentInstances>
+            <componentName>forceChatter:recordFeedContainer</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Account.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>AttachedContentDocuments</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>NONE</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>parentFieldApiName</name>
+                <value>Account.Id</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListApiName</name>
+                <value>Histories</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>relatedListComponentOverride</name>
+                <value>GRID</value>
+            </componentInstanceProperties>
+            <componentName>force:relatedListSingleContainer</componentName>
+        </componentInstances>
+        <mode>Replace</mode>
+        <name>sidebar</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Account Record Page New</masterLabel>
+    <parentFlexiPage>sfa__Account_rec_L</parentFlexiPage>
+    <sobjectType>Account</sobjectType>
+    <template>
+        <name>flexipage:recordHomeTemplateDesktop</name>
+    </template>
+    <type>RecordPage</type>
+</FlexiPage>

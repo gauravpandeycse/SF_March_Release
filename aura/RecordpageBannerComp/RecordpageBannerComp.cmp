@@ -1,0 +1,35 @@
+<aura:component implements="flexipage:availableForAllPageTypes" description="RecordpageBannerComp">
+
+    <aura:attribute name="title" type="String" default=""/>
+    <aura:attribute name="subtitle" type="String" default=""/>
+    <aura:attribute name="showBanner" type="Boolean" default="{!false}"/>
+
+    <aura:handler event="c:showBannerEvent" action="{!c.showBannerEvent}"/>
+
+    <aura:if isTrue="{!v.showBanner}">
+        <div class="slds-page-header">
+            <div class="slds-page-header__row">
+                <div class="slds-page-header__col-title">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <span class="slds-icon_container" title="opportunity">
+                                <lightning:icon iconName="utility:warning" alternativeText="Warning!" variant="warning"/>
+                            </span>
+                        </div>
+                        <div class="slds-media__body">
+                            <div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <h1>
+                                        <span class="slds-page-header__title slds-truncate">{!v.title}</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <p class="slds-page-header__name-meta">{!v.subtitle}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aura:if>
+
+</aura:component>

@@ -1,0 +1,5 @@
+<aura:component implements="lightning:backgroundUtilityItem" description="Popup Width Background Utility Component">
+     <!--<aura:handler name="init" value="{!this}" action="{!c.init}" /> -->
+    <c:PopupCssResourceComp/>
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+</aura:component>

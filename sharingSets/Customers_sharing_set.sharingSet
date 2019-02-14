@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Case</object>
+        <objectField>Account</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <description>The sharing set used for the Customers community</description>
+    <name>Customers sharing set</name>
+    <profiles>CloudCraze Customer Community User</profiles>
+</SharingSet>

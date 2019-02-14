@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>IMCD Czech Republic (32100)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>IMCD Czech Republic (32100)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>Region_SEE</parentRole>
+</Role>

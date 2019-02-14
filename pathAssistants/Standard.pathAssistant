@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Standard</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>AnnualRevenue</fieldNames>
+        <fieldNames>NoOfEmployees__c</fieldNames>
+        <fieldNames>pi__campaign__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Get your leads&amp;#39; email address&lt;/li&gt;&lt;li&gt;Find out information about your lead and your leads&amp;#39; company&lt;/li&gt;&lt;li&gt;Filter out traders, sellers, consultants, non-relevant industries and funnel to the leads who can develop, manufacture and market (at least one of the three)&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Marketing Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Website</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Visit your leads&amp;#39; website to learn about your leads&amp;#39; business and industry&lt;/li&gt;&lt;li&gt;Find your lead on social networks to determine how to best engage and connect&lt;/li&gt;&lt;li&gt;Clarify LOB at least to level 1, 2 or 3 if possible&lt;/li&gt;&lt;li&gt;Please enter a description&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Description</fieldNames>
+        <picklistValueName>Rejected</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>MobilePhone</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Get a mobile number&lt;/li&gt;&lt;li&gt;Enter descriptions of any important information about your lead&lt;/li&gt;&lt;li&gt;The lead contains an opportunity for which we want to identify the criteria; budget, authority, need and timeline&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Sales Accepted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Standard</recordTypeName>
+</PathAssistant>

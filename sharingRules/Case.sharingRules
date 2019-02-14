@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Australia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Australia</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_61100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Australia</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Benelux</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Benelux</label>
+        <sharedTo>
+            <roleAndSubordinates>REGION_Benelux</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Netherlands,IMCD Belgium</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>China</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>China</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_71100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD China</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Coatings_Construction</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Coatings &amp; Construction</label>
+        <sharedTo>
+            <group>Global_LOB_Coatings_Construction</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Coatings &amp; Construction</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Egypt</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Egypt</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_64100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Egypt</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Food</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Food</label>
+        <sharedTo>
+            <group>Global_LOB_Food</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Food</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>France</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>France</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_91100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD France</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Germany</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Germany</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_31100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Germany</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Home_Care_and_I_I</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Home Care and I&amp;I</label>
+        <sharedTo>
+            <group>Global_LOB_Home_Care_and_I_I</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Home Care and I&amp;I</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Iberia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Iberia</label>
+        <sharedTo>
+            <roleAndSubordinates>REGION_Iberia</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Algeria,IMCD Morocco,IMCD Spain,IMCD Tunisia,IMCD Portugal</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>India</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>India</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_72100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD India</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Italy</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Italy</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_81100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Italy</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Italy_Neuvendis</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Italy Neuvendis</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_82100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Italy Neuvendis</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Japan</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Japan</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_79100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Japan</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Kenya</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Kenya</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_67200</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Kenya</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Lomas</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Lomas</label>
+        <sharedTo>
+            <roleAndSubordinates>REGION_Lomas</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Canada,IMCD US Lomas</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Lubricants</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Lubricants</label>
+        <sharedTo>
+            <group>Global_LOB_Lubricants</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Lubricants</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Malaysia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Malaysia</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_73100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Malaysia</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>New_Zealand</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>New Zealand</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_62100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD New Zealand</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Nordics</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Nordics</label>
+        <sharedTo>
+            <roleAndSubordinates>REGION_Nordics</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Denmark,IMCD Finland,IMCD Baltics,IMCD Sweden,IMCD Norway</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Other_Specialties</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Other Specialties</label>
+        <sharedTo>
+            <group>Global_LOB_Other_Specialties</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Other Specialties</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Personal_Care</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Personal Care</label>
+        <sharedTo>
+            <group>Global_LOB_Personal_Care</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Personal Care</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Pharmaceuticals</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Pharmaceuticals</label>
+        <sharedTo>
+            <group>Global_LOB_Pharmaceuticals</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Pharmaceuticals</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Philippines</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Philippines</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_77200</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Philipppines</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Plastics_Rubber</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Plastics &amp; Rubber</label>
+        <sharedTo>
+            <group>Global_LOB_Advanced_Materials</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Advanced Materials</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Poland</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Poland</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_33100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Poland</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Puerto_Rico</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Puerto Rico</label>
+        <sharedTo>
+            <roleAndSubordinates>Role_55400</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Puerto Rico</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Region_Brazil</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Region Brazil</label>
+        <sharedTo>
+            <roleAndSubordinates>REGION_Brazil</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Brazil,IMCD Brazil Pharma</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Region_Indonesia</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Region Indonesia</label>
+        <sharedTo>
+            <roleAndSubordinates>REGION_Indonesia</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Indonesia SP,IMCD Indonesia</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Russia_Ukraine</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Russia/Ukraine</label>
+        <sharedTo>
+            <roleAndSubordinates>REGION_Russia</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Ukraine,IMCD Russia</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SEE</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SEE</label>
+        <sharedTo>
+            <roleAndSubordinates>Region_SEE</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Serbia,IMCD Czech Republic,IMCD South East Europe</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Singapore</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Singapore</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_74200</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Singapore</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>South_Africa</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>South Africa</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_67100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD South Africa</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Switzerland</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Switzerland</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_35100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Switzerland</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Synthesis</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Synthesis</label>
+        <sharedTo>
+            <group>Global_LOB_Synthesis</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>LOB1__c</field>
+            <operation>equals</operation>
+            <value>Synthesis</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Thailand</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Thailand</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_76100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Thailand</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Turkey</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Turkey</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_65100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Turkey</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>US</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>US</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_55100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD US</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>US_MJS</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>US MJS</label>
+        <sharedTo>
+            <roleAndSubordinates>Role_55200</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD US MJS Sales</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>United_Kingdom</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>United Kingdom</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_51100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD United Kingdom</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Vietnam</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Vietnam</label>
+        <sharedTo>
+            <roleAndSubordinates>ROLE_78100</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>IMCDCompany__c</field>
+            <operation>equals</operation>
+            <value>IMCD Vietnam</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

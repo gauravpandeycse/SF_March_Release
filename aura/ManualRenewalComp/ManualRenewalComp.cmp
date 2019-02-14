@@ -1,0 +1,120 @@
+<aura:component implements="force:LightningQuickActionWithoutHeader,force:hasRecordId" controller="ManualRenewalCompController">
+ 
+	<ltng:require styles="{!$Resource.popupCSS}"/>
+	<aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:attribute name="toggleSpinner" type="boolean" default="{!false}"/>
+    <aura:attribute name="isFeatureEnabled" type="boolean" default="{!false}"/>
+    <aura:attribute name="formValid" type="boolean" default="{!false}"/>
+    <aura:attribute name="hasValidationErrors" type="boolean" default="{!false}"/>
+    <aura:attribute name="canPrevious" type="boolean" default="{!false}"/>
+    <aura:attribute name="canNext" type="boolean" default="{!false}"/>
+	<aura:attribute name="accountRecord" type="Object"/>
+    <aura:attribute name="data" type="object"/>
+    <aura:attribute name="dataResult" type="object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="columnsResult" type="List"/>
+    <aura:attribute name="selectedRows" type="List"/>
+    <aura:attribute name="sortedBy" type="String" default="SBQQ__Product__r_Name"/>
+    <aura:attribute name="sortedDirection" type="String"/>
+    <aura:attribute name="defaultSortDirection" type="String" default="asc"/>
+    <aura:attribute name="hideCheckboxColumn" type="boolean" default="{!false}"/>
+    <aura:attribute name="errors" type="Object"/>
+    <aura:attribute name="maxSelection" type="integer"/>
+	<aura:attribute name="listLob" type="List"/>
+    
+    <lightning:notificationsLibrary aura:id="notifLib"/>
+    
+	<force:recordData aura:id="accountDataService"
+		recordId="{!v.recordId}"
+		targetFields="{!v.accountRecord}"
+		fields="Name,Id"
+	/>
+    
+	<div class="modal-header slds-modal__header">
+		<h2 class="title slds-text-heading--medium">{!$Label.c.IMCD_LC_Title_CreateManualRenewal}</h2>
+	</div>
+	<div class="slds-m-bottom_medium"/> <!-- spacer -->
+    
+	<!--loading spinner start -->
+ 	<aura:if isTrue="{!v.toggleSpinner}">
+		<div class="slds-spinner--brand  slds-spinner slds-spinner--large" role="alert">
+			<span class="slds-assistive-text">Loading</span>
+			<div class="slds-spinner__dot-a"></div>
+			<div class="slds-spinner__dot-b"></div>
+		</div>
+ 	</aura:if>   
+	<!-- Loading spinner end -->
+    
+    <div class="slds-hide" aura:id="featureDisabled-container" style="height: 300px;">
+	    <ui:message title="Information" severity="info" closable="false">
+			{!$Label.c.IMCD_LC_MSG_ManualRenewalDisabled}
+		</ui:message>
+    </div>
+    
+    <div style="height: 300px;" aura:id="datatable-container">
+        <lightning:datatable aura:id="datatable" columns="{!v.columns}"
+            data="{!v.data}"
+            keyField="Id"
+            showRowNumberColumn="true"
+            selectedRows="{!v.selectedRows}"
+			hideCheckboxColumn="{!v.hideCheckboxColumn}"
+            onsort="{!c.updateColumnSorting}"
+            sortedBy="{!v.sortedBy}"
+            sortedDirection="{!v.sortedDirection}"
+            defaultSortDirection="{!v.defaultSortDirection}"
+            onrowselection="{!c.rowSelectAction}"/>
+	</div>
+    
+	<div aura:id="datatable-results-container" class="slds-hide results-wrap">
+		<aura:if isTrue="{!!v.hasValidationErrors}">
+            <ui:message title="Info" severity="info" closable="false">
+                {!$Label.c.IMCD_LC_MSG_CanCreateManualRenewal}
+                <lightning:layout>
+                    <lightning:layoutItem flexibility="auto" padding="around-small" size="4">
+                        <lightning:input type="date" aura:id="quoteExpiration" name="quoteExpiration" label="Quote Expiration Date" required="true" onchange="{!c.validateInput}"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem flexibility="auto" padding="around-small" size="4">
+                        <lightning:select name="lob" label="LOB" aura:id="lob" required="true" messageWhenValueMissing="{!$Label.c.IMCD_LC_MSG_LobValidation}" onchange="{!c.validateInput}">
+                            <option value="" text="Select LOB..."/>
+                            <aura:iteration items="{!v.listLob}" var="option">  
+                                <option value="{!option.Id}" 
+                                        text="{!join(' / ', option.SBQQ__OriginalQuoteLine__r_SBQQ__Quote__r_LOB1__c,
+                                              option.SBQQ__OriginalQuoteLine__r_SBQQ__Quote__r_LOB2__c, 
+                                               option.SBQQ__OriginalQuoteLine__r_SBQQ__Quote__r_LOB3__c)}"/>
+    
+                            </aura:iteration>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                </lightning:layout>
+                <lightning:layout>
+                    <lightning:layoutItem flexibility="auto" padding="around-small" size="4">
+                        <lightning:input type="date" aura:id="validityFrom" name="validityFrom" label="Validity From" required="true" onchange="{!c.validateInput}"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem flexibility="auto" padding="around-small" size="4">
+                        <lightning:input type="date" aura:id="validityTo" name="validityTo" label="Validity To" required="true" onblur="{!c.validateInput}"/>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </ui:message> 
+            <div class="slds-m-bottom_medium"/> <!-- spacer -->
+            <aura:set attribute="else">	
+                <ui:message title="Info" severity="warning" closable="false">{!$Label.c.IMCD_LC_MSG_CannotCreateManualRenewal}</ui:message>
+            </aura:set>       
+        </aura:if>
+        <lightning:datatable aura:id="datatable-results" columns="{!v.columnsResult}"
+                             data="{!v.dataResult}"
+                             keyField="Id"
+                             showRowNumberColumn="{!false}"
+                             hideCheckboxColumn="{!true}"/>
+	</div>
+    
+	<div class="slds-m-bottom_medium"/> <!-- spacer -->
+	<div class="modal-footer slds-modal__footer">
+		<lightning:button variant="neutral" disabled="{!!v.canPrevious}" onclick="{!c.previousAction}" label="{!$Label.SBQQ.lbl_previous}" />
+        <lightning:button variant="neutral" disabled="{!!v.canNext}" onclick="{!c.nextAction}" label="{!$Label.SBQQ.lbl_next}" />
+        <lightning:button variant="neutral" disabled="{!!v.formValid}" onclick="{!c.createRenewalAction}" label="{!$Label.c.IMCD_LC_CreateRenewalQuote}" />
+		<lightning:button variant="neutral" onclick="{!c.closeAction}" label="{!$Label.c.IMCD_LC_CloseWindow}" /> 
+	</div>
+	
+</aura:component>

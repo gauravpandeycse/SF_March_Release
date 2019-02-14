@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>https://imcdgroup.atlassian.net/browse/SFDP-1972</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the Account, this is only relevant for Principal Summary reports.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>Summary_Report_LInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>FollowUpReportCreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>FollowupReport__r.CreatedDate</formula>
+        <label>Follow Up Report Created Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FollowUpReportProduct__c</fullName>
+        <externalId>false</externalId>
+        <formula>FollowupReport__r.ProductDisplayName__c</formula>
+        <label>Follow Up Report Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FollowUpReportQuoteName__c</fullName>
+        <externalId>false</externalId>
+        <formula>PrimaryQuoteLine__r.SBQQ__Quote__r.Name</formula>
+        <label>Follow Up Report Quote Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FollowupReport__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Follow-up Report</label>
+        <referenceTo>FollowUpReport__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>SummaryReportLInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MarketInfoBOCompetitorDistributor__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;Drill into record or generate document.&apos;</formula>
+        <label>Market Info BO Competitor Distributor</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoBOCompetitorProduct__c</fullName>
+        <externalId>false</externalId>
+        <formula>MarketInfoBo__r.CompetitorProduct__c</formula>
+        <label>Market Info BO Competitor Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoBOQuoteName__c</fullName>
+        <externalId>false</externalId>
+        <formula>MarketInfoBo__r.QuoteLine__r.SBQQ__Quote__r.Name</formula>
+        <label>Market Info BO Quote Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoBoCompetitorProducer__c</fullName>
+        <externalId>false</externalId>
+        <formula>MarketInfoBo__r.Competitor_Producer__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Market Info Bo Competitor Producer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoBo__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Market Info BO</label>
+        <referenceTo>MarketInfoBO__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>SummaryReportLInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MarketInfoMarketBGClassification__c</fullName>
+        <externalId>false</externalId>
+        <formula>MarketInfoMarket__r.BusinessGroupClassification__r.Name</formula>
+        <label>Market Info Market BG Classification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoMarketCompetitorDistributor__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;Drill into record or generate document.&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Market Info Market Competitor Distr.</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoMarketCompetitorProducer__c</fullName>
+        <externalId>false</externalId>
+        <formula>MarketInfoMarket__r.Competitor_Producer__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Market Info Market Competitor Producer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoMarketCompetitorProduct__c</fullName>
+        <externalId>false</externalId>
+        <formula>MarketInfoMarket__r.CompetitorProduct__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Market Info Market Competitor Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoMarketProduct__c</fullName>
+        <externalId>false</externalId>
+        <formula>MarketInfoMarket__r.Product__r.Name</formula>
+        <label>Market Info Market Product</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MarketInfoMarket__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Market Info Market</label>
+        <referenceTo>MarketInfoMarket__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>SummaryReportLInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityAmountNoDec__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.AmountNoDec__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Potential Annual Turnover</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityApplication__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Application__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Application</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityCloseDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.CloseDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Close Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityExpectedRevenueNoDec__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.ExpectedRevenueNoDec__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Expected Revenue</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityKeyOpportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Key_Opportunity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Key Opportunity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityStage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Stage</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityType__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.BO_Type_Display__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity BO Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>SummaryReportLInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryQuoteLine__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Lookup to the Primary Quote Line</inlineHelpText>
+        <label>Quote Line</label>
+        <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>SummaryReportLInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryQuote__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Quote</label>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>SummaryReportLInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PrincipalName__c</fullName>
+        <externalId>false</externalId>
+        <formula>PrimaryQuoteLine__r.PrincipalName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Principal Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductName__c</fullName>
+        <externalId>false</externalId>
+        <formula>PrimaryQuoteLine__r.ProductDisplay__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductPrice__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CurrencyIsoCode) + &apos; &apos; + PrimaryQuoteLine__r.PricePerUOMwithUOM__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Price</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuoteName__c</fullName>
+        <externalId>false</externalId>
+        <formula>PrimaryQuoteLine__r.SBQQ__Quote__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quote Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SummaryReport__c</fullName>
+        <externalId>false</externalId>
+        <label>Summary Report</label>
+        <referenceTo>SummaryReport__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>SummaryReportLInes</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>VisitReportDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( 
+				NOT ( ISBLANK ( VisitReport__c ) )
+				, VisitReport__r.Visit_Date__c
+				, IF ( 
+								NOT ( ISBLANK ( VisitReportOpportunity__c ) )
+								, VisitReportOpportunity__r.VisitDate__c
+								, null
+				)
+)</formula>
+        <label>Visit Report Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>VisitReportOpportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Visit Report</label>
+        <referenceTo>VisitReportOppty__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>Summary_Report_LInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>VisitReportSubject__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( 
+				NOT ( ISBLANK ( VisitReport__c ) )
+				, VisitReport__r.Subject__c
+				, IF ( 
+								NOT ( ISBLANK ( VisitReportOpportunity__c ) )
+								, VisitReportOpportunity__r.VisitReport__r.Subject__c
+								, &apos;&apos;
+				)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Visit Report Subject</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VisitReportType__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( 
+				NOT ( ISBLANK ( VisitReport__c ) )
+				, TEXT ( VisitReport__r.Type__c )
+				, IF ( 
+								NOT ( ISBLANK ( VisitReportOpportunity__c ) )
+								, TEXT ( VisitReportOpportunity__r.VisitReport__r.Type__c )
+								, &apos;&apos;
+				)
+)</formula>
+        <label>Visit Report Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VisitReport__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Visit Report (Unrelated)</label>
+        <referenceTo>VisitReport__c</referenceTo>
+        <relationshipLabel>Summary Report LInes</relationshipLabel>
+        <relationshipName>Summary_Report_LInes</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Summary Report Line</label>
+    <nameField>
+        <displayFormat>PRL-{00000000}</displayFormat>
+        <label>Report Line Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Summary Report LInes</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

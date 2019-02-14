@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>IT-N Customer Service</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>IT-N Customer Service</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>ITN_Operations_Support</parentRole>
+</Role>

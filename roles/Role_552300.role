@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>US-MJ IMCD US Central / IC (552300)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>US-MJ IMCD US Central / IC (552300)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>US_MJ_BUM_IMCD_US_Central_IC</parentRole>
+</Role>

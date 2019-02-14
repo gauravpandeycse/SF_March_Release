@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>BE Technical Department (22100)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>BE Technical Department (22100)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>BE_Technical_Manager</parentRole>
+</Role>

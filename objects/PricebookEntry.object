@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddPricebookEntryOnPricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddPricebookEntryOnProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddStandardPrice</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>BasePrice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Base purchase price for this product as contracted with principal.</description>
+        <externalId>false</externalId>
+        <label>Base Price</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Incoterm__c</fullName>
+        <externalId>false</externalId>
+        <label>Incoterm</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Incoterms</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Intercompany__c</fullName>
+        <description>Intercompany flag (from Account, where Account is a Supplier)</description>
+        <externalId>false</externalId>
+        <formula>Supplier__r.Intercompany__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Intercompany</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>Modified__c</fullName>
+        <externalId>false</externalId>
+        <label>Modified</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>PriceValidityEnd__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Validity End</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PriceValidityStart__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Validity Start</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductCostInformation__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Cost Information</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ShipFromAddress__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ship-from Address</label>
+        <referenceTo>AccountShiptoAddress__c</referenceTo>
+        <relationshipLabel>Price Book Entries (Ship-From Address)</relationshipLabel>
+        <relationshipName>PbeShipFrom</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ShipToAddress__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ship-to Address</label>
+        <referenceTo>AccountShiptoAddress__c</referenceTo>
+        <relationshipLabel>Price Book Entries</relationshipLabel>
+        <relationshipName>PbeShipTo</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>StandardPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Supplier (V) for this Product / Price Book</description>
+        <externalId>false</externalId>
+        <label>Supplier</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Only allowed to select Suppliers for purchase prices</errorMessage>
+            <filterItems>
+                <field>Account.TF_RecordTypeDeveloperName__c</field>
+                <operation>notContain</operation>
+                <value>Customer</value>
+            </filterItems>
+            <infoMessage>Select a supplier</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Price Book Entries</relationshipLabel>
+        <relationshipName>Price_Book_Entries</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TF_FilteredProduct__c</fullName>
+        <description>Product2Id if active, else null. Used in Price Rules to crash a PBE-search if inactive</description>
+        <externalId>false</externalId>
+        <formula>if (IsActive = true &amp;&amp; Product2.IsActive = true, CASESAFEID(Product2Id), null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TF_FilteredProduct</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TF_ForErpFlag__c</fullName>
+        <externalId>false</externalId>
+        <formula>AND (
+    UnitPrice &gt; 0,
+    BasePrice__c 
+	)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>For ERP</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UseStandardPrice</fullName>
+    </fields>
+    <searchLayouts>
+        <searchResultsAdditionalFields>PRODUCT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT.DEFAULT_PRICE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.DESCRIPTION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY_ENUM</searchResultsAdditionalFields>
+    </searchLayouts>
+    <validationRules>
+        <fullName>invalidListPrice</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+    UnitPrice &gt; 0,
+    NOT ( BasePrice__c )
+)</errorConditionFormula>
+        <errorMessage>You cannot set a List price, since the Base Price flag isn&apos;t set (Note: there should be only one price/currency marked as Base price for a given product).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>supplierRequired</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+				BasePrice__c,
+				UnitPrice &gt; 0,
+				ISBLANK ( Supplier__c )
+)</errorConditionFormula>
+        <errorMessage>A Supplier is required for this purchase price, because Base price flag is enabled and the List price &gt; 0.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>validValidityDates</fullName>
+        <active>true</active>
+        <errorConditionFormula>PriceValidityEnd__c &lt; PriceValidityStart__c</errorConditionFormula>
+        <errorMessage>Price validity dates incorrect, please correct. Validity end date cannot be prior to the Validity start date.</errorMessage>
+    </validationRules>
+</CustomObject>

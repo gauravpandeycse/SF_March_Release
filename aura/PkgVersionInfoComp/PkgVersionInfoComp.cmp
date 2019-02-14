@@ -1,0 +1,35 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" controller="PkgVersionInfoCompController">
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="data" type="object"/>
+    <aura:attribute name="columns" type="List"/>
+
+    <article class="slds-card">
+        <div class="slds-grid slds-einstein-header slds-card__header">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-grid slds-grid_vertical-align-center slds-size_3-of-4 slds-medium-size_2-of-3">
+                    <div class="slds-media__body">
+                        <h2 class="slds-truncate">
+                            <b><span class="slds-text-heading_small">Managed Package Version Info</span></b>
+                        </h2>
+                    </div>
+                </div>
+                <div class="slds-einstein-header__figure slds-size_1-of-4 slds-medium-size_1-of-3"></div>
+            </header>
+        </div>
+
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-tile__detail">
+                <div aura:id="datatable-container">
+                    <lightning:datatable aura:id="datatable" columns="{!v.columns}"
+                                         data="{!v.data}"
+                                         keyField="Id"
+                                         showRowNumberColumn="{!true}"
+                                         hideCheckboxColumn="{!true}"
+                     />
+                </div>
+            </div>
+        </div>
+    </article>
+
+</aura:component>

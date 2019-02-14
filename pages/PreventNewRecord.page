@@ -1,0 +1,3 @@
+<apex:page id="PreventNewRecord" standardController="Product2">
+<!-- dummy page uses as override on Product2 CreateNewProduct standard action -->
+</apex:page>

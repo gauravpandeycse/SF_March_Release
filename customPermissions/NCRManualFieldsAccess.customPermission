@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This particular permission grants the access to manual NCR details fields. This permission is initially intended for service desk users to link NCRs in countries which can or do not integrate orders with the Group ERP System.</description>
+    <label>NCR Manual Fields Access</label>
+</CustomPermission>

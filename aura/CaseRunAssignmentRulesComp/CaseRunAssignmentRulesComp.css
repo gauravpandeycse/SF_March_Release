@@ -1,0 +1,9 @@
+.THIS.widebutton {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    min-width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}

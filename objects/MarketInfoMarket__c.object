@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Market_Info_Market_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Market_Info_Market</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Market_Info_Market</fullName>
+        <fields>Name</fields>
+        <fields>RecordTypeId</fields>
+        <label>Market Info Market</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AccountManager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Owner.FirstName &amp; &quot; &quot; &amp; Account__r.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Manager</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Market_Intelligences</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BgClassification__c</fullName>
+        <externalId>false</externalId>
+        <formula>BusinessGroupClassification__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BG Classification</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BusinessGroupClassification__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Group Classification</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value needs to be a Product Business Group</errorMessage>
+            <filterItems>
+                <field>BusinessGroupClassification__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Business Group (Product)</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>BusinessGroupClassification__c</referenceTo>
+        <relationshipLabel>Market Info Market</relationshipLabel>
+        <relationshipName>Market_Intelligences</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessUnit__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT ( Account__r.ImcdBusinessUnit__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>External Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CompetitorAverageSalesPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Average Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CompetitorDistributorName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Competitor_Distributor__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competitor Distributor Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompetitorProducerName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Competitor_Producer__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competitor Producer Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompetitorProduct__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Product</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompetitorQuanity__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitor_Distributor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor Distributor</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value needs to be of Type Distributor</errorMessage>
+            <filterItems>
+                <field>Competitor__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Distributor</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Competitor__c</referenceTo>
+        <relationshipLabel>Market Info Market</relationshipLabel>
+        <relationshipName>Market_Info_Market_Distributor</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_Producer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor Producer</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value needs to be of Type Producer</errorMessage>
+            <filterItems>
+                <field>Competitor__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Producer</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Competitor__c</referenceTo>
+        <relationshipLabel>Market Info Market (Competitor Producer)</relationshipLabel>
+        <relationshipName>Market_Info_Market_Competitor</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ExternalComments__c</fullName>
+        <externalId>false</externalId>
+        <label>External Comments</label>
+        <length>1024</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IMCDCompany__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.IMCDCompany__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IMCD Company</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>InternalComments__c</fullName>
+        <externalId>false</externalId>
+        <label>Internal Comments</label>
+        <length>1024</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>OpportunityId__c</fullName>
+        <description>Returns the Opportunity Id, if the Lookup is empty it returns &apos;N/A&apos;</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Opportunity__c,&apos;N/A&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Market Info Market</relationshipLabel>
+        <relationshipName>Market_Info_Market</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentAccount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Parent.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PotentialIsKnown__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Potential Is Known</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PrimaryQuoteId__c</fullName>
+        <description>Returning &apos;N/A&apos; if the Foreign key cannot be resolved. In this way we force the SOQL to include this field. This is important since in (e.g.) the Create Principal Report flow it needs the PrimaryQuoteId__c if available. But if the field is not part of the sObject SOQL, it would fail.</description>
+        <externalId>false</externalId>
+        <formula>BLANKVALUE(Opportunity__r.SBQQ__PrimaryQuote__c, &apos;N/A&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Quote Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrincipalId__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Product__r.Principal__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Principal Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PrincipalLookup__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>SFDP-2004
+PrincipalLookup__c = Lookup, Princpal__c is formula.</description>
+        <externalId>false</externalId>
+        <label>Principal</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Principal Global</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Market Info Market (Principal)</relationshipLabel>
+        <relationshipName>Market_Info_Market</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Principal__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (
+		NOT ( ISBLANK ( Product__c ) )
+  , Product__r.PrincipalName__c
+		, IF ( 
+				NOT ( ISBLANK ( PrincipalLookup__c ) )
+				, PrincipalLookup__r.Name
+		  , &apos;&apos;
+		)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Principal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product ID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Market Info Market</relationshipLabel>
+        <relationshipName>Market_Info_Market</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TradeGrade__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trade Grade</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TradeName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.TradeName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trade Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnitofMeasurement__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of Measurement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>UnitOfMeasurement</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Market Info Market</label>
+    <nameField>
+        <displayFormat>MIM-{000000000}</displayFormat>
+        <label>Market Info Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Market Info Market</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>MarketInfoOngoing</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Market_Info_Market</compactLayoutAssignment>
+        <description>Market Info for ongoing business</description>
+        <label>Market Info Ongoing</label>
+        <picklistValues>
+            <picklist>UnitofMeasurement__c</picklist>
+            <values>
+                <fullName>00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>LB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>MarketSurvey</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Market_Info_Market</compactLayoutAssignment>
+        <description>Market Survey for new business</description>
+        <label>Market Survey</label>
+        <picklistValues>
+            <picklist>UnitofMeasurement__c</picklist>
+            <values>
+                <fullName>00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>LB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>mutualExclusivePrincipalAndProduct</fullName>
+        <active>true</active>
+        <description>Either should be provided, not both</description>
+        <errorConditionFormula>AND (
+   $Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c
+   , RecordType.DeveloperName = &apos;MarketInfoOngoing&apos;
+   , OR (
+							ISBLANK ( Product__c ) &amp;&amp; ISBLANK ( PrincipalLookup__c )
+							, NOT ( ISBLANK ( Product__c ) ) &amp;&amp; NOT ( ISBLANK ( PrincipalLookup__c ) )
+
+			)								
+)</errorConditionFormula>
+        <errorMessage>Either specify a Product or a Principal, but not both.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Create_Product_Report</fullName>
+        <availability>online</availability>
+        <description>This Button will generate the WebMerge Product Report Document.</description>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Create Product Report</masterLabel>
+        <openType>newWindow</openType>
+        <page>WebmergeMarketInfoMarket</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,12 @@
+<design:component>
+
+    <design:attribute name="type" label="type" required="true" default="text" datasource="checkbox,date,datetime,email,number"/>
+    <design:attribute name="value" label="value" description="The value should be specified, for checkboxes the Checked attribute"/>
+    <design:attribute name="checked" label="checked" description="Only for Checkboxes, the checked value should be specified"/>
+    <design:attribute name="label" label="label" description="Label of the field"/>
+    <design:attribute name="title" label="title" description="Hover text of the field"/>
+    <design:attribute name="variant" label="variant" default="standard" datasource="standard,label-hidden"/>
+    <design:attribute name="readonly" label="readonly" default="{!true}"/>
+    <design:attribute name="disabled" label="disabled" default="{!false}"/>
+
+</design:component>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Customer Global Parent (C5) and Principal (V5) can only be created by IMCD Group (Corproate)</description>
+    <label>Allowed to Create C5 and V5</label>
+</CustomPermission>

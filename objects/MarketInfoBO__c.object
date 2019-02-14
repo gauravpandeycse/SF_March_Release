@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Market_Info_BO</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Market_Info_BO</fullName>
+        <fields>Name</fields>
+        <fields>RecordTypeId</fields>
+        <label>Market Info BO</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AccountManager__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.SBQQ__Quote__r.SBQQ__Account__r.Owner.FirstName &amp; &quot; &quot; &amp; QuoteLine__r.SBQQ__Quote__r.SBQQ__Account__r.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Manager</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountName__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.SBQQ__Quote__r.AccountName__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BusinessGroupClassification__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Group Classification</label>
+        <referenceTo>BusinessGroupClassification__c</referenceTo>
+        <relationshipLabel>Market Info BO</relationshipLabel>
+        <relationshipName>Market_Info_BO</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessUnit__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT ( QuoteLine__r.SBQQ__Quote__r.SBQQ__Account__r.ImcdBusinessUnit__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompetitorAverageSalesPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Average Sales Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CompetitorDistributorName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Competitor_Distributor__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competitor Distributor</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompetitorProducerName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Competitor_Producer__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competitor Producer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompetitorProduct__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Product</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompetitorQuanity__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Quanity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitor_Distributor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor Distributor</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value needs to be of Type Distributor</errorMessage>
+            <filterItems>
+                <field>Competitor__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Distributor</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Competitor__c</referenceTo>
+        <relationshipLabel>Market Info BO</relationshipLabel>
+        <relationshipName>Market_Info_BO_Distributor</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_Producer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competitor Producer</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Competitor__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Producer</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Competitor__c</referenceTo>
+        <relationshipLabel>Market Info BO (Competitor Producer)</relationshipLabel>
+        <relationshipName>Market_Info_BO_Producer</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.SBQQ__Quote__r.SBQQ__Opportunity2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PotentialIsKnown__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Potential Is Known</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ProductDisplayName__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.ProductDisplay__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Display Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Market Info BO</relationshipLabel>
+        <relationshipName>Market_Info_BO</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>QuoteId__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.SBQQ__Quote__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quote Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuoteLine__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Line</label>
+        <referenceTo>SBQQ__QuoteLine__c</referenceTo>
+        <relationshipLabel>Market Info BO</relationshipLabel>
+        <relationshipName>Market_Info_BO</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>QuoteName__c</fullName>
+        <externalId>false</externalId>
+        <formula>QuoteLine__r.SBQQ__Quote__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quote Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UnitOfMeasurement__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit of Measurement</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>UnitOfMeasurement</valueSetName>
+        </valueSet>
+    </fields>
+    <label>Market Info BO</label>
+    <nameField>
+        <displayFormat>MB-{000000000}</displayFormat>
+        <label>Market Info BO Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Market Info BO</pluralLabel>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Market_Info_BO</compactLayoutAssignment>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>UnitOfMeasurement__c</picklist>
+            <values>
+                <fullName>00</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>01</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HJ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KG</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>LB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>M3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>P2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>OnlyAllowedAgainstPrimary</fullName>
+        <active>true</active>
+        <description>Validation rule to make sure the quote line item this is created from is related to a Primary quote.</description>
+        <errorConditionFormula>AND( 
+IsNew(), 
+QuoteLine__r.SBQQ__Quote__r.SBQQ__Primary__c = FALSE, 
+$Setup.Global_Bypass_Processes_Settings__c.Run_Assignments_Rules__c 
+)</errorConditionFormula>
+        <errorMessage>You are only allowed to create Market Info BO&apos;s from a Quote Line Item associated to a primary Quote.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

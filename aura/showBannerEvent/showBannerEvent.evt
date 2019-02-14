@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="showBannerEvent">
+    <aura:attribute name="title" type="String"/>
+    <aura:attribute name="subtitle" type="String"/>
+    <aura:attribute name="showbanner" type="Boolean"/>
+</aura:event>
