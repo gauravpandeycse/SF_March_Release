@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <validationRules>
+        <fullName>Date_check_End_before_From_not_allowed</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+				$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c 
+    , NOT ( ISBLANK(PriceValidityFrom__c) )
+    , NOT ( ISBLANK(PriceValidityTo__c) )
+    , (ISCHANGED(PriceValidityFrom__c) || ISCHANGED(PriceValidityTo__c)) 
+    , (PriceValidityFrom__c &gt; PriceValidityTo__c || PriceValidityTo__c &lt; TODAY() ) 
+)</errorConditionFormula>
+        <errorMessage>Invalid &apos;Validity date&apos; entry: &apos;Validity from&apos; date is before &apos;Validity to&apos; date or &apos;Validity to&apos; date is in the past (Quote)</errorMessage>
+    </validationRules>
+</CustomObject>
