@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>ZA Construction, Inks, Adhesives (67133)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>ZA Construction, Inks, Adhesives (67133)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>ZA_BUM_Construction_Inks_Adhesives</parentRole>
+</Role>

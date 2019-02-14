@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This custom permission is assigned to admin or other users who should be able to edit read-only fields on locked products or bypass other product-related validation rules</description>
+    <label>Locked Product Bypass</label>
+</CustomPermission>

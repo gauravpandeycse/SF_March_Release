@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>fake@fake.com</email>
+    <name>Benelux Direct from Supplier Samples</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Sample_BNL_BE</publicGroup>
+            <publicGroup>Sample_BNL_NL</publicGroup>
+        </publicGroups>
+        <users>
+            <user>anna.manukjan@imcd.nl</user>
+            <user>christophe.keuleers@imcd.be</user>
+            <user>cyanne.polderdijk@imcd.nl</user>
+            <user>daroushka.cijntje@imcd.nl</user>
+            <user>eric.coenen@imcd.nl.prod</user>
+            <user>frederike.huissoon@imcd.nl</user>
+            <user>jan.berghout@imcd.nl</user>
+            <user>jo.caluyn@imcd.be</user>
+            <user>kristof.smets@imcd.be</user>
+            <user>mandy.hoitsema@imcd.nl</user>
+            <user>marianne.vanderburg@imcd.nl</user>
+            <user>melissa.verweij@imcd.be</user>
+            <user>petra.scheepmaker@imcd.nl</user>
+            <user>puck.vermeulen@imcd.nl</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

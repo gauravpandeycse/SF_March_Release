@@ -1,0 +1,6 @@
+<aura:documentation>
+    <aura:description>Documentation for AccountSummaryApp</aura:description>
+    <aura:example name="AccountSummaryApp" ref="AccountSummaryApp" label="AccountSummaryApp">
+        This Lightning App is used to host the AccountSummaryComp LC through Lightning Out in the AccountSummary VF page
+    </aura:example>
+</aura:documentation>

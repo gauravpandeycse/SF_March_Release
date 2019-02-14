@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Diff__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(ROUND(UnitPrice, 2)) +&quot;|&quot;+ TEXT(ROUND(SBQQ__QuoteLine__r.SBQQ__NetPrice__c, 2))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Diff</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>GrossMargin__c</fullName>
+        <description>CPQ Twin-field for the SBQQ__QuoteLine__c.GrossMargin__c field
+https://imcdgroup.atlassian.net/browse/SFDP-1942</description>
+        <externalId>false</externalId>
+        <label>Gross Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IncorrectAmountReason__c</fullName>
+        <description>Sibling field of IncorrectAmount__c</description>
+        <externalId>false</externalId>
+        <formula>IF ( ( ISPICKVAL( SBQQ__QuoteLine__r.Stage__c, &apos;Lost&apos; ) &amp;&amp; UnitPrice &lt;&gt; 0 ), &apos;Stage=Lost, UnitPrice &lt;&gt; 0&apos;, &apos;&apos;)
++&quot;|&quot;+	
+IF ( ( ISPICKVAL( SBQQ__QuoteLine__r.Stage__c, &apos;Lost&apos; ) &amp;&amp; TotalPrice &lt;&gt; 0 ), &apos;Stage=Lost, TotalPrice &lt;&gt; 0&apos;, &apos;&apos;)
++&quot;|&quot;+		
+IF ( ( Quantity &lt;&gt; SBQQ__QuoteLine__r.SBQQ__EffectiveQuantity__c ) , &apos;Quantity &lt;&gt; SBQQ__QuoteLine__r.SBQQ__EffectiveQuantity__c&apos;, &apos;&apos;)
++&quot;|&quot;+
+IF ( ( TEXT (SBQQ__QuoteLine__r.CurrencyIsoCode) &lt;&gt; TEXT (CurrencyIsoCode) ), &apos;CurrencyIsoCode &lt;&gt; SBQQ__QuoteLine__r.CurrencyIsoCode&apos;, &apos;&apos;)
++&quot;|&quot;+
+IF ( AND (  TEXT ( SBQQ__QuoteLine__r.Stage__c ) &lt;&gt; &apos;Lost&apos;, SBQQ__QuoteLine__r.SBQQ__NetPrice__c &lt;&gt; UnitPrice, ABS ( SBQQ__QuoteLine__r.SBQQ__NetPrice__c - UnitPrice ) &gt; 0.1 ), &apos;UnitPrice &lt;&gt; SBQQ__QuoteLine__r.SBQQ__NetPrice__c&apos;, &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Incorrect Amount Reason</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IncorrectAmount__c</fullName>
+        <description>This field identifies whether the UnitPrice, TotalPrice and Quantity fields are synchronized correctly with the record&apos;s related SBQQ__QuoteLine__c (from the Primary Quote). 
+- If SBQQ__QuoteLine__r.Stage__c = Lost, the UnitPrice + TotalPrice on the OpportunityLineItem should be 0
+- If SBQQ__QuoteLine__r.Stage__c &lt;&gt; Lost, the UnitPrice should match the SBQQ__NetPrice__c
+- Quantity should always match SBQQ__EffectiveQuantity__c
+
+See also: https://help.salesforce.com/articleView?id=000271528&amp;type=1&amp;language=en_US</description>
+        <externalId>false</externalId>
+        <formula>OR (
+    AND (
+        ISPICKVAL( SBQQ__QuoteLine__r.Stage__c, &apos;Lost&apos; )
+        , UnitPrice &lt;&gt; 0
+    )
+    ,	AND (
+        ISPICKVAL( SBQQ__QuoteLine__r.Stage__c, &apos;Lost&apos; )
+        , TotalPrice &lt;&gt; 0
+    )
+    , SBQQ__QuoteLine__r.SBQQ__EffectiveQuantity__c &lt;&gt; Quantity
+    , TEXT (SBQQ__QuoteLine__r.CurrencyIsoCode) &lt;&gt; TEXT (CurrencyIsoCode)
+    , AND (
+        TEXT ( SBQQ__QuoteLine__r.Stage__c ) &lt;&gt; &apos;Lost&apos;
+        , SBQQ__QuoteLine__r.SBQQ__NetPrice__c &lt;&gt; UnitPrice
+        , ABS ( SBQQ__QuoteLine__r.SBQQ__NetPrice__c - UnitPrice ) &gt; 0.1
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Incorrect Amount</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityQuoteLineStage__c</fullName>
+        <description>https://imcdgroup.atlassian.net/browse/SFDP-1942</description>
+        <externalId>false</externalId>
+        <formula>TEXT(SBQQ__QuoteLine__r.Stage__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Quote Line Stage</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <description>https://imcdgroup.atlassian.net/browse/SFDP-1942</description>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Identified</fullName>
+                    <default>false</default>
+                    <label>Identified</label>
+                </value>
+                <value>
+                    <fullName>Analysis</fullName>
+                    <default>false</default>
+                    <label>Analysis</label>
+                </value>
+                <value>
+                    <fullName>Engagement</fullName>
+                    <default>false</default>
+                    <label>Engagement</label>
+                </value>
+                <value>
+                    <fullName>Launch</fullName>
+                    <default>false</default>
+                    <label>Launch</label>
+                </value>
+                <value>
+                    <fullName>Closing</fullName>
+                    <default>false</default>
+                    <label>Closing</label>
+                </value>
+                <value>
+                    <fullName>Won</fullName>
+                    <default>false</default>
+                    <label>Won</label>
+                </value>
+                <value>
+                    <fullName>Lost</fullName>
+                    <default>false</default>
+                    <label>Lost</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+</CustomObject>

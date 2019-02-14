@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>DE Sales Area A/CH/DK/N/S/SF (31121)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>DE Sales Area A/CH/DK/N/S/SF (31121)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>DE_BUM_Sales_Area_A_CH_DK_N_S_SF</parentRole>
+</Role>

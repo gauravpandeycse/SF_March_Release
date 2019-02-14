@@ -1,0 +1,1751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AU_ACT</fullName>
+        <default>false</default>
+        <label>Australian Capital Territory (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>AU_NSW</fullName>
+        <default>false</default>
+        <label>New South Wales (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>AU_NT</fullName>
+        <default>false</default>
+        <label>Northern Territory (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>AU_QLD</fullName>
+        <default>false</default>
+        <label>Queensland (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>AU_SA</fullName>
+        <default>false</default>
+        <label>South Australia (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>AU_TAS</fullName>
+        <default>false</default>
+        <label>Tasmania (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>AU_VIC</fullName>
+        <default>false</default>
+        <label>Victoria (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>AU_WA</fullName>
+        <default>false</default>
+        <label>Western Australia (AU)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_AC</fullName>
+        <default>false</default>
+        <label>Acre (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_AL</fullName>
+        <default>false</default>
+        <label>Alagoas (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_AM</fullName>
+        <default>false</default>
+        <label>Amazonas (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_AP</fullName>
+        <default>false</default>
+        <label>Amapá (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_BA</fullName>
+        <default>false</default>
+        <label>Bahia (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_CE</fullName>
+        <default>false</default>
+        <label>Ceará (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_DF</fullName>
+        <default>false</default>
+        <label>Distrito Federal (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_ES</fullName>
+        <default>false</default>
+        <label>Espírito Santo (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_GO</fullName>
+        <default>false</default>
+        <label>Goiás (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_MA</fullName>
+        <default>false</default>
+        <label>Maranhão (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_MG</fullName>
+        <default>false</default>
+        <label>Minas Gerais (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_MS</fullName>
+        <default>false</default>
+        <label>Mato Grosso do Sul (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_MT</fullName>
+        <default>false</default>
+        <label>Mato Grosso (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_PA</fullName>
+        <default>false</default>
+        <label>Pará (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_PB</fullName>
+        <default>false</default>
+        <label>Paraíba (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_PE</fullName>
+        <default>false</default>
+        <label>Pernambuco (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_PI</fullName>
+        <default>false</default>
+        <label>Piauí (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_PR</fullName>
+        <default>false</default>
+        <label>Paraná (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_RJ</fullName>
+        <default>false</default>
+        <label>Rio de Janeiro (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_RN</fullName>
+        <default>false</default>
+        <label>Rio Grande do Norte (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_RO</fullName>
+        <default>false</default>
+        <label>Rondônia (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_RR</fullName>
+        <default>false</default>
+        <label>Roraima (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_RS</fullName>
+        <default>false</default>
+        <label>Rio Grande do Sul (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_SC</fullName>
+        <default>false</default>
+        <label>Santa Catarina (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_SE</fullName>
+        <default>false</default>
+        <label>Sergipe (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_SP</fullName>
+        <default>false</default>
+        <label>São Paulo (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>BR_TO</fullName>
+        <default>false</default>
+        <label>Tocantins (BR)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_AB</fullName>
+        <default>false</default>
+        <label>Alberta (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_BC</fullName>
+        <default>false</default>
+        <label>British Columbia (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_MB</fullName>
+        <default>false</default>
+        <label>Manitoba (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_NB</fullName>
+        <default>false</default>
+        <label>New Brunswick (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_NL</fullName>
+        <default>false</default>
+        <label>Newfoundland and Labrador (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_NS</fullName>
+        <default>false</default>
+        <label>Nova Scotia (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_NT</fullName>
+        <default>false</default>
+        <label>Northwest Territories (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_NU</fullName>
+        <default>false</default>
+        <label>Nunavut (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_ON</fullName>
+        <default>false</default>
+        <label>Ontario (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_PE</fullName>
+        <default>false</default>
+        <label>Prince Edward Island (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_QC</fullName>
+        <default>false</default>
+        <label>Quebec (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_SK</fullName>
+        <default>false</default>
+        <label>Saskatchewan (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CA_YT</fullName>
+        <default>false</default>
+        <label>Yukon Territories (CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_11</fullName>
+        <default>false</default>
+        <label>Beijing (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_12</fullName>
+        <default>false</default>
+        <label>Tianjin (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_13</fullName>
+        <default>false</default>
+        <label>Hebei (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_14</fullName>
+        <default>false</default>
+        <label>Shanxi (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_15</fullName>
+        <default>false</default>
+        <label>Nei Mongol (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_21</fullName>
+        <default>false</default>
+        <label>Liaoning (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_22</fullName>
+        <default>false</default>
+        <label>Jilin (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_23</fullName>
+        <default>false</default>
+        <label>Heilongjiang (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_31</fullName>
+        <default>false</default>
+        <label>Shanghai (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_32</fullName>
+        <default>false</default>
+        <label>Jiangsu (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_33</fullName>
+        <default>false</default>
+        <label>Zhejiang (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_34</fullName>
+        <default>false</default>
+        <label>Anhui (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_35</fullName>
+        <default>false</default>
+        <label>Fujian (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_36</fullName>
+        <default>false</default>
+        <label>Jiangxi (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_37</fullName>
+        <default>false</default>
+        <label>Shandong (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_41</fullName>
+        <default>false</default>
+        <label>Henan (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_42</fullName>
+        <default>false</default>
+        <label>Hubei (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_43</fullName>
+        <default>false</default>
+        <label>Hunan (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_44</fullName>
+        <default>false</default>
+        <label>Guangdong (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_45</fullName>
+        <default>false</default>
+        <label>Guangxi (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_46</fullName>
+        <default>false</default>
+        <label>Hainan (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_50</fullName>
+        <default>false</default>
+        <label>Chongqing (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_51</fullName>
+        <default>false</default>
+        <label>Sichuan (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_52</fullName>
+        <default>false</default>
+        <label>Guizhou (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_53</fullName>
+        <default>false</default>
+        <label>Yunnan (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_54</fullName>
+        <default>false</default>
+        <label>Xizang (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_61</fullName>
+        <default>false</default>
+        <label>Shaanxi (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_62</fullName>
+        <default>false</default>
+        <label>Gansu (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_63</fullName>
+        <default>false</default>
+        <label>Qinghai (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_64</fullName>
+        <default>false</default>
+        <label>Ningxia (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_65</fullName>
+        <default>false</default>
+        <label>Xinjiang (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_71</fullName>
+        <default>false</default>
+        <label>Chinese Taipei (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_91</fullName>
+        <default>false</default>
+        <label>Hong Kong (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>CN_92</fullName>
+        <default>false</default>
+        <label>Macao (CN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_CE</fullName>
+        <default>false</default>
+        <label>Clare (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_CN</fullName>
+        <default>false</default>
+        <label>Cavan (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_CO</fullName>
+        <default>false</default>
+        <label>Cork (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_CW</fullName>
+        <default>false</default>
+        <label>Carlow (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_D</fullName>
+        <default>false</default>
+        <label>Dublin (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_DL</fullName>
+        <default>false</default>
+        <label>Donegal (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_G</fullName>
+        <default>false</default>
+        <label>Galway (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_KE</fullName>
+        <default>false</default>
+        <label>Kildare (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_KK</fullName>
+        <default>false</default>
+        <label>Kilkenny (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_KY</fullName>
+        <default>false</default>
+        <label>Kerry (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_LD</fullName>
+        <default>false</default>
+        <label>Longford (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_LH</fullName>
+        <default>false</default>
+        <label>Louth (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_LK</fullName>
+        <default>false</default>
+        <label>Limerick (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_LM</fullName>
+        <default>false</default>
+        <label>Leitrim (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_LS</fullName>
+        <default>false</default>
+        <label>Laois (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_MH</fullName>
+        <default>false</default>
+        <label>Meath (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_MN</fullName>
+        <default>false</default>
+        <label>Monaghan (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_MO</fullName>
+        <default>false</default>
+        <label>Mayo (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_OY</fullName>
+        <default>false</default>
+        <label>Offaly (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_RN</fullName>
+        <default>false</default>
+        <label>Roscommon (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_SO</fullName>
+        <default>false</default>
+        <label>Sligo (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_TA</fullName>
+        <default>false</default>
+        <label>Tipperary (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_WD</fullName>
+        <default>false</default>
+        <label>Waterford (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_WH</fullName>
+        <default>false</default>
+        <label>Westmeath (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_WW</fullName>
+        <default>false</default>
+        <label>Wicklow (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IE_WX</fullName>
+        <default>false</default>
+        <label>Wexford (IE)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_AN</fullName>
+        <default>false</default>
+        <label>Andaman and Nicobar Islands (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_AP</fullName>
+        <default>false</default>
+        <label>Andhra Pradesh (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_AR</fullName>
+        <default>false</default>
+        <label>Arunachal Pradesh (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_AS</fullName>
+        <default>false</default>
+        <label>Assam (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_BR</fullName>
+        <default>false</default>
+        <label>Bihar (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_CH</fullName>
+        <default>false</default>
+        <label>Chandigarh (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_CT</fullName>
+        <default>false</default>
+        <label>Chhattisgarh (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_DD</fullName>
+        <default>false</default>
+        <label>Daman and Diu (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_DL</fullName>
+        <default>false</default>
+        <label>Delhi (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_DN</fullName>
+        <default>false</default>
+        <label>Dadra and Nagar Haveli (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_GA</fullName>
+        <default>false</default>
+        <label>Goa (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_GJ</fullName>
+        <default>false</default>
+        <label>Gujarat (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_HP</fullName>
+        <default>false</default>
+        <label>Himachal Pradesh (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_HR</fullName>
+        <default>false</default>
+        <label>Haryana (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_JH</fullName>
+        <default>false</default>
+        <label>Jharkhand (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_JK</fullName>
+        <default>false</default>
+        <label>Jammu and Kashmir (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_KA</fullName>
+        <default>false</default>
+        <label>Karnataka (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_KL</fullName>
+        <default>false</default>
+        <label>Kerala (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_LD</fullName>
+        <default>false</default>
+        <label>Lakshadweep (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_MH</fullName>
+        <default>false</default>
+        <label>Maharashtra (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_ML</fullName>
+        <default>false</default>
+        <label>Meghalaya (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_MN</fullName>
+        <default>false</default>
+        <label>Manipur (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_MP</fullName>
+        <default>false</default>
+        <label>Madhya Pradesh (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_MZ</fullName>
+        <default>false</default>
+        <label>Mizoram (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_NL</fullName>
+        <default>false</default>
+        <label>Nagaland (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_OR</fullName>
+        <default>false</default>
+        <label>Odisha (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_PB</fullName>
+        <default>false</default>
+        <label>Punjab (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_PY</fullName>
+        <default>false</default>
+        <label>Puducherry (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_RJ</fullName>
+        <default>false</default>
+        <label>Rajasthan (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_SK</fullName>
+        <default>false</default>
+        <label>Sikkim (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_TN</fullName>
+        <default>false</default>
+        <label>Tamil Nadu (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_TR</fullName>
+        <default>false</default>
+        <label>Tripura (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_UP</fullName>
+        <default>false</default>
+        <label>Uttar Pradesh (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_UT</fullName>
+        <default>false</default>
+        <label>Uttarakhand (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_WB</fullName>
+        <default>false</default>
+        <label>West Bengal (IN)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AG</fullName>
+        <default>false</default>
+        <label>Agrigento (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AL</fullName>
+        <default>false</default>
+        <label>Alessandria (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AN</fullName>
+        <default>false</default>
+        <label>Ancona (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AO</fullName>
+        <default>false</default>
+        <label>Aosta (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AP</fullName>
+        <default>false</default>
+        <label>Ascoli Piceno (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AQ</fullName>
+        <default>false</default>
+        <label>L&apos;Aquila (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AR</fullName>
+        <default>false</default>
+        <label>Arezzo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AT</fullName>
+        <default>false</default>
+        <label>Asti (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_AV</fullName>
+        <default>false</default>
+        <label>Avellino (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BA</fullName>
+        <default>false</default>
+        <label>Bari (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BG</fullName>
+        <default>false</default>
+        <label>Bergamo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BI</fullName>
+        <default>false</default>
+        <label>Biella (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BL</fullName>
+        <default>false</default>
+        <label>Belluno (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BN</fullName>
+        <default>false</default>
+        <label>Benevento (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BO</fullName>
+        <default>false</default>
+        <label>Bologna (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BR</fullName>
+        <default>false</default>
+        <label>Brindisi (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BS</fullName>
+        <default>false</default>
+        <label>Brescia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BT</fullName>
+        <default>false</default>
+        <label>Barletta-Andria-Trani (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_BZ</fullName>
+        <default>false</default>
+        <label>Bolzano (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CA</fullName>
+        <default>false</default>
+        <label>Cagliari (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CB</fullName>
+        <default>false</default>
+        <label>Campobasso (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CE</fullName>
+        <default>false</default>
+        <label>Caserta (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CH</fullName>
+        <default>false</default>
+        <label>Chieti (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CI</fullName>
+        <default>false</default>
+        <label>Carbonia-Iglesias (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CL</fullName>
+        <default>false</default>
+        <label>Caltanissetta (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CN</fullName>
+        <default>false</default>
+        <label>Cuneo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CO</fullName>
+        <default>false</default>
+        <label>Como (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CR</fullName>
+        <default>false</default>
+        <label>Cremona (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CS</fullName>
+        <default>false</default>
+        <label>Cosenza (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CT</fullName>
+        <default>false</default>
+        <label>Catania (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_CZ</fullName>
+        <default>false</default>
+        <label>Catanzaro (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_EN</fullName>
+        <default>false</default>
+        <label>Enna (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_FC</fullName>
+        <default>false</default>
+        <label>Forlì-Cesena (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_FE</fullName>
+        <default>false</default>
+        <label>Ferrara (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_FG</fullName>
+        <default>false</default>
+        <label>Foggia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_FI</fullName>
+        <default>false</default>
+        <label>Florence (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_FM</fullName>
+        <default>false</default>
+        <label>Fermo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_FR</fullName>
+        <default>false</default>
+        <label>Frosinone (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_GE</fullName>
+        <default>false</default>
+        <label>Genoa (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_GO</fullName>
+        <default>false</default>
+        <label>Gorizia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_GR</fullName>
+        <default>false</default>
+        <label>Grosseto (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_IM</fullName>
+        <default>false</default>
+        <label>Imperia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_IS</fullName>
+        <default>false</default>
+        <label>Isernia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_KR</fullName>
+        <default>false</default>
+        <label>Crotone (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_LC</fullName>
+        <default>false</default>
+        <label>Lecco (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_LE</fullName>
+        <default>false</default>
+        <label>Lecce (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_LI</fullName>
+        <default>false</default>
+        <label>Livorno (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_LO</fullName>
+        <default>false</default>
+        <label>Lodi (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_LT</fullName>
+        <default>false</default>
+        <label>Latina (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_LU</fullName>
+        <default>false</default>
+        <label>Lucca (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_MB</fullName>
+        <default>false</default>
+        <label>Monza and Brianza (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_MC</fullName>
+        <default>false</default>
+        <label>Macerata (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_ME</fullName>
+        <default>false</default>
+        <label>Messina (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_MI</fullName>
+        <default>false</default>
+        <label>Milan (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_MN</fullName>
+        <default>false</default>
+        <label>Mantua (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_MO</fullName>
+        <default>false</default>
+        <label>Modena (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_MS</fullName>
+        <default>false</default>
+        <label>Massa and Carrara (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_MT</fullName>
+        <default>false</default>
+        <label>Matera (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_NA</fullName>
+        <default>false</default>
+        <label>Naples (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_NO</fullName>
+        <default>false</default>
+        <label>Novara (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_NU</fullName>
+        <default>false</default>
+        <label>Nuoro (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_OG</fullName>
+        <default>false</default>
+        <label>Ogliastra (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_OR</fullName>
+        <default>false</default>
+        <label>Oristano (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_OT</fullName>
+        <default>false</default>
+        <label>Olbia-Tempio (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PA</fullName>
+        <default>false</default>
+        <label>Palermo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PC</fullName>
+        <default>false</default>
+        <label>Piacenza (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PD</fullName>
+        <default>false</default>
+        <label>Padua (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PE</fullName>
+        <default>false</default>
+        <label>Pescara (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PG</fullName>
+        <default>false</default>
+        <label>Perugia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PI</fullName>
+        <default>false</default>
+        <label>Pisa (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PN</fullName>
+        <default>false</default>
+        <label>Pordenone (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PO</fullName>
+        <default>false</default>
+        <label>Prato (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PR</fullName>
+        <default>false</default>
+        <label>Parma (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PT</fullName>
+        <default>false</default>
+        <label>Pistoia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PU</fullName>
+        <default>false</default>
+        <label>Pesaro and Urbino (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PV</fullName>
+        <default>false</default>
+        <label>Pavia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_PZ</fullName>
+        <default>false</default>
+        <label>Potenza (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RA</fullName>
+        <default>false</default>
+        <label>Ravenna (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RC</fullName>
+        <default>false</default>
+        <label>Reggio Calabria (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RE</fullName>
+        <default>false</default>
+        <label>Reggio Emilia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RG</fullName>
+        <default>false</default>
+        <label>Ragusa (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RI</fullName>
+        <default>false</default>
+        <label>Rieti (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RM</fullName>
+        <default>false</default>
+        <label>Rome (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RN</fullName>
+        <default>false</default>
+        <label>Rimini (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_RO</fullName>
+        <default>false</default>
+        <label>Rovigo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_SA</fullName>
+        <default>false</default>
+        <label>Salerno (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_SI</fullName>
+        <default>false</default>
+        <label>Siena (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_SO</fullName>
+        <default>false</default>
+        <label>Sondrio (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_SP</fullName>
+        <default>false</default>
+        <label>La Spezia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_SR</fullName>
+        <default>false</default>
+        <label>Syracuse (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_SS</fullName>
+        <default>false</default>
+        <label>Sassari (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_SV</fullName>
+        <default>false</default>
+        <label>Savona (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TA</fullName>
+        <default>false</default>
+        <label>Taranto (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TE</fullName>
+        <default>false</default>
+        <label>Teramo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TN</fullName>
+        <default>false</default>
+        <label>Trento (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TO</fullName>
+        <default>false</default>
+        <label>Turin (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TP</fullName>
+        <default>false</default>
+        <label>Trapani (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TR</fullName>
+        <default>false</default>
+        <label>Terni (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TS</fullName>
+        <default>false</default>
+        <label>Trieste (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_TV</fullName>
+        <default>false</default>
+        <label>Treviso (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_UD</fullName>
+        <default>false</default>
+        <label>Udine (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VA</fullName>
+        <default>false</default>
+        <label>Varese (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VB</fullName>
+        <default>false</default>
+        <label>Verbano-Cusio-Ossola (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VC</fullName>
+        <default>false</default>
+        <label>Vercelli (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VE</fullName>
+        <default>false</default>
+        <label>Venice (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VI</fullName>
+        <default>false</default>
+        <label>Vicenza (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VR</fullName>
+        <default>false</default>
+        <label>Verona (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VS</fullName>
+        <default>false</default>
+        <label>Medio Campidano (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VT</fullName>
+        <default>false</default>
+        <label>Viterbo (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>IT_VV</fullName>
+        <default>false</default>
+        <label>Vibo Valentia (IT)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_AG</fullName>
+        <default>false</default>
+        <label>Aguascalientes (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_BC</fullName>
+        <default>false</default>
+        <label>Baja California (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_BS</fullName>
+        <default>false</default>
+        <label>Baja California Sur (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_CH</fullName>
+        <default>false</default>
+        <label>Chihuahua (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_CL</fullName>
+        <default>false</default>
+        <label>Colima (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_CM</fullName>
+        <default>false</default>
+        <label>Campeche (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_CO</fullName>
+        <default>false</default>
+        <label>Coahuila (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_CS</fullName>
+        <default>false</default>
+        <label>Chiapas (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_DF</fullName>
+        <default>false</default>
+        <label>Federal District (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_DG</fullName>
+        <default>false</default>
+        <label>Durango (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_GR</fullName>
+        <default>false</default>
+        <label>Guerrero (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_GT</fullName>
+        <default>false</default>
+        <label>Guanajuato (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_HG</fullName>
+        <default>false</default>
+        <label>Hidalgo (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_JA</fullName>
+        <default>false</default>
+        <label>Jalisco (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_ME</fullName>
+        <default>false</default>
+        <label>Mexico State (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_MI</fullName>
+        <default>false</default>
+        <label>Michoacán (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_MO</fullName>
+        <default>false</default>
+        <label>Morelos (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_NA</fullName>
+        <default>false</default>
+        <label>Nayarit (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_NL</fullName>
+        <default>false</default>
+        <label>Nuevo León (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_OA</fullName>
+        <default>false</default>
+        <label>Oaxaca (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_PB</fullName>
+        <default>false</default>
+        <label>Puebla (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_QE</fullName>
+        <default>false</default>
+        <label>Querétaro (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_QR</fullName>
+        <default>false</default>
+        <label>Quintana Roo (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_SI</fullName>
+        <default>false</default>
+        <label>Sinaloa (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_SL</fullName>
+        <default>false</default>
+        <label>San Luis Potosí (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_SO</fullName>
+        <default>false</default>
+        <label>Sonora (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_TB</fullName>
+        <default>false</default>
+        <label>Tabasco (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_TL</fullName>
+        <default>false</default>
+        <label>Tlaxcala (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_TM</fullName>
+        <default>false</default>
+        <label>Tamaulipas (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_VE</fullName>
+        <default>false</default>
+        <label>Veracruz (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_YU</fullName>
+        <default>false</default>
+        <label>Yucatán (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>MX_ZA</fullName>
+        <default>false</default>
+        <label>Zacatecas (MX)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AA</fullName>
+        <default>false</default>
+        <label>Armed Forces Americas (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AE</fullName>
+        <default>false</default>
+        <label>Armed Forces Europe (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AK</fullName>
+        <default>false</default>
+        <label>Alaska (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AL</fullName>
+        <default>false</default>
+        <label>Alabama (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AP</fullName>
+        <default>false</default>
+        <label>Armed Forces Pacific (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AR</fullName>
+        <default>false</default>
+        <label>Arkansas (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AS</fullName>
+        <default>false</default>
+        <label>American Samoa (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_AZ</fullName>
+        <default>false</default>
+        <label>Arizona (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_CA</fullName>
+        <default>false</default>
+        <label>California (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_CO</fullName>
+        <default>false</default>
+        <label>Colorado (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_CT</fullName>
+        <default>false</default>
+        <label>Connecticut (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_DC</fullName>
+        <default>false</default>
+        <label>District of Columbia (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_DE</fullName>
+        <default>false</default>
+        <label>Delaware (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_FL</fullName>
+        <default>false</default>
+        <label>Florida (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_FM</fullName>
+        <default>false</default>
+        <label>Federated Micronesia (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_GA</fullName>
+        <default>false</default>
+        <label>Georgia (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_GU</fullName>
+        <default>false</default>
+        <label>Guam (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_HI</fullName>
+        <default>false</default>
+        <label>Hawaii (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_IA</fullName>
+        <default>false</default>
+        <label>Iowa (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_ID</fullName>
+        <default>false</default>
+        <label>Idaho (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_IL</fullName>
+        <default>false</default>
+        <label>Illinois (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_IN</fullName>
+        <default>false</default>
+        <label>Indiana (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_KS</fullName>
+        <default>false</default>
+        <label>Kansas (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_KY</fullName>
+        <default>false</default>
+        <label>Kentucky (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_LA</fullName>
+        <default>false</default>
+        <label>Louisiana (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MA</fullName>
+        <default>false</default>
+        <label>Massachusetts (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MD</fullName>
+        <default>false</default>
+        <label>Maryland (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_ME</fullName>
+        <default>false</default>
+        <label>Maine (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MH</fullName>
+        <default>false</default>
+        <label>Marshall Islands (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MI</fullName>
+        <default>false</default>
+        <label>Michigan (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MN</fullName>
+        <default>false</default>
+        <label>Minnesota (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MO</fullName>
+        <default>false</default>
+        <label>Missouri (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MP</fullName>
+        <default>false</default>
+        <label>Northern Mariana Islands (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MS</fullName>
+        <default>false</default>
+        <label>Mississippi (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_MT</fullName>
+        <default>false</default>
+        <label>Montana (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_NC</fullName>
+        <default>false</default>
+        <label>North Carolina (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_ND</fullName>
+        <default>false</default>
+        <label>North Dakota (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_NE</fullName>
+        <default>false</default>
+        <label>Nebraska (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_NH</fullName>
+        <default>false</default>
+        <label>New Hampshire (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_NJ</fullName>
+        <default>false</default>
+        <label>New Jersey (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_NM</fullName>
+        <default>false</default>
+        <label>New Mexico (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_NV</fullName>
+        <default>false</default>
+        <label>Nevada (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_NY</fullName>
+        <default>false</default>
+        <label>New York (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_OH</fullName>
+        <default>false</default>
+        <label>Ohio (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_OK</fullName>
+        <default>false</default>
+        <label>Oklahoma (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_OR</fullName>
+        <default>false</default>
+        <label>Oregon (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_PA</fullName>
+        <default>false</default>
+        <label>Pennsylvania (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_PR</fullName>
+        <default>false</default>
+        <label>Puerto Rico (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_PW</fullName>
+        <default>false</default>
+        <label>Palau (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_RI</fullName>
+        <default>false</default>
+        <label>Rhode Island (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_SC</fullName>
+        <default>false</default>
+        <label>South Carolina (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_SD</fullName>
+        <default>false</default>
+        <label>South Dakota (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_TN</fullName>
+        <default>false</default>
+        <label>Tennessee (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_TX</fullName>
+        <default>false</default>
+        <label>Texas (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_UM</fullName>
+        <default>false</default>
+        <label>United States Minor Outlying Islands (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_UT</fullName>
+        <default>false</default>
+        <label>Utah (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_VA</fullName>
+        <default>false</default>
+        <label>Virginia (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_VI</fullName>
+        <default>false</default>
+        <label>US Virgin Islands (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_VT</fullName>
+        <default>false</default>
+        <label>Vermont (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_WA</fullName>
+        <default>false</default>
+        <label>Washington (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_WI</fullName>
+        <default>false</default>
+        <label>Wisconsin (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_WV</fullName>
+        <default>false</default>
+        <label>West Virginia (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>US_WY</fullName>
+        <default>false</default>
+        <label>Wyoming (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>IN_TG</fullName>
+        <default>false</default>
+        <label>Telangana (IN)</label>
+    </customValue>
+    <description>This is the list of states replicated from the SF master Countries and States Address settings metadata</description>
+    <masterLabel>States</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

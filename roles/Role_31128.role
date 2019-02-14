@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>DE Plastics &amp; Advanced Industries (31128)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>DE Plastics &amp; Advanced Industries (31128)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>DE_BUM_Plastics_Advanced_Industries</parentRole>
+</Role>

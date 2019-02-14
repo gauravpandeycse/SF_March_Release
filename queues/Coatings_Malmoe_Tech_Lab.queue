@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>fake@fake.com</email>
+    <name>Coatings - Malmoe Tech Lab</name>
+    <queueMembers>
+        <users>
+            <user>alena.simunic@imcd.se</user>
+            <user>christiane.orset@imcd.fr</user>
+            <user>jerome.bollard@imcd.fr</user>
+            <user>joerg.schmitz@imcd.de</user>
+            <user>olaf.hetche@imcd.de</user>
+            <user>stefan.lagerquist@imcd.se</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

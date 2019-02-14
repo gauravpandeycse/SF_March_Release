@@ -1,0 +1,48 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global" description="FlowOutputFieldComp">
+
+    <!-- all public attributes also in design file -->
+    <aura:attribute name="type" type="String" access="public"/>
+    <aura:attribute name="value" type="String" access="public"/>
+    <aura:attribute name="checked" type="Boolean" default="false" access="public"/>
+    <aura:attribute name="label" type="String" default="please specify label..." access="public"/>
+    <aura:attribute name="title" type="String" default="{!v.label}" access="public"/>
+    <aura:attribute name="variant" type="String" default="standard" access="public"/>
+    <aura:attribute name="readonly" type="Boolean" default="{!true}" access="public"/>
+    <aura:attribute name="disabled" type="Boolean" default="{!false}" access="public"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+
+    <aura:if isTrue="{!v.type == 'text'}">
+        <lightning:input aura:id="lightning-input"
+                         name="lightning-input"
+                         label="{!v.label}"
+                         title="{!v.title}"
+                         variant="{!v.variant}"
+                         readonly="{!v.readonly}"
+                         disabled="{!v.disabled}">
+        </lightning:input>
+    </aura:if>
+
+    <aura:if isTrue="{!v.type == 'checkbox'}">
+        <lightning:input type="{!v.type}"
+                         label="{!v.label}"
+                         title="{!v.title}"
+                         variant="{!v.variant}"
+                         readonly="{!v.readonly}"
+                         disabled="{!v.disabled}"
+                         checked="{!v.checked}"
+        />
+    </aura:if>
+
+    <aura:if isTrue="{!and((v.type != 'checkbox'),(v.type !='text'))}">
+        <lightning:input type="{!v.type}"
+                         label="{!v.label}"
+                         title="{!v.title}"
+                         variant="{!v.variant}"
+                         readonly="{!v.readonly}"
+                         disabled="{!v.disabled}"
+                         value="{!v.value}"
+        />
+    </aura:if>
+
+</aura:component>

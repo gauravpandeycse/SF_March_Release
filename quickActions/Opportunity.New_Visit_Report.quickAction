@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDP-265. Created.</description>
+    <label>New Visit Report</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Opportunity__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>VisitReport__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>VisitReportOppty__c</targetObject>
+    <targetParentField>Opportunity__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

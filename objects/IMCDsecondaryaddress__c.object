@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>BankData1__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank Data</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CertificationLogo1__c</fullName>
+        <externalId>false</externalId>
+        <label>Certification Logo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CompanyEmail1__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CompanyFax1__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Fax</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>CompanyPhone1__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>CompanyWebsite1__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Website</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>IMCDcompanyCity1__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Company City</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IMCDcompanyCountry1__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Company Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IMCDcompanyPC1__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Company PC</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IMCDcompanyState1__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Company State/County</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IMCDcompanyStreet1__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Company Street</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IMCDcompany__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Company</label>
+        <referenceTo>ImcdCompany__c</referenceTo>
+        <relationshipLabel>IMCD secondary addresses</relationshipLabel>
+        <relationshipName>IMCD_secondary_addresses</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>SAcode__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>code used to identify the sub-address for using on the quote as an tested field for TC condition</description>
+        <externalId>true</externalId>
+        <inlineHelpText>code used to identify the sub-address for using on the quote as an tested field for TC condition</inlineHelpText>
+        <label>SAcode</label>
+        <length>5</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>TF_Find__c</fullName>
+        <defaultValue>&quot;all&quot;</defaultValue>
+        <description>Field used to find and display IMCD secondary addresses on Quote level</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field used to find and display IMCD secondary addresses on Quote level</inlineHelpText>
+        <label>TF Find</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>IMCD secondary address</label>
+    <nameField>
+        <label>IMCD secondary address Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>IMCD secondary addresses</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

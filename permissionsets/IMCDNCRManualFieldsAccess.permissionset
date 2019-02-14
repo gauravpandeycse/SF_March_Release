@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>NCRManualFieldsAccess</name>
+    </customPermissions>
+    <description>Permission granted to NCR manual details fields: Product, Carrier Name, Supplier, Warehouse, Sales Order, Sales Order Line, Purchase Order and Purchase Order Line.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>IMCD NCR Manual Fields Access</label>
+</PermissionSet>

@@ -1,0 +1,3299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Opportunity_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Standard Opportunity</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engagement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Launch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Won</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>New_Awesome_Companct_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>New_Awesome_Companct_Layout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>CloseDate</fields>
+        <fields>AmountNoDec__c</fields>
+        <fields>ExpectedRevenueNoDec__c</fields>
+        <fields>TotalMarginPerc__c</fields>
+        <fields>OwnerId</fields>
+        <label>New Awesome Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <errorMessage>Opportunities can only be linked to Sold To or Prospect Accounts</errorMessage>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Customer_Sold_To</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Customer_Prospect</value>
+            </filterItems>
+            <infoMessage>Opportunities can only be linked to Sold To or Prospect Accounts</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>AmountNoDec__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT ( CurrencyIsoCode ) + &apos; &apos; +
+IF( Amount &gt;= 1000000000,
+TEXT( ROUND( Amount/1000000000,2 ) ) +&apos;B&apos;,
+IF( Amount &gt;= 1000000,
+TEXT( ROUND ( Amount/1000000,2 ) ) + &apos;M&apos;,
+IF( Amount &gt;= 1000,
+TEXT( ROUND( Amount/1000,1 ) ) + &apos;K&apos;, TEXT(Round(Amount,0)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Potential Annual Net Turnover</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BO_Type_Display__c</fullName>
+        <description>Formula field to display the value of the BO Type picklist.  Created so that WebMerge can correctly display the BO Type value on the Product Report.</description>
+        <externalId>false</externalId>
+        <formula>CASE(
+TEXT(Type), 
+&quot;Development__c&quot;, &quot;Development&quot;, 
+&quot;Replacement__c&quot;, &quot;Replacement&quot;, 
+TEXT(Type)
+)</formula>
+        <label>BO Type Display</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BgcPlasticsId__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>SFDP-1131. Carried-over from the Account. Modifiable by user on the Opportunity.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunities for the Advanced Materials LOB can have a customer business group classification specified. This is optional. If available on the account the value is carried-over, but can be changed on the opportunity.</inlineHelpText>
+        <label>BGC Advanced Materials</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <errorMessage>You are only allowed to select a customer business group classification for the LOB Advanced Materials</errorMessage>
+            <filterItems>
+                <field>BusinessGroupClassification__c.Lob1__c</field>
+                <operation>equals</operation>
+                <value>Advanced Materials</value>
+            </filterItems>
+            <filterItems>
+                <field>BusinessGroupClassification__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Business Group (Customer)</value>
+            </filterItems>
+            <infoMessage>Select a valid Customer business group classification for Advanced Materials.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>BusinessGroupClassification__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Budget_Confirmed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Budget Confirmed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <description>Business Unit from the Account</description>
+        <externalId>false</externalId>
+        <formula>TEXT ( Account.ImcdBusinessUnit__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Business Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Cold_Opportunity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking this box will move the opportunity to a &apos;cold&apos; stage (long-term opportunity). When checking the box, the probability automatically changes to 0%</inlineHelpText>
+        <label>Cold Opportunity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Discovery_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Discovery Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DummyBoType__c</fullName>
+        <description>This field is of Temporary use. It can be deleted once all Opportunities have a valid BO. &quot;Undetermined&quot; is used for opportunities which were lacking a value. This fields is solely used in the Customer and Principal reporting flows, which references a picklist. These values will be used in subsequent queries.</description>
+        <externalId>false</externalId>
+        <label>Dummy BO Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Development__c</fullName>
+                    <default>false</default>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Replacement__c</fullName>
+                    <default>false</default>
+                    <label>Replacement</label>
+                </value>
+                <value>
+                    <fullName>Undetermined</fullName>
+                    <default>false</default>
+                    <label>Undetermined</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenueNoDec__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT ( CurrencyIsoCode ) + &apos; &apos; +
+IF( ExpectedRevenue &gt;= 1000000000,
+TEXT( ROUND( ExpectedRevenue/1000000000,2 ) ) +&apos;B&apos;,
+IF( ExpectedRevenue &gt;= 1000000,
+TEXT( ROUND ( ExpectedRevenue/1000000,2 ) ) + &apos;M&apos;,
+IF( ExpectedRevenue &gt;= 1000,
+TEXT( ROUND( ExpectedRevenue/1000,1 ) ) + &apos;K&apos;, TEXT(Round(ExpectedRevenue,0)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Revenue</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Functionality__c</fullName>
+        <externalId>false</externalId>
+        <label>Functionality</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HelixId__c</fullName>
+        <externalId>true</externalId>
+        <label>HelixId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IqScore</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Key_Opportunity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check the box when the opportunity can be identified as key</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checking the box will overwrite the quote line items</inlineHelpText>
+        <label>Key Opportunity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LOB1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Leaving this field empty, will automatically copy the Primary LOB1/2/3 values from the Account</inlineHelpText>
+        <label>LOB1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LOB1</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOB2__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>LOB1__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>LOB2</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Coatings &amp; Construction</controllingFieldValue>
+                <valueName>Adhesives &amp; Sealants</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Coatings &amp; Construction</controllingFieldValue>
+                <valueName>Construction</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Coatings &amp; Construction</controllingFieldValue>
+                <valueName>Distributors</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Coatings &amp; Construction</controllingFieldValue>
+                <valueName>Industrial Coatings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Coatings &amp; Construction</controllingFieldValue>
+                <valueName>Inks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Coatings &amp; Construction</controllingFieldValue>
+                <valueName>Paints</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Animal Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Bakery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Beverage</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Confectionery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Dairy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Edible Oils &amp; Fats</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Fruits &amp; Vegetables</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Ingredients Manufacturers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Food</controllingFieldValue>
+                <valueName>Savoury</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care and I&amp;I</controllingFieldValue>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Distributors &amp; Traders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care and I&amp;I</controllingFieldValue>
+                <valueName>Home Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care and I&amp;I</controllingFieldValue>
+                <valueName>I&amp;I</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Drilling fluids</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Driveline fluids</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Engine oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Fuel Additives</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Fuels</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Industrial oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Lubricants</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Electronics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>High Temperature Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Lab Instruments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Mining</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Oil &amp; Gas Processing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Pulp Paper &amp; Board</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Textile</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Other Specialties</controllingFieldValue>
+                <valueName>Water Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Personal Care</controllingFieldValue>
+                <valueName>Cosmetics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Personal Care</controllingFieldValue>
+                <valueName>Fragrances</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals</controllingFieldValue>
+                <valueName>Agrochemicals Formulation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals</controllingFieldValue>
+                <valueName>Agrochemicals Synthesis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals</controllingFieldValue>
+                <valueName>Lab. &amp; Medical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals</controllingFieldValue>
+                <valueName>Pharmaceuticals Formulation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals</controllingFieldValue>
+                <valueName>Pharmaceuticals Synthesis</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals</controllingFieldValue>
+                <valueName>Biopharmaceuticals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advanced Materials</controllingFieldValue>
+                <valueName>Composites</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advanced Materials</controllingFieldValue>
+                <valueName>Converters</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advanced Materials</controllingFieldValue>
+                <valueName>Plastic Compounders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advanced Materials</controllingFieldValue>
+                <valueName>Polyurethane</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Advanced Materials</controllingFieldValue>
+                <valueName>Rubber</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synthesis</controllingFieldValue>
+                <valueName>Polymerization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synthesis</controllingFieldValue>
+                <valueName>Synthesis Industrial</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOB3__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>LOB2__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>LOB3</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Blow Moulding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Cable Extrusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Compounder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Filament Extrusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Film Extrusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Injection Moulding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Lamination</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Pipe Extrusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Profile Extrusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Rotational Moulding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Converters</controllingFieldValue>
+                <valueName>Sheet Extrusion</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Plastic Compounders</controllingFieldValue>
+                <valueName>ETP Compounders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Plastic Compounders</controllingFieldValue>
+                <valueName>High Performance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Plastic Compounders</controllingFieldValue>
+                <valueName>Masterbatch Producer</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Plastic Compounders</controllingFieldValue>
+                <valueName>PO Compounders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Plastic Compounders</controllingFieldValue>
+                <valueName>PVC Compounders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Plastic Compounders</controllingFieldValue>
+                <valueName>Re-Compounders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Plastic Compounders</controllingFieldValue>
+                <valueName>TPE Compounders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synthesis Industrial</controllingFieldValue>
+                <valueName>Chemicals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synthesis Industrial</controllingFieldValue>
+                <valueName>Dyestuffs</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Synthesis Industrial</controllingFieldValue>
+                <valueName>Pigments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biopharmaceuticals</controllingFieldValue>
+                <valueName>Vaccines</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biopharmaceuticals</controllingFieldValue>
+                <valueName>Cell Culture</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Biopharmaceuticals</controllingFieldValue>
+                <valueName>Purification &amp; Formulation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <controllingFieldValue>Edible Oils &amp; Fats</controllingFieldValue>
+                <controllingFieldValue>Fruits &amp; Vegetables</controllingFieldValue>
+                <controllingFieldValue>Ingredients Manufacturers</controllingFieldValue>
+                <controllingFieldValue>Nutrition</controllingFieldValue>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <controllingFieldValue>Animal Nutrition</controllingFieldValue>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Distributors &amp; Traders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Beer &amp; Brewing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Powder Drinks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Soft Drinks &amp; Fruit Juices</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Spirits &amp; Liquors &amp; Alcopops</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Tea &amp; Coffee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Beverage</controllingFieldValue>
+                <valueName>Wine</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Chewing Gum</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Chocolate</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Gums &amp; Jellies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Hard-Boiled Sweets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Confectionery</controllingFieldValue>
+                <valueName>Toffee &amp; Caramels</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Blends</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Butter &amp; Cream</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Cheese &amp; Cheese Analogues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Desserts &amp; Puddings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Drinks &amp; Milk</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Fermented Products &amp; Yoghurt</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Ice Cream &amp; Frozen Novelties</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Dairy</controllingFieldValue>
+                <valueName>Milk Powder &amp; Whiteners</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible Oils &amp; Fats</controllingFieldValue>
+                <valueName>Animal &amp; Fish Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible Oils &amp; Fats</controllingFieldValue>
+                <valueName>Margarine &amp; Shortenings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible Oils &amp; Fats</controllingFieldValue>
+                <valueName>Nut &amp; Seed Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Edible Oils &amp; Fats</controllingFieldValue>
+                <valueName>Olive Oil</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fruits &amp; Vegetables</controllingFieldValue>
+                <valueName>Dried Fruits &amp; Vegetables</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fruits &amp; Vegetables</controllingFieldValue>
+                <valueName>Fresh Preparations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fruits &amp; Vegetables</controllingFieldValue>
+                <valueName>Fruit Preparations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fruits &amp; Vegetables</controllingFieldValue>
+                <valueName>Jams &amp; Jellies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fruits &amp; Vegetables</controllingFieldValue>
+                <valueName>Powder Fruits &amp; Vegetables</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ingredients Manufacturers</controllingFieldValue>
+                <valueName>Biotechnology</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ingredients Manufacturers</controllingFieldValue>
+                <valueName>Colour</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ingredients Manufacturers</controllingFieldValue>
+                <valueName>Emulsifiers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ingredients Manufacturers</controllingFieldValue>
+                <valueName>Flavour Houses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ingredients Manufacturers</controllingFieldValue>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <controllingFieldValue>Oil &amp; Gas Processing</controllingFieldValue>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Others</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Ingredients Manufacturers</controllingFieldValue>
+                <valueName>Starch</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Nutrition</controllingFieldValue>
+                <valueName>Clinical Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Nutrition</controllingFieldValue>
+                <valueName>Dietary Supplements</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Nutrition</controllingFieldValue>
+                <valueName>Infant Formula &amp; Baby Food</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Nutrition</controllingFieldValue>
+                <valueName>Sport Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Nutrition</controllingFieldValue>
+                <valueName>Weight Management</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Compounds &amp; Spice Blends</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Fish</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Meat &amp; Poultry</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Noodles &amp; Pasta</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Ready Meals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Sauces &amp; Dressings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Snacks</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Savoury</controllingFieldValue>
+                <valueName>Soups &amp; Bouillons</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care</controllingFieldValue>
+                <controllingFieldValue>I&amp;I</controllingFieldValue>
+                <valueName>Air Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care</controllingFieldValue>
+                <controllingFieldValue>I&amp;I</controllingFieldValue>
+                <valueName>Automotive Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care</controllingFieldValue>
+                <controllingFieldValue>I&amp;I</controllingFieldValue>
+                <valueName>Cleaning &amp; Surface Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care</controllingFieldValue>
+                <controllingFieldValue>I&amp;I</controllingFieldValue>
+                <valueName>Dishwash</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Home Care</controllingFieldValue>
+                <controllingFieldValue>I&amp;I</controllingFieldValue>
+                <valueName>Laundry Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Adhesives &amp; Sealants</controllingFieldValue>
+                <valueName>Consumer and Professional</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Adhesives &amp; Sealants</controllingFieldValue>
+                <valueName>Industrial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Adhesives &amp; Sealants</controllingFieldValue>
+                <valueName>Label &amp; Tape</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Adhesives &amp; Sealants</controllingFieldValue>
+                <valueName>Packaging</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Construction</controllingFieldValue>
+                <valueName>Bitumen Applications</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Construction</controllingFieldValue>
+                <valueName>Concrete Technologies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Construction</controllingFieldValue>
+                <valueName>Dry Mortars</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Construction</controllingFieldValue>
+                <valueName>Floor Coverings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Construction</controllingFieldValue>
+                <valueName>Masonry &amp; Wall Products</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial Coatings</controllingFieldValue>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Automotive</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial Coatings</controllingFieldValue>
+                <valueName>Can &amp; Coil</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial Coatings</controllingFieldValue>
+                <valueName>Metal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial Coatings</controllingFieldValue>
+                <valueName>Plastics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial Coatings</controllingFieldValue>
+                <valueName>Powder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial Coatings</controllingFieldValue>
+                <valueName>Wood</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Inks</controllingFieldValue>
+                <valueName>Flexo &amp; Gravure</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Inks</controllingFieldValue>
+                <valueName>Inkjet &amp; Digital</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Inks</controllingFieldValue>
+                <valueName>Offset</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Inks</controllingFieldValue>
+                <valueName>Overprint Varnish</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Inks</controllingFieldValue>
+                <valueName>Screen Printing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Animal Nutrition</controllingFieldValue>
+                <valueName>Feed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Animal Nutrition</controllingFieldValue>
+                <valueName>Pet Food</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Blenders &amp; Improvers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Bread</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Cereals &amp; Bar</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Fine Bakery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bakery</controllingFieldValue>
+                <valueName>Milling &amp; Flour</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Driveline fluids</controllingFieldValue>
+                <valueName>Automatic Transmission oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Driveline fluids</controllingFieldValue>
+                <valueName>Axle oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Driveline fluids</controllingFieldValue>
+                <valueName>Manual Transmission oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engine oils</controllingFieldValue>
+                <valueName>Heavy Duty Engine oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engine oils</controllingFieldValue>
+                <valueName>Marine oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engine oils</controllingFieldValue>
+                <valueName>Natural Gas EO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engine oils</controllingFieldValue>
+                <valueName>Passenger Car Motor oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Engine oils</controllingFieldValue>
+                <valueName>Small Engines oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fuels</controllingFieldValue>
+                <valueName>Diesel additives</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fuels</controllingFieldValue>
+                <valueName>Gasoline additives</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Fuels</controllingFieldValue>
+                <valueName>Heavy fuel additives</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>Compressor oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>Electrical oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Greases</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>Heat Transfer fluids</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>Hydraulic oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>Industrial Gear oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>Mould release agent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>MWF - Cleaning fluids</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>MWF - Forming oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>MWF - Protecting oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>MWF - Quenching fluids</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <valueName>MWF - Removal oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Process oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Industrial oils</controllingFieldValue>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Turbine oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Gear Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Hydraulics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Metalworking Fluid</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Rolling Oils</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>ShortT Rust Prev.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lubricants</controllingFieldValue>
+                <valueName>Traders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Others</controllingFieldValue>
+                <valueName>Traders and Distributors</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>Distributors</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>PCB Assembly</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>Photonics &amp; Lighting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>Semiconductor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>Sensor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>Solar Panels</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>Specialist Applications</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Electronics</controllingFieldValue>
+                <valueName>Transport</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Temperature Products</controllingFieldValue>
+                <valueName>Abrasives</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Temperature Products</controllingFieldValue>
+                <valueName>Friction</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Temperature Products</controllingFieldValue>
+                <valueName>Glass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Temperature Products</controllingFieldValue>
+                <valueName>Refractories</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Temperature Products</controllingFieldValue>
+                <valueName>Technical Ceramics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Temperature Products</controllingFieldValue>
+                <valueName>Traditional Ceramics</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Oil &amp; Gas Processing</controllingFieldValue>
+                <valueName>Air &amp; Gas Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Oil &amp; Gas Processing</controllingFieldValue>
+                <valueName>Refineries &amp; Petrochemicals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pulp Paper &amp; Board</controllingFieldValue>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Coating</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pulp Paper &amp; Board</controllingFieldValue>
+                <valueName>Pulp</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Carpets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Digital Printing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Dyeing incl. Bleaching</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Finishing-Impregnation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <controllingFieldValue>Water Treatment</controllingFieldValue>
+                <valueName>Formulator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Leather</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Nonwovens</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Printing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Ropes-Nets-Scrims</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Silk Screen</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Spinning Fiber-Filament-Yarn</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Textile</controllingFieldValue>
+                <valueName>Weaving-Knitting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Water Treatment</controllingFieldValue>
+                <valueName>Drinkable Water</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Water Treatment</controllingFieldValue>
+                <valueName>Industrial Waste Water</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Water Treatment</controllingFieldValue>
+                <valueName>Public Waste Water</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Water Treatment</controllingFieldValue>
+                <valueName>Swimming Pool</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cosmetics</controllingFieldValue>
+                <valueName>Dental</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cosmetics</controllingFieldValue>
+                <valueName>Hair Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cosmetics</controllingFieldValue>
+                <valueName>Make-up</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cosmetics</controllingFieldValue>
+                <valueName>Raw Materials</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cosmetics</controllingFieldValue>
+                <valueName>Skin Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Cosmetics</controllingFieldValue>
+                <valueName>Toiletries</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <valueName>Adjuvants</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <valueName>Biopestcides &amp; Biostimulants</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <controllingFieldValue>Agrochemicals Synthesis</controllingFieldValue>
+                <controllingFieldValue>Pharmaceuticals Formulation</controllingFieldValue>
+                <controllingFieldValue>Pharmaceuticals Synthesis</controllingFieldValue>
+                <valueName>Contract Research &amp; Manufacturing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <valueName>Environmental Science</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <controllingFieldValue>Agrochemicals Synthesis</controllingFieldValue>
+                <controllingFieldValue>Pharmaceuticals Formulation</controllingFieldValue>
+                <controllingFieldValue>Pharmaceuticals Synthesis</controllingFieldValue>
+                <valueName>Generic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <controllingFieldValue>Agrochemicals Synthesis</controllingFieldValue>
+                <controllingFieldValue>Pharmaceuticals Formulation</controllingFieldValue>
+                <controllingFieldValue>Pharmaceuticals Synthesis</controllingFieldValue>
+                <valueName>Innovator</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <valueName>Plant Nutrition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Formulation</controllingFieldValue>
+                <valueName>Seed &amp; Fruit Treatment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Agrochemicals Synthesis</controllingFieldValue>
+                <valueName>Bioactives</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lab. &amp; Medical</controllingFieldValue>
+                <valueName>Lab. Chemicals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lab. &amp; Medical</controllingFieldValue>
+                <valueName>Medical Equipment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Lab. &amp; Medical</controllingFieldValue>
+                <valueName>Test Kits</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals Formulation</controllingFieldValue>
+                <valueName>Hospitals and Universities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals Formulation</controllingFieldValue>
+                <valueName>Nutraceutical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals Formulation</controllingFieldValue>
+                <valueName>Pharmacy Specials</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals Formulation</controllingFieldValue>
+                <controllingFieldValue>Pharmaceuticals Synthesis</controllingFieldValue>
+                <valueName>Veterinary</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Pharmaceuticals Synthesis</controllingFieldValue>
+                <valueName>Biosynthesis</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LeadABCRating__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead ABC Rating</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>ABCRating</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LeadAnnualRevenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Annual Revenue</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>AnnualRevenue</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LeadNoOfEmployees__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead No. Of Employees</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>NoOfEmployees</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Revenue_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Revenue Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Currency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LegacyInformation__c</fullName>
+        <description>This field is used for legacy information for migration
+example: re-parenting Opportunities for Lomas</description>
+        <externalId>false</externalId>
+        <label>Legacy Information</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LocalErpId__c</fullName>
+        <externalId>true</externalId>
+        <label>LocalErpId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Loss Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Commercial Reasons</fullName>
+                    <default>false</default>
+                    <label>Commercial Reasons</label>
+                </value>
+                <value>
+                    <fullName>Technical Reasons</fullName>
+                    <default>false</default>
+                    <label>Technical Reasons</label>
+                </value>
+                <value>
+                    <fullName>Sample library at customer</fullName>
+                    <default>false</default>
+                    <label>Sample library at customer</label>
+                </value>
+                <value>
+                    <fullName>Lost to Competitor</fullName>
+                    <default>false</default>
+                    <label>Lost to Competitor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>No Budget / Lost Funding</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No Budget / Lost Funding</label>
+                </value>
+                <value>
+                    <fullName>No Decision / Non-Responsive</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No Decision / Non-Responsive</label>
+                </value>
+                <value>
+                    <fullName>Price</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Price</label>
+                </value>
+                <value>
+                    <fullName>Technical</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Technical</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Margin__c</fullName>
+        <description>Margin percentage</description>
+        <externalId>false</externalId>
+        <label>Margin Expectation</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>NrOfQuotes__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Counts nr of Quotes of the opportunity</inlineHelpText>
+        <label>NrOfQuotes</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityErrorReason__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (
+				AND (
+				    TEXT(CurrencyIsoCode) &lt;&gt;  TEXT(SBQQ__PrimaryQuote__r.CurrencyIsoCode)
+								, NOT (ISBLANK ( SBQQ__PrimaryQuote__r.Id ) )
+				)
+				, &apos;Opportunity and Primary Quote Currency mismatch&apos;, &apos;|&apos;
+)
++ 
+IF (
+				AND (
+			     Pricebook2Id &lt;&gt; SBQQ__PrimaryQuote__r.SBQQ__PriceBook__c
+								, NOT (ISBLANK ( SBQQ__PrimaryQuote__r.Id ) )
+				)
+				, &apos;Opportunity and Primary Quote Pricebook mismatch&apos;, &apos;|&apos;
+)
++
+IF ( ISBLANK (SBQQ__PrimaryQuote__r.Id), &apos;Opportunity has no Primary quote&apos;, &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Error Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityError__c</fullName>
+        <description>Checks whether the Opportunity has potential issues. Sibbling field OpportunityErrorReason__c
+- Currency &lt;&gt; the Primary Quote&apos;s Currency</description>
+        <externalId>false</externalId>
+        <formula>OR (
+				AND (
+								TEXT(CurrencyIsoCode) &lt;&gt;  TEXT(SBQQ__PrimaryQuote__r.CurrencyIsoCode)
+								, NOT ISBLANK (SBQQ__PrimaryQuote__r.Id)
+				)
+    , AND (
+ 								Pricebook2Id &lt;&gt;  SBQQ__PrimaryQuote__r.SBQQ__PriceBook__c
+								, NOT ISBLANK (SBQQ__PrimaryQuote__r.Id)
+				)
+				, ISBLANK (SBQQ__PrimaryQuote__r.Id)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Error</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PartnerAccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>A Project can be used to group Opportunities</description>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ROI_Analysis_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ROI Analysis Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Technical_Remarks__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Remarks</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TotalGrossMarginNoDec__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT ( CurrencyIsoCode ) + &apos; &apos; +
+IF( TotalGrossMargin__c &gt;= 1000000000,
+TEXT( ROUND( TotalGrossMargin__c/1000000000,2 ) ) +&apos;B&apos;,
+IF( TotalGrossMargin__c &gt;= 1000000,
+TEXT( ROUND ( TotalGrossMargin__c/1000000,2 ) ) + &apos;M&apos;,
+IF( TotalGrossMargin__c &gt;= 1000,
+TEXT( ROUND( TotalGrossMargin__c/1000,1 ) ) + &apos;K&apos;, TEXT(Round(TotalGrossMargin__c,0)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Gross Margin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalGrossMargin__c</fullName>
+        <description>https://imcdgroup.atlassian.net/browse/SFDP-1942</description>
+        <externalId>false</externalId>
+        <label>Total Gross Margin</label>
+        <summarizedField>OpportunityLineItem.GrossMargin__c</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Lost</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TotalMarginPerc__c</fullName>
+        <description>https://imcdgroup.atlassian.net/browse/SFDP-1942</description>
+        <externalId>false</externalId>
+        <formula>TotalGrossMargin__c / Amount</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Margin (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <businessProcess>Standard Opportunity</businessProcess>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>DummyBoType__c</picklist>
+            <values>
+                <fullName>Development%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undetermined</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB1__c</picklist>
+            <values>
+                <fullName>Advanced Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coatings %26 Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Care and I%26I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lubricants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Specialties</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmaceuticals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Synthesis</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB2__c</picklist>
+            <values>
+                <fullName>Adhesives %26 Sealants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agrochemicals Formulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agrochemicals Synthesis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Animal Nutrition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biopharmaceuticals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composites</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confectionery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Converters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cosmetics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dairy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributors %26 Traders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drilling fluids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driveline fluids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edible Oils %26 Fats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engine oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fragrances</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fruits %26 Vegetables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel Additives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Temperature Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I%26I</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Coatings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ingredients Manufacturers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lab Instruments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lab%2E %26 Medical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lubricants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mining</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nutrition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oil %26 Gas Processing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paints</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmaceuticals Formulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmaceuticals Synthesis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Compounders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polymerization</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polyurethane</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp Paper %26 Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rubber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Savoury</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Synthesis Industrial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Textile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Water Treatment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LOB3__c</picklist>
+            <values>
+                <fullName>Abrasives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adjuvants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air %26 Gas Treatment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Animal %26 Fish Oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automatic Transmission oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Automotive Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Axle oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Beer %26 Brewing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bioactives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biopestcides %26 Biostimulants</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biosynthesis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bitumen Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blenders %26 Improvers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blends</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blow Moulding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bread</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Butter %26 Cream</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cable Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Can %26 Coil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carpets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cell Culture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cereals %26 Bar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheese %26 Cheese Analogues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chewing Gum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chocolate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cleaning %26 Surface Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Nutrition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coating</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compounder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compounds %26 Spice Blends</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compressor oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concrete Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumer and Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Research %26 Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Desserts %26 Puddings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diesel additives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dietary Supplements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital Printing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dishwash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributors %26 Traders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dried Fruits %26 Vegetables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drinkable Water</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Drinks %26 Milk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Mortars</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dyeing incl%2E Bleaching</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dyestuffs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ETP Compounders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emulsifiers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental Science</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Feed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fermented Products %26 Yoghurt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Filament Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Film Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fine Bakery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finishing-Impregnation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flavour Houses</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flexo %26 Gravure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Floor Coverings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Formulator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fresh Preparations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Friction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fruit Preparations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gasoline additives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gear Oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Generic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gums %26 Jellies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hair Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hard-Boiled Sweets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heat Transfer fluids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy Duty Engine oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heavy fuel additives</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitals and Universities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hydraulic oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hydraulics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ice Cream %26 Frozen Novelties</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Gear oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Waste Water</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Infant Formula %26 Baby Food</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Injection Moulding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inkjet %26 Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Innovator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jams %26 Jellies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lab%2E Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Label %26 Tape</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lamination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laundry Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leather</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MWF - Cleaning fluids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MWF - Forming oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MWF - Protecting oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MWF - Quenching fluids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MWF - Removal oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Make-up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Transmission oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Margarine %26 Shortenings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marine oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Masonry %26 Wall Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Masterbatch Producer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meat %26 Poultry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metalworking Fluid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milk Powder %26 Whiteners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Milling %26 Flour</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mould release agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas EO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nonwovens</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Noodles %26 Pasta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nut %26 Seed Oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nutraceutical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Olive Oil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Biotech%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overprint Varnish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCB Assembly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PO Compounders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PVC Compounders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Packaging</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Passenger Car Motor oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pet Food</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacy Specials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Photonics %26 Lighting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pigments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipe Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plant Nutrition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Powder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Powder Drinks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Powder Fruits %26 Vegetables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Profile Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Waste Water</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pulp</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purification %26 Formulation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Raw Materials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Re-Compounders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ready Meals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refineries %26 Petrochemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refractories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rolling Oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ropes-Nets-Scrims</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rotational Moulding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sauces %26 Dressings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Screen Printing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seed %26 Fruit Treatment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Semiconductor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sensor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sheet Extrusion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ShortT Rust Prev%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silk Screen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Skin Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Engines oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Snacks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Soft Drinks %26 Fruit Juices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solar Panels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Soups %26 Bouillons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Specialist Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spinning Fiber-Filament-Yarn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spirits %26 Liquors %26 Alcopops</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sport Nutrition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Starch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Swimming Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TPE Compounders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tea %26 Coffee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Ceramics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Test Kits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toffee %26 Caramels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toiletries</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traders and Distributors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Ceramics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transport</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turbine oils</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vaccines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veterinary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weaving-Knitting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weight Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadABCRating__c</picklist>
+            <values>
+                <fullName>A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A - Potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B - Potential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C - Potential</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadAnnualRevenue__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>100000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1000000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>500000</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadNoOfEmployees__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>25</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>250</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Lead_Revenue_Currency__c</picklist>
+            <values>
+                <fullName>AUD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BGN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BRL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CHF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CNY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CZK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DKK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DZD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EGP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HRK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HUF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IDR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JPY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KRW</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MYR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NOK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NZD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PLN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RSD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RUB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SEK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SGD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UAH</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VND</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ZAR</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Loss_Reason__c</picklist>
+            <values>
+                <fullName>Commercial Reasons</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample library at customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Reasons</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Development%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement%5F%5Fc</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>sbaa__ApprovalStatus__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CannotChangeLob1</fullName>
+        <active>true</active>
+        <description>LOB1 cannot be changed, once it&apos;s set. Only allowed by custom permission. Changing the LOB1 has impact on custom sharing. Initially shared Opportunities and child Quotes based on LOB1 will not be automatically re-calculated.</description>
+        <errorConditionFormula>IF (
+   AND (
+				 $Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c
+     , NOT ( $Permission.LockedOpportunityLob1Bypass )
+					, ISCHANGED ( LOB1__c )
+					, NOT ( ISBLANK ( TEXT ( PRIORVALUE ( LOB1__c ) ) ) )
+    )
+				, true
+    , false
+)</errorConditionFormula>
+        <errorMessage>After creating an Opportunity you&apos;re only allowed to change the LOB2 and LOB3.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CannotCreateOppsLinkedToInactiveAccounts</fullName>
+        <active>true</active>
+        <description>Preventing the CREATION of new Opps linked to inactive accounts.</description>
+        <errorConditionFormula>AND (
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c =True,
+ISNEW(),
+TEXT(Account.Status__c) = &apos;Not Active&apos;
+)</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>Please select an active account</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ClosedWonOnlyOnSoldTo</fullName>
+        <active>true</active>
+        <description>Opportunities can only be set to &apos;Closed Won&apos; or &apos;Closing&apos; on Sold To Accounts</description>
+        <errorConditionFormula>$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c =True &amp;&amp;
+OR(ISPICKVAL(StageName , &apos;Won&apos;),ISPICKVAL(StageName , &apos;Closing&apos;)) &amp;&amp; 
+Account.RecordType.DeveloperName &lt;&gt; &apos;Customer_Sold_To&apos;</errorConditionFormula>
+        <errorMessage>Opportunities can only be set to &apos;Closed Won&apos; or &apos;Closing&apos; on Sold To Accounts</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>LostReason</fullName>
+        <active>true</active>
+        <description>Ensure a reason is captured before opportunity is set to lost.</description>
+        <errorConditionFormula>AND ( 
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c =True,
+ISPICKVAL( StageName, &quot;Lost&quot; ), 
+ISBLANK( TEXT(  Loss_Reason__c  ) )
+ )</errorConditionFormula>
+        <errorDisplayField>Loss_Reason__c</errorDisplayField>
+        <errorMessage>Please provide a reason why this opportunity is lost.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OpportunitiesOnlyOnProspectAndSoldTo</fullName>
+        <active>true</active>
+        <description>Opportunities can be created only on Prospect and Sold-To</description>
+        <errorConditionFormula>IF(
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c &amp;&amp; 
+Account.RecordType.DeveloperName &lt;&gt; &apos;Customer_Sold_To&apos; &amp;&amp; 
+Account.RecordType.DeveloperName &lt;&gt; &apos;Customer_Prospect&apos;, 
+true,
+false)</errorConditionFormula>
+        <errorMessage>Opportunities can only be created on &apos;Sold To&apos; And &apos;Prospect&apos; Accounts</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>OpportunityMustHaveLOB</fullName>
+        <active>true</active>
+        <description>Validates that an Opportunity should always have an LOB. Note that if the Opportunity&apos;s LOB field is left empty, it is automatically taken over from the Account.</description>
+        <errorConditionFormula>ISBLANK(TEXT(LOB1__c)) &amp;&amp; ISBLANK(TEXT(Account.Primary_LOB1__c))</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>Specify this Opportunity&apos;s LOB, either on this record or on the parent Account</errorMessage>
+    </validationRules>
+</CustomObject>

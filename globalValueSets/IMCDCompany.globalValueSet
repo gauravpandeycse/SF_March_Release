@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>45100</fullName>
+        <default>false</default>
+        <label>IMCD Algeria</label>
+    </customValue>
+    <customValue>
+        <fullName>66100</fullName>
+        <default>false</default>
+        <label>IMCD Argentina </label>
+    </customValue>
+    <customValue>
+        <fullName>61100</fullName>
+        <default>false</default>
+        <label>IMCD Australia</label>
+    </customValue>
+    <customValue>
+        <fullName>15100</fullName>
+        <default>false</default>
+        <label>IMCD Baltics</label>
+    </customValue>
+    <customValue>
+        <fullName>22100</fullName>
+        <default>false</default>
+        <label>IMCD Belgium</label>
+    </customValue>
+    <customValue>
+        <fullName>20000</fullName>
+        <default>false</default>
+        <label>IMCD Benelux</label>
+    </customValue>
+    <customValue>
+        <fullName>69100</fullName>
+        <default>false</default>
+        <label>IMCD Brazil</label>
+    </customValue>
+    <customValue>
+        <fullName>69200</fullName>
+        <default>false</default>
+        <label>IMCD Brazil Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>56100</fullName>
+        <default>false</default>
+        <label>IMCD Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>68100</fullName>
+        <default>false</default>
+        <label>IMCD Chili</label>
+    </customValue>
+    <customValue>
+        <fullName>71100</fullName>
+        <default>false</default>
+        <label>IMCD China</label>
+    </customValue>
+    <customValue>
+        <fullName>32100</fullName>
+        <default>false</default>
+        <label>IMCD Czech Republic</label>
+    </customValue>
+    <customValue>
+        <fullName>13100</fullName>
+        <default>false</default>
+        <label>IMCD Denmark</label>
+    </customValue>
+    <customValue>
+        <fullName>64100</fullName>
+        <default>false</default>
+        <label>IMCD Egypt</label>
+    </customValue>
+    <customValue>
+        <fullName>12100</fullName>
+        <default>false</default>
+        <label>IMCD Finland</label>
+    </customValue>
+    <customValue>
+        <fullName>91100</fullName>
+        <default>false</default>
+        <label>IMCD France</label>
+    </customValue>
+    <customValue>
+        <fullName>31100</fullName>
+        <default>false</default>
+        <label>IMCD Germany</label>
+    </customValue>
+    <customValue>
+        <fullName>00100</fullName>
+        <default>false</default>
+        <label>IMCD Group (default)</label>
+    </customValue>
+    <customValue>
+        <fullName>00112</fullName>
+        <default>false</default>
+        <label>IMCD Group B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>72100</fullName>
+        <default>false</default>
+        <label>IMCD India</label>
+    </customValue>
+    <customValue>
+        <fullName>75100</fullName>
+        <default>false</default>
+        <label>IMCD Indonesia</label>
+    </customValue>
+    <customValue>
+        <fullName>75200</fullName>
+        <default>false</default>
+        <label>IMCD Indonesia SP</label>
+    </customValue>
+    <customValue>
+        <fullName>81100</fullName>
+        <default>false</default>
+        <label>IMCD Italy</label>
+    </customValue>
+    <customValue>
+        <fullName>82100</fullName>
+        <default>false</default>
+        <label>IMCD Italy Neuvendis</label>
+    </customValue>
+    <customValue>
+        <fullName>79100</fullName>
+        <default>false</default>
+        <label>IMCD Japan</label>
+    </customValue>
+    <customValue>
+        <fullName>67200</fullName>
+        <default>false</default>
+        <label>IMCD Kenya</label>
+    </customValue>
+    <customValue>
+        <fullName>73100</fullName>
+        <default>false</default>
+        <label>IMCD Malaysia</label>
+    </customValue>
+    <customValue>
+        <fullName>43100</fullName>
+        <default>false</default>
+        <label>IMCD Morocco</label>
+    </customValue>
+    <customValue>
+        <fullName>21100</fullName>
+        <default>false</default>
+        <label>IMCD Netherlands</label>
+    </customValue>
+    <customValue>
+        <fullName>62100</fullName>
+        <default>false</default>
+        <label>IMCD New Zealand</label>
+    </customValue>
+    <customValue>
+        <fullName>14100</fullName>
+        <default>false</default>
+        <label>IMCD Norway</label>
+    </customValue>
+    <customValue>
+        <fullName>77200</fullName>
+        <default>false</default>
+        <label>IMCD Philipppines</label>
+    </customValue>
+    <customValue>
+        <fullName>33100</fullName>
+        <default>false</default>
+        <label>IMCD Poland</label>
+    </customValue>
+    <customValue>
+        <fullName>42100</fullName>
+        <default>false</default>
+        <label>IMCD Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>55400</fullName>
+        <default>false</default>
+        <label>IMCD Puerto Rico</label>
+    </customValue>
+    <customValue>
+        <fullName>16100</fullName>
+        <default>false</default>
+        <label>IMCD Russia</label>
+    </customValue>
+    <customValue>
+        <fullName>36300</fullName>
+        <default>false</default>
+        <label>IMCD Serbia</label>
+    </customValue>
+    <customValue>
+        <fullName>74200</fullName>
+        <default>false</default>
+        <label>IMCD Singapore</label>
+    </customValue>
+    <customValue>
+        <fullName>67100</fullName>
+        <default>false</default>
+        <label>IMCD South Africa</label>
+    </customValue>
+    <customValue>
+        <fullName>36100</fullName>
+        <default>false</default>
+        <label>IMCD South East Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>41100</fullName>
+        <default>false</default>
+        <label>IMCD Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>11100</fullName>
+        <default>false</default>
+        <label>IMCD Sweden</label>
+    </customValue>
+    <customValue>
+        <fullName>35100</fullName>
+        <default>false</default>
+        <label>IMCD Switzerland</label>
+    </customValue>
+    <customValue>
+        <fullName>76100</fullName>
+        <default>false</default>
+        <label>IMCD Thailand</label>
+    </customValue>
+    <customValue>
+        <fullName>44100</fullName>
+        <default>false</default>
+        <label>IMCD Tunisia</label>
+    </customValue>
+    <customValue>
+        <fullName>65100</fullName>
+        <default>false</default>
+        <label>IMCD Turkey</label>
+    </customValue>
+    <customValue>
+        <fullName>16200</fullName>
+        <default>false</default>
+        <label>IMCD Ukraine</label>
+    </customValue>
+    <customValue>
+        <fullName>51100</fullName>
+        <default>false</default>
+        <label>IMCD United Kingdom</label>
+    </customValue>
+    <customValue>
+        <fullName>68500</fullName>
+        <default>false</default>
+        <label>IMCD Uruguay</label>
+    </customValue>
+    <customValue>
+        <fullName>55100</fullName>
+        <default>false</default>
+        <label>IMCD US</label>
+    </customValue>
+    <customValue>
+        <fullName>55500</fullName>
+        <default>false</default>
+        <label>IMCD US Lomas</label>
+    </customValue>
+    <customValue>
+        <fullName>55200</fullName>
+        <default>false</default>
+        <label>IMCD US MJS Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>78100</fullName>
+        <default>false</default>
+        <label>IMCD Vietnam</label>
+    </customValue>
+    <description>IMCD Company Name and Numbers</description>
+    <masterLabel>IMCD Company</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

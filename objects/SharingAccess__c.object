@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Sharing_Access_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>IMCD_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>IMCD_Compact_Layout</fullName>
+        <fields>UserDisplayName__c</fields>
+        <fields>ActiveUser__c</fields>
+        <fields>IMCDCompany__c</fields>
+        <fields>Global__c</fields>
+        <fields>LOB1__c</fields>
+        <fields>PrincipalId__c</fields>
+        <label>IMCD Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ActiveUser__c</fullName>
+        <externalId>false</externalId>
+        <formula>UserId__r.IsActive</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Active User</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Global__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Global</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IMCDCompany__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Company</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IMCDCompany</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOB1__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LOB1</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LOB2__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>LOB2</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PrincipalId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Principal</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Not a Principal Account</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Principal Global</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>SharingAcees</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ShowInListView__c</fullName>
+        <description>This flag is used to show records for the users in a list view</description>
+        <externalId>false</externalId>
+        <formula>UserId__c = $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Show In List View</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>UserDisplayName__c</fullName>
+        <externalId>false</externalId>
+        <formula>UserId__r.LastName + &apos;, &apos; + UserId__r.FirstName + &apos; (&apos; + Id + &apos;)&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User Display Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UserId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>SharingAcees</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>bypassEditValidationRule__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>for bypassing prevent_Editing_Records VR rule in SharingAccess trigger</description>
+        <externalId>false</externalId>
+        <label>bypassEditValidationRule</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isValid__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR (
+	AND ( ISBLANK ( TEXT ( IMCDCompany__c ) ), Global__c, NOT ( ISBLANK ( TEXT ( LOB1__c ) ) ) )
+	, AND ( NOT ( ISBLANK ( TEXT ( IMCDCompany__c ) ) ) , NOT ( Global__c ), NOT ( ISBLANK ( TEXT ( LOB1__c ) ) ) )
+	, AND ( NOT ( ISBLANK ( PrincipalId__c ) ), NOT ( ISBLANK ( TEXT ( LOB1__c ) ) ), ISBLANK ( TEXT ( IMCDCompany__c ) ),  Global__c )
+	, AND ( NOT ( ISBLANK ( PrincipalId__c ) ), NOT ( ISBLANK ( TEXT ( LOB1__c ) ) ), NOT ( ISBLANK ( TEXT ( IMCDCompany__c ) ) ),  NOT ( Global__c ) )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Valid</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>lastSharingReconciliationDate__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Leave this field empty, and do not update.</inlineHelpText>
+        <label>Last Sharing Recalculation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>Sharing Access</label>
+    <nameField>
+        <label>Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Sharing Access</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
+        <excludedStandardButtons>MassChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>UserId__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ActiveUser__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LOB1__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IMCDCompany__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Global__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PrincipalId__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>UserDisplayName__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ActiveUser__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IMCDCompany__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LOB1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Global__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PrincipalId__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>LOBisrequired</fullName>
+        <active>false</active>
+        <description>Choosing a Principal requires to choose LOB</description>
+        <errorConditionFormula>IF(AND(NOT(ISBLANK(PrincipalId__c)), ISBLANK(TEXT(LOB1__c))),TRUE, FALSE)</errorConditionFormula>
+        <errorDisplayField>LOB1__c</errorDisplayField>
+        <errorMessage>Choosing a Principal requires to choose LOB</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>prevent_Editing_Records</fullName>
+        <active>true</active>
+        <description>throws an error upon attempt to edit the record</description>
+        <errorConditionFormula>IF( AND(bypassEditValidationRule__c = FALSE, OR(ISCHANGED(Global__c),ISCHANGED(IMCDCompany__c),ISCHANGED(LOB1__c),ISCHANGED(Name),ISCHANGED(PrincipalId__c),ISCHANGED(UserId__c) ) ),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>Editing the Sharing Access record is not allowed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>prevent_Global_Lob_Csharing_Creation</fullName>
+        <active>true</active>
+        <description>Sharing based on record that is global and has Lob value, covered with criteria based sharing (public groups)</description>
+        <errorConditionFormula>IF(AND(ISBLANK(TEXT(IMCDCompany__c)), ISBLANK(PrincipalId__c), Global__c=TRUE, 
+NOT(ISBLANK( TEXT(LOB1__c) )) ),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>Can not create custom sharing based on LOB and Global parameter</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>sharingNotAllowedIfOnlyLOBSelected</fullName>
+        <active>true</active>
+        <description>can&apos;t share record based only on LOB</description>
+        <errorConditionFormula>IF(AND(ISBLANK(TEXT(IMCDCompany__c)), ISBLANK(PrincipalId__c), Global__c=FALSE, 
+NOT(ISBLANK( TEXT(LOB1__c) )) ),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>Custom Sharing based only on LOB and User is not allowed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>sharingNotAllowedIfOnlyPrincipalSelected</fullName>
+        <active>true</active>
+        <description>can&apos;t share record based only on Principal and not Global</description>
+        <errorConditionFormula>IF(AND(ISBLANK(TEXT(IMCDCompany__c)), ISBLANK(TEXT(LOB1__c)), Global__c=FALSE, 
+NOT(ISBLANK(PrincipalId__c)) ),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>Custom Sharing based only on Principal and User is not allowed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>sharingNotAllowedLOBPrincipal</fullName>
+        <active>true</active>
+        <description>can&apos;t share record based only on LOB</description>
+        <errorConditionFormula>IF(AND(ISBLANK(TEXT(IMCDCompany__c)), NOT(ISBLANK(PrincipalId__c)), Global__c=FALSE, 
+NOT(ISBLANK( TEXT(LOB1__c) )) ),TRUE,FALSE)</errorConditionFormula>
+        <errorMessage>Custom Sharing based only on LOB, Principal and User is not allowed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>validateGlobalCompany</fullName>
+        <active>true</active>
+        <description>a global record of sharingAccess should not be assigned to company</description>
+        <errorConditionFormula>IF( 
+  AND(
+    $Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c = True,
+    Global__c = TRUE, 
+    ! ISBLANK( TEXT(IMCDCompany__c) ) 
+  ),
+TRUE,
+FALSE)</errorConditionFormula>
+        <errorMessage>IMCDComany field has to be empty on Global SharingAccess records</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,13 @@
+<!--
+Author:        Jeroen Burgers
+Company:       Salesforce
+User Story:    https://imcdgroup.atlassian.net/browse/SFDP-904
+Description:   Flow component to include the popupCSS static resource
+               It increases width of the Lightning Action (Flow)
+               ltng:require only accepts static strings (e.g. cannot accept aura:attribute / concat
+History
+               15/11/2018 Created
+-->
+<aura:component implements="lightning:availableForFlowScreens" description="Flow component to embed a named CSS static resource">
+    <ltng:require styles="{!$Resource.popupCSS}"/>
+</aura:component>

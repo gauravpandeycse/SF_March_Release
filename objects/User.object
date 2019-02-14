@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>User_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>User_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>Email</fields>
+        <fields>Phone</fields>
+        <label>User Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>CustomPermissions__c</fullName>
+        <description>Fields contains string of custom permissions for this user.</description>
+        <externalId>false</externalId>
+        <formula>IF ( $Permission.CanViewContractedPrices, &apos;CanViewContractedPrices&apos;, &apos;&apos;) &amp; &apos;|&apos; &amp;
+IF ( $Permission.SalesAdminBypass, &apos;SalesAdminBypass&apos;, &apos;&apos;) &amp; &apos;|&apos; &amp;
+IF ( $Permission.CpqManualPriceRenewalPilot, &apos;CpqManualPriceRenewalPilot&apos;, &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Custom Permissions</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DefaultSampleStore__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Sample Store</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>SampleStores</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GroupFlag__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT (CONTAINS ( $Setup.IntegrationSettings__c.LocalProductCompanies__c , TEXT ( ImcdCompany__c ) ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Group Flag</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GrpCrmId__c</fullName>
+        <description>Lotus Notes Id.</description>
+        <externalId>true</externalId>
+        <label>Notes Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ImcdBusinessUnit__c</fullName>
+        <externalId>false</externalId>
+        <label>IMCD Business Unit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IMCDBusinessUnit</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ImcdCompany__c</fullName>
+        <description>Imcd Company for this user</description>
+        <externalId>false</externalId>
+        <label>IMCD Company</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>IMCDCompany</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IntegrationId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Field containing the External Id for this user. Should be Unique.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Should be populated with the UserID of the originating ERP system.</inlineHelpText>
+        <label>Integration Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>JdeId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>JDE ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>LocalErpId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Local ERP ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>PsftId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>PeopleSoft ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>TF_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>UserRole.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Role (Formula)</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wave__c</fullName>
+        <description>The Rollout Wave that this User is part of</description>
+        <externalId>false</externalId>
+        <formula>Case(ImcdCompany__c,
+&apos;00100&apos;,&apos;Wave0&apos;
+,&apos;00110&apos;,&apos;Wave0&apos;
+,&apos;00112&apos;,&apos;Wave0&apos;
+,&apos;21100&apos;,&apos;Wave1&apos;
+,&apos;22100&apos;,&apos;Wave1&apos;
+,&apos;91100&apos;,&apos;Wave1&apos;
+,&apos;55500&apos;,&apos;Wave1&apos;
+,&apos;56100&apos;,&apos;Wave1&apos;
+,&apos;81100&apos;,&apos;Wave2&apos;
+,&apos;82100&apos;,&apos;Wave2&apos;
+,&apos;65100&apos;,&apos;Wave2&apos;
+,&apos;41100&apos;,&apos;Wave2&apos;
+,&apos;42100&apos;,&apos;Wave2&apos;
+,&apos;43100&apos;,&apos;Wave2&apos;
+,&apos;44100&apos;,&apos;Wave2&apos;
+,&apos;45100&apos;,&apos;Wave2&apos;
+,&apos;67100&apos;,&apos;Wave2&apos;
+,&apos;51100&apos;,&apos;Wave2.5&apos;
+,&apos;64100&apos;,&apos;Wave3&apos;
+,&apos;11100&apos;,&apos;Wave2.5&apos;
+,&apos;12100&apos;,&apos;Wave2.5&apos;
+,&apos;13100&apos;,&apos;Wave2.5&apos;
+,&apos;14100&apos;,&apos;Wave2.5&apos;
+,&apos;15100&apos;,&apos;Wave2.5&apos;
+,&apos;16100&apos;,&apos;Wave2.5&apos;
+,&apos;16200&apos;,&apos;Wave2.5&apos;
+,&apos;31100&apos;,&apos;Wave2.5&apos;
+,&apos;32100&apos;,&apos;Wave2.5&apos;
+,&apos;33100&apos;,&apos;Wave2.5&apos;
+,&apos;35100&apos;,&apos;Wave2.5&apos;
+,&apos;36100&apos;,&apos;Wave2.5&apos;
+,&apos;36300&apos;,&apos;Wave2.5&apos;
+,&apos;72100&apos;,&apos;Wave3&apos;
+,&apos;74200&apos;,&apos;Wave3&apos;
+,&apos;79100&apos;,&apos;Wave3&apos;
+,&apos;78100&apos;,&apos;Wave3&apos;
+,&apos;67200&apos;,&apos;Wave3&apos;
+,&apos;73100&apos;,&apos;Wave3&apos;
+,&apos;75100&apos;,&apos;Wave3&apos;
+,&apos;75200&apos;,&apos;Wave3&apos;
+,&apos;76100&apos;,&apos;Wave3&apos;
+,&apos;77200&apos;,&apos;Wave3&apos;
+,&apos;71100&apos;,&apos;Wave4&apos;
+,&apos;55100&apos;,&apos;Wave4&apos;
+,&apos;55200&apos;,&apos;Wave4&apos;
+,&apos;55400&apos;,&apos;Wave4&apos;
+,&apos;69100&apos;,&apos;Wave4&apos;
+,&apos;69200&apos;,&apos;Wave4&apos;
+,&apos;61100&apos;,&apos;Wave4&apos;
+,&apos;62100&apos;,&apos;Wave4&apos;
+,&apos;Unknown&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Wave</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>IMCDCompany_is_a_required_field</fullName>
+        <active>true</active>
+        <description>The field IMCDCompany is required on User.
+Cannot be set to required on the field itself because in that case you need to provide a default an we don&apos;t want that.</description>
+        <errorConditionFormula>AND ( 
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c =True,
+ISBLANK(TEXT( ImcdCompany__c ))
+)</errorConditionFormula>
+        <errorDisplayField>ImcdCompany__c</errorDisplayField>
+        <errorMessage>IMCDCompany is a required field</errorMessage>
+    </validationRules>
+</CustomObject>

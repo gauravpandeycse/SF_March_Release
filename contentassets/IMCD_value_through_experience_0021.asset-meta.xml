@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentAsset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isVisibleByExternalUsers>true</isVisibleByExternalUsers>
+    <language>en_US</language>
+    <masterLabel>IMCD_value_through_experience_0021</masterLabel>
+    <versions>
+        <version>
+            <number>1</number>
+            <pathOnClient>IMCD value through experience (002).gif</pathOnClient>
+        </version>
+    </versions>
+</ContentAsset>

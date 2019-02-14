@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Price_Renewal_Campaign_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Curtomer of contracted price</inlineHelpText>
+        <label>Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Price Renewal Campaign Items</relationshipLabel>
+        <relationshipName>Price_Renewal_Campaign_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractedPrice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Relation to Contracted price</inlineHelpText>
+        <label>Contracted Price</label>
+        <referenceTo>SBQQ__ContractedPrice__c</referenceTo>
+        <relationshipLabel>Price Renewal Campaign Items</relationshipLabel>
+        <relationshipName>Price_Renewal_Campaign_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrentPrice__c</fullName>
+        <externalId>false</externalId>
+        <formula>TF_CurrentPrice__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Error__c</fullName>
+        <description>Error during creation of Renewal quote</description>
+        <externalId>false</externalId>
+        <label>Error</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FullSegment__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.FullSegmentsNumber__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MainStatus__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PriceRenewalCampaign__r.Stage__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MainStatus</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MinContractedPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Contracted Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NewPrice__c</fullName>
+        <externalId>false</externalId>
+        <formula>CurrentPrice__c  * (1 + PriceIncrease__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Ok__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Mark to indicate changed of approved status</inlineHelpText>
+        <label>Ok</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PackSize__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.PackageDescription__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pack Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PriceIncrease__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Increase</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>PriceRenewalCampaign__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Renewal Campaign</label>
+        <referenceTo>PriceRenewalCampaign__c</referenceTo>
+        <relationshipLabel>Price Renewal Campaign Items</relationshipLabel>
+        <relationshipName>PriceRenewalCampaignLine</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipName>Price_Campaign_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Min Quantity</inlineHelpText>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Review</fullName>
+                    <color>#DDDDDD</color>
+                    <default>true</default>
+                    <label>Review</label>
+                </value>
+                <value>
+                    <fullName>Updated</fullName>
+                    <color>#BBBBBB</color>
+                    <default>false</default>
+                    <label>Updated</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <color>#66FF99</color>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <color>#FF9966</color>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TF_CurrentPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>TF_Current Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TF_PriceBookEntry__c</fullName>
+        <description>Link to PBE</description>
+        <externalId>false</externalId>
+        <label>TF_PriceBookEntry</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Price Renewal Campaign Item</label>
+    <nameField>
+        <displayFormat>PRCI-{000000}</displayFormat>
+        <label>Price Renewal Campaign Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Price Renewal Campaign Items</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Ok__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MainStatus__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Allow_editing_only_in_Reviewmode</fullName>
+        <active>true</active>
+        <description>Make sure a user can only update the item record in the corrects stage and state for the financial data</description>
+        <errorConditionFormula>AND ( 
+$Setup.Global_Bypass_Processes_Settings__c.Run_Validation_Rules__c, 
+
+
+
+if  (ISNEW() = false 
+&amp;&amp;  
+(
+  ISCHANGED(  PriceIncrease__c ) 
+   ||
+  
+  ISCHANGED( MinContractedPrice__c) 
+) 
+  &amp;&amp;
+(
+   (TEXT(Status__c) != &apos;Review&apos; &amp;&amp; TEXT(Status__c) != &apos;Updated&apos;  
+    &amp;&amp;  
+    MainStatus__c != &apos;Review&apos; )
+), true, false)
+
+)</errorConditionFormula>
+        <errorMessage>Sorry, update only possible in Review status</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

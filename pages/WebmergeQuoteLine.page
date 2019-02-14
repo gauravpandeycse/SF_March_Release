@@ -1,0 +1,5 @@
+<apex:page standardController="SBQQ__QuoteLine__c" docType="html-5.0" title="Webmerge Quote Line: {!SBQQ__QuoteLine__c.Name}">
+
+    <webm:WebmergeWizard record="{!SBQQ__QuoteLine__c}" nameField="Name" />
+
+</apex:page>

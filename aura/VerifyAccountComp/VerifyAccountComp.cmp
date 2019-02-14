@@ -1,0 +1,45 @@
+<!--
+Author:        Kevin Ruibin Do
+Company:       Salesforce
+User Story:    https://imcdgroup.atlassian.net/browse/SFDP-2227
+Description:   Component which shows whether there are any warning pertinent to this account.
+History
+               13/12/2018 Created
+               14/12/2018 Removed code related to showBanner and spinner
+                          Removed if-statement regarding changeType == "LOADED"
+                          Replaced PrimaryLOB1Text__c with Primary_LOB1__c
+                          Replaced LockedForIntegration__c with TF_RecordTypeDeveloperName__c
+               19/12/2018 Removed TF_RecordTypeDeveloperName__c and corresponding controller logic
+			   22/01/2019 SF/MICO/Including ImcdBusinessUnit__c required prior to Submit the prospect 	(SFDP-2025)
+-->
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordID" description="VerifyAccountComp">
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="targetRecord" type="Object"/>
+    <aura:attribute name="targetFields" type="Object"/>
+
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Primary_LOB1__c,isValidShipping__c, ImcdBusinessUnit__c"
+                      targetRecord="{!v.targetRecord}"
+                      targetFields="{!v.targetFields}"
+                      recordUpdated="{!c.recordUpdated}"/>
+
+    <!-- Display a lightning card with details about the record -->
+    <aura:if isTrue="{!!empty(v.data)}">
+        <article class="slds-card results-wrap">
+            <div class="slds-card__body slds-card__body--inner">
+                <div class="slds-title__detail">
+                    <div aura:id="datatable-container">
+                        <lightning:datatable aura:id="datatable" columns="{!v.columns}"
+                                             data="{!v.data}"
+                                             keyField="Id"
+                                             showRowNumberColumn="{!true}"
+                                             hideCheckboxColumn="{!true}"/>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </aura:if>
+</aura:component>

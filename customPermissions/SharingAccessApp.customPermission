@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>- Shows are hides components admin components on the Sharing Access app page in the Standard app</description>
+    <label>Sharing Access App Visible</label>
+</CustomPermission>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account_object_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account object Name</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_Change_Account</fullName>
+        <categories>Opportunity Trigger</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot Change Account</shortDescription>
+        <value>Cannot Change Account For this Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Contract_Manager_Profile_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Manager Profile Name</shortDescription>
+        <value>Contract Manager</value>
+    </labels>
+    <labels>
+        <fullName>CouldNotCreateRequest</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CouldNotCreateRequest</shortDescription>
+        <value>Could Not create Sample Request</value>
+    </labels>
+    <labels>
+        <fullName>CouldNotFindQueue</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CouldNotFindQueue</shortDescription>
+        <value>Could not find Queue for QuoteLine</value>
+    </labels>
+    <labels>
+        <fullName>CreatedSample</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CreatedSample</shortDescription>
+        <value>Sucessfully Created Sample Request</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Sold_To_Account_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Sold To Account Record Type</shortDescription>
+        <value>Customer_Sold_To</value>
+    </labels>
+    <labels>
+        <fullName>DirectFromSupplier</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DirectFromSupplier</shortDescription>
+        <value>Direct Supplier</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_CANT_DELETE_PRIMARY</fullName>
+        <categories>Error Values</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_CANT_DELETE_PRIMARY</shortDescription>
+        <value>You cannot delete a primary LOB. Create a new LOB and mark it as primary</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_LOB_MUST_BE_PRIMARY</fullName>
+        <categories>Error Values</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ERROR_LOB_MUST_BE_PRIMARY</shortDescription>
+        <value>This Account does not yet have a primary LOB, so this LOB must be primary</value>
+    </labels>
+    <labels>
+        <fullName>FailedToAssignCase</fullName>
+        <categories>Case, Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FailedToAssignCase</shortDescription>
+        <value>Unfortunately, we&apos;ve encountered an error trying to assign the case(s):</value>
+    </labels>
+    <labels>
+        <fullName>Global_Principa_Account_Recordtype</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Global Principa Account Recordtype</shortDescription>
+        <value>Principal_Global</value>
+    </labels>
+    <labels>
+        <fullName>IMCDCompany_Field_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCDCompany Field Name</shortDescription>
+        <value>IMCDCompany__c</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_HELP_ShipToAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_HELP_ShipToAddress</shortDescription>
+        <value>&apos;The Address name is required and should be given a value e.g. &quot;Warehouse, Boston&quot;.&apos;</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_BannerSubTitle_QuoteVerification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_BannerSubTitle_QuoteVerification</shortDescription>
+        <value>The quote has one or more validations which failed, and which need to be addressed in order to successfully move the quote forward.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_BannerTitle_QuoteVerification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_BannerTitle_QuoteVerification</shortDescription>
+        <value>Quote validations</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_CloneQuote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_CloneQuote</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_CloseWindow</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_CloseWindow</shortDescription>
+        <value>Close window</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_CreateRenewalQuote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_CreateRenewalQuote</shortDescription>
+        <value>Create Renewal</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_ActiveIntegration</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_ActiveIntegration</shortDescription>
+        <value>There might be some issue here, because ths prospect is already being processed through integration and cannot be submitted at this time.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CanCloneQuote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CanCloneQuote</shortDescription>
+        <value>You can create a new customer quote, which will copy all the {0} line items from Opportunity quote {1}. Items which are marked as &apos;Lost&apos; will be excluded. Please fill out the necessary fields below in order to continue.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CanCreateManualRenewal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CanCreateManualRenewal</shortDescription>
+        <value>You&apos;re almost done. Please provide the new quote&apos;s expirations date, as well as the validity dates.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotCloneQuote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotCloneQuote</shortDescription>
+        <value>You cannot create a new Customer quote for opportunity {0}. Another quote already exists for opportunity {1}.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotCloneQuoteOpptyLocked</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotCloneQuoteOpptyLocked</shortDescription>
+        <value>You cannot create a new Customer quote for opportunity {0} because it&apos;s locked.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotCreateManualRenewal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotCreateManualRenewal</shortDescription>
+        <value>You cannot renew the (combination of these) products. Please review the errors below.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotRenewExistingPRC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotRenewExistingPRC</shortDescription>
+        <value>This product cannot be renewed because there is a Price Renewal Campaign {0} with Status {1} for this product.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotRenewExistingQuoteLine</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotRenewExistingQuoteLine</shortDescription>
+        <value>Cannot renew this product. There is future Quote {0} which references the same product.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotRenewMixedIncoterms</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotRenewMixedIncoterms</shortDescription>
+        <value>You cannot renew because of mixed Incoterms. Ensure you select products showing the same Incoterm.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotRenewMixedLobs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotRenewMixedLobs</shortDescription>
+        <value>You cannot renew because of mixed LOBs. Ensure you select products showing the same LOB.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CannotRenewMixedShipToAddresses</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CannotRenewMixedShipToAddresses</shortDescription>
+        <value>You cannot renew because of mixed Ship-to addresses. Ensure you select products showing the same Ship-to addresses.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CloneQuoteError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CloneQuoteError</shortDescription>
+        <value>There was an error creating your customer quote. Most likely cause: a product in this opportunity quote is already present in another quote. Please check with your local administrator by providing this reference:</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_CloneQuoteSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_CloneQuoteSuccess</shortDescription>
+        <value>Your Customer quote got created successfully.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_ConvertProspect</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_ConvertProspect</shortDescription>
+        <value>Checks and balances tell that you can convert your prospect. The Sold-to account which it will convert to, will be managed solely from within Salesforce and will not be integrated with a backend system. However, you need provide the ERP Id under which this Sold-to Account is known in your ERP system.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_ConvertProspectSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_ConvertProspectSuccess</shortDescription>
+        <value>You&apos;re prospect got converted successfully to a Sold-to account!</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_ExpirationDtValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_ExpirationDtValidation</shortDescription>
+        <value>Expiration date should be in the future.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_LobValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_LobValidation</shortDescription>
+        <value>Please select an LOB from the list.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_ManualRenewalDisabled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_ManualRenewalDisabled</shortDescription>
+        <value>This feature is currently disabled.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_RenewalQuoteError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_RenewalQuoteError</shortDescription>
+        <value>Ooops... this is awkward. An error occurred while creating your renewal quote. Details have been logged. Please check with your administrator.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_RenewalQuoteSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_RenewalQuoteSuccess</shortDescription>
+        <value>You&apos;re renewal quote got created succesfully!</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_RenewalWithFutureContractedPrices</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_RenewalWithFutureContractedPrices</shortDescription>
+        <value>A price with an effective date in the future exists for this product. The quote which originated this price is {0}</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_RequiredBusinessUnit</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_RequiredBusinessUnit</shortDescription>
+        <value>A prospect requires to have an IMCD Business Unit defined.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_RequiredMainAddress</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_RequiredMainAddress</shortDescription>
+        <value>Main address should be provided (Street, Postal code, City and Country)</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_RequiredPrimaryLob</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_RequiredPrimaryLob</shortDescription>
+        <value>A prospect requires to have a primary LOB. Simply assign a primary LOB in the prospect&apos;s related list and try again.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_SubmitProspect</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_SubmitProspect</shortDescription>
+        <value>Checks and balances tell that you can submit your prospect. Please beware that it can take some time before the integration, backend creation and verification of your sold-to customer account will be completed.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_SubmitProspectError</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_SubmitProspectError</shortDescription>
+        <value>The has been an error while submitting your prospect. Sorry for that. Please check with your local administrator.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_SubmitProspectSuccess</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_SubmitProspectSuccess</shortDescription>
+        <value>The prospect got submitted successfully. It might take some time for your new prospect to be verified and converted to a Sold-to customer.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_TooManyProductsSelected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_TooManyProductsSelected</shortDescription>
+        <value>A maximum of {0} can be selected for an approval. Please reduce the number of products to renew. If necessary create more renewal quotes.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_MSG_ValidityDtValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_MSG_ValidityDtValidation</shortDescription>
+        <value>Please review validity dates.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_ManualRenewalMaxSelection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_ManualRenewalMaxSelection</shortDescription>
+        <value>30</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_Title_CloneCustomerQuote</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_Title_CloneCustomerQuote</shortDescription>
+        <value>Create Customer Quote</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_Title_CreateManualRenewal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_Title_CreateManualRenewal</shortDescription>
+        <value>Manual Renewal Quote</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_LC_Title_SubmitProspect</fullName>
+        <categories>Lightning Component Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_LC_Title_SubmitProspect</shortDescription>
+        <value>Submit Prospect</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_OPPTY_CLOSING_STAGE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_OPPTY_CLOSING_STAGE</shortDescription>
+        <value>CLOSING</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_OPPTY_END_STAGES</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_OPPTY_END_STAGES</shortDescription>
+        <value>WON,LOST</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_OPPTY_INVALID_STAGE_MSG</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_OPPTY_INVALID_STAGE_MSG</shortDescription>
+        <value>You are not allowed to change the Opportunity stage backwards from Closing, Won or Lost.</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_OPPTY_LOST_STAGE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_OPPTY_LOST_STAGE</shortDescription>
+        <value>LOST</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_OPPTY_TEMP_PROD_MSG1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_OPPTY_TEMP_PROD_MSG1</shortDescription>
+        <value>One or more temp products are present on quotes for this opportunity, which is preventing changing the stage to {0}. Please review:</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_OPPTY_TEMP_PROD_MSG2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_OPPTY_TEMP_PROD_MSG2</shortDescription>
+        <value>Quote {0} which contains temp product {1}</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_OPPTY_WON_STAGE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD_OPPTY_WON_STAGE</shortDescription>
+        <value>WON</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_Standard_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IMCD Standard Profile</shortDescription>
+        <value>IMCD Standard Profile</value>
+    </labels>
+    <labels>
+        <fullName>IMCD_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name of IMCD User Profile</shortDescription>
+        <value>IMCD User</value>
+    </labels>
+    <labels>
+        <fullName>LOB1_Field_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LOB1 Field Name</shortDescription>
+        <value>LOB1__c</value>
+    </labels>
+    <labels>
+        <fullName>MANUAL_RAW_CAUSE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MANUAL_RAW_CAUSE</shortDescription>
+        <value>Manual</value>
+    </labels>
+    <labels>
+        <fullName>NO_ACCESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_ACCESS</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>NoSysAdminQueue</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NoSysAdminQueue</shortDescription>
+        <value>No System Admin Queue Found</value>
+    </labels>
+    <labels>
+        <fullName>Principal_Regional_Account_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Principal Regional Account Record Type</shortDescription>
+        <value>Principal_Regional</value>
+    </labels>
+    <labels>
+        <fullName>ProcessingRequest</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProcessingRequest</shortDescription>
+        <value>Processing Sample Request</value>
+    </labels>
+    <labels>
+        <fullName>Profile_IMCD_Standard_Profile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Profile IMCD Standard Profile</shortDescription>
+        <value>IMCD Standard Profile</value>
+    </labels>
+    <labels>
+        <fullName>READ_ACCESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>READ ACCESS</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>READ_WRITE_ACCESS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>READ_WRITE_ACCESS</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Regional_Account_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Regional Account Record Type</shortDescription>
+        <value>Customer_Regional</value>
+    </labels>
+    <labels>
+        <fullName>SampleRequestPrimaryQuote</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SampleRequestPrimaryQuote</shortDescription>
+        <value>Sample Requests can be created only on the Primary Quote</value>
+    </labels>
+    <labels>
+        <fullName>Standard_User_Profile_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Standard User Profile Name</shortDescription>
+        <value>Standard User</value>
+    </labels>
+    <labels>
+        <fullName>SystemAdminQueueName</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SystemAdminQueueName</shortDescription>
+        <value>System Admin Review Cases</value>
+    </labels>
+    <labels>
+        <fullName>System_Admin_Profile_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Admin Profile Name</shortDescription>
+        <value>System Administrator</value>
+    </labels>
+    <labels>
+        <fullName>TestSystemAdminQueueName</fullName>
+        <categories>Lightning Component Labels - Sample Request</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TestSystemAdminQueueName</shortDescription>
+        <value>Test System Admin Review Cases</value>
+    </labels>
+    <labels>
+        <fullName>prevent_delete_of_Quote_Line_Case_scenario</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>prevent delete of Quote Line Case scenario</shortDescription>
+        <value>QuoteLine with related Sample Requests can&apos;t be deleted</value>
+    </labels>
+    <labels>
+        <fullName>prevent_delete_of_Quote_Line_ContPrice_Scenario</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete not possible, contracted price exists</shortDescription>
+        <value>Delete not possible, contracted price exists</value>
+    </labels>
+    <labels>
+        <fullName>prevent_delete_of_Quote_Line_FReports_scenario</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>prevent delete of Quote Line FReports scenario</shortDescription>
+        <value>QuoteLine with related Follow Up Reports can not be deleted</value>
+    </labels>
+    <labels>
+        <fullName>prevent_delete_of_Quote_Line_MInfo_scenario</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>prevent delete of Quote Line MInfo scenario</shortDescription>
+        <value>Quoteline with related Market Info records can not be deleted</value>
+    </labels>
+</CustomLabels>

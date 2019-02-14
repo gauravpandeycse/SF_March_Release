@@ -1,0 +1,3 @@
+<apex:page standardController="SummaryReport__c" docType="html-5.0" title="Webmerge Name: {!SummaryReport__c.Name}">
+    <webm:WebmergeWizard record="{!SummaryReport__c}" />
+</apex:page>

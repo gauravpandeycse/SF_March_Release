@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Settings and constants for Integration such as Events etc.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>EvtCreateContractedPrice__c</fullName>
+        <externalId>false</externalId>
+        <label>Create Contracted Price Event</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EvtCreateSoldTo__c</fullName>
+        <externalId>false</externalId>
+        <label>Create Customer (Sold-to) Event</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EvtCreateTempProduct__c</fullName>
+        <externalId>false</externalId>
+        <label>Create Temp Product Event</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EvtSendSampleWarehouse__c</fullName>
+        <description>Send Sample to Warehouse event</description>
+        <externalId>false</externalId>
+        <label>Send Sample to Warehouse Event</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LocalErpComps__c</fullName>
+        <description>Comma-separated list of countries which are using local erp.</description>
+        <externalId>false</externalId>
+        <label>Local ERP Companies</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LocalProductCompanies__c</fullName>
+        <description>Comma separated IMCd Companies that manage their products in their local ERP.</description>
+        <externalId>false</externalId>
+        <label>Local Product Companies</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Recalculations_Per_Hour__c</fullName>
+        <description>The maximum number of Quotes that will get resubmitted for calculation per hour</description>
+        <externalId>false</externalId>
+        <label>Quote Recalculations Per Hour</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SampleRequestIntegrationQueues__c</fullName>
+        <description>This field significies a comma-separated list of Queues for which Sample Requests when set to Assigned triggers integration through Talend.</description>
+        <externalId>false</externalId>
+        <label>Sample Request Integration Queues</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>stdPricebookId__c</fullName>
+        <externalId>false</externalId>
+        <label>Standard Price Book Id</label>
+        <length>18</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Integration Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,10 @@
+/*
+Author: SF/JEBU
+CSS add in order to Wrap the data cells in the datatable-results
+which is instrumented by the results-wrap class
+*/
+.THIS.results-wrap td .slds-truncate {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important;
+}

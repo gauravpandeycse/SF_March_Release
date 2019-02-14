@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Some setting for PRC. Query Limit restricts the nr of Quote lines per Renewal Quote</description>
+    <fields>
+        <fullName>QueryLimit__c</fullName>
+        <defaultValue>30</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Max nr of record when query PRC-items and create Renewal Quotes</inlineHelpText>
+        <label>QueryLimit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>RPCsetting</label>
+    <pluralLabel>RPCsetting</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

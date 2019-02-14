@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>10000</fullName>
+        <default>false</default>
+        <label>10000 IMCD Nordic</label>
+    </customValue>
+    <customValue>
+        <fullName>10100</fullName>
+        <default>false</default>
+        <label>10100 IMCD Nordic AB</label>
+    </customValue>
+    <customValue>
+        <fullName>10119</fullName>
+        <default>false</default>
+        <label>10119 SE General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>10200</fullName>
+        <default>false</default>
+        <label>10200 AWL Holding AB</label>
+    </customValue>
+    <customValue>
+        <fullName>10219</fullName>
+        <default>false</default>
+        <label>10219 SE General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>10300</fullName>
+        <default>false</default>
+        <label>10300  IMCD NORDIC INVESTMENTS AB</label>
+    </customValue>
+    <customValue>
+        <fullName>10319</fullName>
+        <default>false</default>
+        <label>10319 SE General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>11100</fullName>
+        <default>false</default>
+        <label>11100 IMCD Sweden AB</label>
+    </customValue>
+    <customValue>
+        <fullName>11101</fullName>
+        <default>false</default>
+        <label>11101 SE Management</label>
+    </customValue>
+    <customValue>
+        <fullName>11102</fullName>
+        <default>false</default>
+        <label>11102 SE Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>11103</fullName>
+        <default>false</default>
+        <label>11103 SE CS/Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>11104</fullName>
+        <default>false</default>
+        <label>11104 SE IT</label>
+    </customValue>
+    <customValue>
+        <fullName>11105</fullName>
+        <default>false</default>
+        <label>11105 SE HSQ</label>
+    </customValue>
+    <customValue>
+        <fullName>11106</fullName>
+        <default>false</default>
+        <label>11106 SE Research</label>
+    </customValue>
+    <customValue>
+        <fullName>11110</fullName>
+        <default>false</default>
+        <label>11110 SE Office 1</label>
+    </customValue>
+    <customValue>
+        <fullName>11111</fullName>
+        <default>false</default>
+        <label>11111 SE Office 2</label>
+    </customValue>
+    <customValue>
+        <fullName>11115</fullName>
+        <default>false</default>
+        <label>11115 SE Production 1</label>
+    </customValue>
+    <customValue>
+        <fullName>11116</fullName>
+        <default>false</default>
+        <label>11116 SE Production 2</label>
+    </customValue>
+    <customValue>
+        <fullName>11119</fullName>
+        <default>false</default>
+        <label>11119 SE General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>11121</fullName>
+        <default>false</default>
+        <label>11121 SE Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>11122</fullName>
+        <default>false</default>
+        <label>11122 SE Advanced Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>11123</fullName>
+        <default>false</default>
+        <label>11123 SE Paper</label>
+    </customValue>
+    <customValue>
+        <fullName>11124</fullName>
+        <default>false</default>
+        <label>11124 SE Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>11125</fullName>
+        <default>false</default>
+        <label>11125 SE Food</label>
+    </customValue>
+    <customValue>
+        <fullName>11126</fullName>
+        <default>false</default>
+        <label>11126 SE HPC</label>
+    </customValue>
+    <customValue>
+        <fullName>11149</fullName>
+        <default>false</default>
+        <label>11149 SE Central Stock/IC</label>
+    </customValue>
+    <customValue>
+        <fullName>11200</fullName>
+        <default>false</default>
+        <label>11200 AB Montoil</label>
+    </customValue>
+    <customValue>
+        <fullName>11219</fullName>
+        <default>false</default>
+        <label>11219 SE General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>11300</fullName>
+        <default>false</default>
+        <label>11300 Swedstab International AB</label>
+    </customValue>
+    <customValue>
+        <fullName>11319</fullName>
+        <default>false</default>
+        <label>11319 SE General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>11400</fullName>
+        <default>false</default>
+        <label>11400 Swedstab AB</label>
+    </customValue>
+    <customValue>
+        <fullName>11419</fullName>
+        <default>false</default>
+        <label>11419 SE General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>12100</fullName>
+        <default>false</default>
+        <label>12100 IMCD Finland Oy</label>
+    </customValue>
+    <customValue>
+        <fullName>12101</fullName>
+        <default>false</default>
+        <label>12101 FI Management</label>
+    </customValue>
+    <customValue>
+        <fullName>12102</fullName>
+        <default>false</default>
+        <label>12102 FI Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>12103</fullName>
+        <default>false</default>
+        <label>12103 FI CS/Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>12104</fullName>
+        <default>false</default>
+        <label>12104 FI IT</label>
+    </customValue>
+    <customValue>
+        <fullName>12105</fullName>
+        <default>false</default>
+        <label>12105 FI HSQ</label>
+    </customValue>
+    <customValue>
+        <fullName>12110</fullName>
+        <default>false</default>
+        <label>12110 FI Office 1</label>
+    </customValue>
+    <customValue>
+        <fullName>12119</fullName>
+        <default>false</default>
+        <label>12119 FI General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>12121</fullName>
+        <default>false</default>
+        <label>12121 FI Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>12122</fullName>
+        <default>false</default>
+        <label>12122 FI Advanced Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>12124</fullName>
+        <default>false</default>
+        <label>12124 FI Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>12125</fullName>
+        <default>false</default>
+        <label>12125 FI Food</label>
+    </customValue>
+    <customValue>
+        <fullName>12126</fullName>
+        <default>false</default>
+        <label>12126 FI HPC</label>
+    </customValue>
+    <customValue>
+        <fullName>12129</fullName>
+        <default>false</default>
+        <label>12129 FI CENTRAL/IC</label>
+    </customValue>
+    <customValue>
+        <fullName>12139</fullName>
+        <default>false</default>
+        <label>12139 FI SBU BALTICS</label>
+    </customValue>
+    <customValue>
+        <fullName>13100</fullName>
+        <default>false</default>
+        <label>13100 IMCD Danmark A/S</label>
+    </customValue>
+    <customValue>
+        <fullName>13101</fullName>
+        <default>false</default>
+        <label>13101 DK Management</label>
+    </customValue>
+    <customValue>
+        <fullName>13102</fullName>
+        <default>false</default>
+        <label>13102 DK Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>13103</fullName>
+        <default>false</default>
+        <label>13103 DK CS/Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>13104</fullName>
+        <default>false</default>
+        <label>13104 DK IT</label>
+    </customValue>
+    <customValue>
+        <fullName>13105</fullName>
+        <default>false</default>
+        <label>13105 DK HSQ</label>
+    </customValue>
+    <customValue>
+        <fullName>13110</fullName>
+        <default>false</default>
+        <label>13110 DK Office 1</label>
+    </customValue>
+    <customValue>
+        <fullName>13119</fullName>
+        <default>false</default>
+        <label>13119 DK General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>13121</fullName>
+        <default>false</default>
+        <label>13121 DK Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>13122</fullName>
+        <default>false</default>
+        <label>13122 DK Advanced Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>13124</fullName>
+        <default>false</default>
+        <label>13124 DK Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>13125</fullName>
+        <default>false</default>
+        <label>13125 DK Food</label>
+    </customValue>
+    <customValue>
+        <fullName>13126</fullName>
+        <default>false</default>
+        <label>13126 DK HPC</label>
+    </customValue>
+    <customValue>
+        <fullName>13129</fullName>
+        <default>false</default>
+        <label>13129 DK CENTRAL/IC</label>
+    </customValue>
+    <customValue>
+        <fullName>14100</fullName>
+        <default>false</default>
+        <label>14100 IMCD Norway AS</label>
+    </customValue>
+    <customValue>
+        <fullName>14101</fullName>
+        <default>false</default>
+        <label>14101 NO Management</label>
+    </customValue>
+    <customValue>
+        <fullName>14102</fullName>
+        <default>false</default>
+        <label>14102 NO Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>14103</fullName>
+        <default>false</default>
+        <label>14103 NO CS/Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>14104</fullName>
+        <default>false</default>
+        <label>14104 NO IT</label>
+    </customValue>
+    <customValue>
+        <fullName>14105</fullName>
+        <default>false</default>
+        <label>14105 NO HSQ</label>
+    </customValue>
+    <customValue>
+        <fullName>14110</fullName>
+        <default>false</default>
+        <label>14110 NO Office 1</label>
+    </customValue>
+    <customValue>
+        <fullName>14115</fullName>
+        <default>false</default>
+        <label>14115 NO Warehouse 1</label>
+    </customValue>
+    <customValue>
+        <fullName>14119</fullName>
+        <default>false</default>
+        <label>14119 NO General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>14121</fullName>
+        <default>false</default>
+        <label>14121 NO Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>14122</fullName>
+        <default>false</default>
+        <label>14122 NO 14122 NO Advanced Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>14124</fullName>
+        <default>false</default>
+        <label>14124 NO Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>14126</fullName>
+        <default>false</default>
+        <label>14126 NO HPC</label>
+    </customValue>
+    <customValue>
+        <fullName>14128</fullName>
+        <default>false</default>
+        <label>14128 NO Food</label>
+    </customValue>
+    <customValue>
+        <fullName>14129</fullName>
+        <default>false</default>
+        <label>14129 NO CENTRAL/IC</label>
+    </customValue>
+    <customValue>
+        <fullName>15100</fullName>
+        <default>false</default>
+        <label>15100 IMCD Baltics UAB</label>
+    </customValue>
+    <customValue>
+        <fullName>15101</fullName>
+        <default>false</default>
+        <label>15101 LT Management</label>
+    </customValue>
+    <customValue>
+        <fullName>15102</fullName>
+        <default>false</default>
+        <label>15102 LT Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>15103</fullName>
+        <default>false</default>
+        <label>15103 LT CS/Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>15104</fullName>
+        <default>false</default>
+        <label>15104 LT IT</label>
+    </customValue>
+    <customValue>
+        <fullName>15105</fullName>
+        <default>false</default>
+        <label>15105 LT HSQ</label>
+    </customValue>
+    <customValue>
+        <fullName>15110</fullName>
+        <default>false</default>
+        <label>15110 LT Office 1</label>
+    </customValue>
+    <customValue>
+        <fullName>15119</fullName>
+        <default>false</default>
+        <label>15119 LT General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>15129</fullName>
+        <default>false</default>
+        <label>15129 LT SBU</label>
+    </customValue>
+    <customValue>
+        <fullName>16100</fullName>
+        <default>false</default>
+        <label>16100 IMCD Russia</label>
+    </customValue>
+    <customValue>
+        <fullName>16101</fullName>
+        <default>false</default>
+        <label>16101 RU Management</label>
+    </customValue>
+    <customValue>
+        <fullName>16102</fullName>
+        <default>false</default>
+        <label>16102 RU Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>16103</fullName>
+        <default>false</default>
+        <label>16103 RU CS/Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>16104</fullName>
+        <default>false</default>
+        <label>16104 RU IT</label>
+    </customValue>
+    <customValue>
+        <fullName>16105</fullName>
+        <default>false</default>
+        <label>16105 RU HSQ</label>
+    </customValue>
+    <customValue>
+        <fullName>16110</fullName>
+        <default>false</default>
+        <label>16110 RU Office 1</label>
+    </customValue>
+    <customValue>
+        <fullName>16119</fullName>
+        <default>false</default>
+        <label>16119 RU General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>16129</fullName>
+        <default>false</default>
+        <label>16129 RU SBU</label>
+    </customValue>
+    <customValue>
+        <fullName>16200</fullName>
+        <default>false</default>
+        <label>16200 IMCD UKRAINE LLC</label>
+    </customValue>
+    <customValue>
+        <fullName>16201</fullName>
+        <default>false</default>
+        <label>16201 UA Management</label>
+    </customValue>
+    <customValue>
+        <fullName>16202</fullName>
+        <default>false</default>
+        <label>16202 UA Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>16203</fullName>
+        <default>false</default>
+        <label>16203 UA CS/Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>16204</fullName>
+        <default>false</default>
+        <label>16204 UA IT</label>
+    </customValue>
+    <customValue>
+        <fullName>16205</fullName>
+        <default>false</default>
+        <label>16205 UA HSQ</label>
+    </customValue>
+    <customValue>
+        <fullName>16210</fullName>
+        <default>false</default>
+        <label>16210 UA Office</label>
+    </customValue>
+    <customValue>
+        <fullName>16219</fullName>
+        <default>false</default>
+        <label>16219 UA General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>16229</fullName>
+        <default>false</default>
+        <label>16229 UA SBU</label>
+    </customValue>
+    <customValue>
+        <fullName>20000</fullName>
+        <default>false</default>
+        <label>20000 IMCD Benelux</label>
+    </customValue>
+    <customValue>
+        <fullName>21000</fullName>
+        <default>false</default>
+        <label>21000 IMCD Netherlands</label>
+    </customValue>
+    <customValue>
+        <fullName>21100</fullName>
+        <default>false</default>
+        <label>21100 IMCD Benelux B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>21101</fullName>
+        <default>false</default>
+        <label>21101 Gen. Overh. IMCD B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>21121</fullName>
+        <default>false</default>
+        <label>21121 Coatings, Adhives, Inks, Found</label>
+    </customValue>
+    <customValue>
+        <fullName>21122</fullName>
+        <default>false</default>
+        <label>21122 Plastics, Rubber, Paper, PUR</label>
+    </customValue>
+    <customValue>
+        <fullName>21123</fullName>
+        <default>false</default>
+        <label>21123 Ind. Chem Acrylate, Monomers</label>
+    </customValue>
+    <customValue>
+        <fullName>21124</fullName>
+        <default>false</default>
+        <label>21124 Pharma, Cosmetics</label>
+    </customValue>
+    <customValue>
+        <fullName>21125</fullName>
+        <default>false</default>
+        <label>21125 Food, Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>21126</fullName>
+        <default>false</default>
+        <label>21126 Refineries, Lubricants, Water</label>
+    </customValue>
+    <customValue>
+        <fullName>21127</fullName>
+        <default>false</default>
+        <label>21127 SBU Pebepol</label>
+    </customValue>
+    <customValue>
+        <fullName>21128</fullName>
+        <default>false</default>
+        <label>21128 SBU Tuerkiye Business</label>
+    </customValue>
+    <customValue>
+        <fullName>21129</fullName>
+        <default>false</default>
+        <label>21129 Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>21200</fullName>
+        <default>false</default>
+        <label>21200 Jan Dekker B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>22000</fullName>
+        <default>false</default>
+        <label>22000 IMCD Belgium</label>
+    </customValue>
+    <customValue>
+        <fullName>220</fullName>
+        <default>false</default>
+        <label>220 IMCD N.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>22100</fullName>
+        <default>false</default>
+        <label>22100 IMCD Benelux N.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>22101</fullName>
+        <default>false</default>
+        <label>22101 Gen. Overh. IMCD N.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>22121</fullName>
+        <default>false</default>
+        <label>22121 Coatings, Adhives, Inks, Found</label>
+    </customValue>
+    <customValue>
+        <fullName>22122</fullName>
+        <default>false</default>
+        <label>22122 Plastics, Rubber, Paper, PUR</label>
+    </customValue>
+    <customValue>
+        <fullName>22123</fullName>
+        <default>false</default>
+        <label>22123 Ind. Chem Acrylate, Monomers</label>
+    </customValue>
+    <customValue>
+        <fullName>22124</fullName>
+        <default>false</default>
+        <label>22124 Pharma, Cosmetics</label>
+    </customValue>
+    <customValue>
+        <fullName>22125</fullName>
+        <default>false</default>
+        <label>22125 Food, Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>22126</fullName>
+        <default>false</default>
+        <label>22126 Refineries, Lubricants, Water</label>
+    </customValue>
+    <customValue>
+        <fullName>22129</fullName>
+        <default>false</default>
+        <label>22129 Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>221</fullName>
+        <default>false</default>
+        <label>221 EMMA HOLDINGS B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>222</fullName>
+        <default>false</default>
+        <label>222 IMCD Finance B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>223</fullName>
+        <default>false</default>
+        <label>223 EMMA BIDCO B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>30000</fullName>
+        <default>false</default>
+        <label>30000 Interorgana Central Europe</label>
+    </customValue>
+    <customValue>
+        <fullName>31000</fullName>
+        <default>false</default>
+        <label>31000 CBG Chemie Beteiligungs GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>31001</fullName>
+        <default>false</default>
+        <label>31001 General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>31100</fullName>
+        <default>false</default>
+        <label>31100 IMCD Deutschland GmbH &amp; Co KG</label>
+    </customValue>
+    <customValue>
+        <fullName>31101</fullName>
+        <default>false</default>
+        <label>31101 Gen. Overhead IMCD Deutschland</label>
+    </customValue>
+    <customValue>
+        <fullName>31103</fullName>
+        <default>false</default>
+        <label>31103 CPD + TSD</label>
+    </customValue>
+    <customValue>
+        <fullName>31104</fullName>
+        <default>false</default>
+        <label>31104 Services</label>
+    </customValue>
+    <customValue>
+        <fullName>31121</fullName>
+        <default>false</default>
+        <label>31121 Sales Area A/CH/DK/N/S/SF</label>
+    </customValue>
+    <customValue>
+        <fullName>31122</fullName>
+        <default>false</default>
+        <label>31122 Centr. PM / Intercompany</label>
+    </customValue>
+    <customValue>
+        <fullName>31123</fullName>
+        <default>false</default>
+        <label>31123 Key Accounts</label>
+    </customValue>
+    <customValue>
+        <fullName>31124</fullName>
+        <default>false</default>
+        <label>31124 Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>31125</fullName>
+        <default>false</default>
+        <label>31125 Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>31126</fullName>
+        <default>false</default>
+        <label>31126 Food / Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>31127</fullName>
+        <default>false</default>
+        <label>31127 Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>31128</fullName>
+        <default>false</default>
+        <label>31128 Plastics &amp; Advanced Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>31129</fullName>
+        <default>false</default>
+        <label>31129 Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>31130</fullName>
+        <default>false</default>
+        <label>31130 Oil Additives/Water Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>31131</fullName>
+        <default>false</default>
+        <label>31131 Detergents, Textile &amp; Agro</label>
+    </customValue>
+    <customValue>
+        <fullName>31200</fullName>
+        <default>false</default>
+        <label>31200 Otto Aldag Handel GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>31201</fullName>
+        <default>false</default>
+        <label>31201 General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>31300</fullName>
+        <default>false</default>
+        <label>31300 Koenig &amp; Wiegand GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>31301</fullName>
+        <default>false</default>
+        <label>31301 Overhead Koenig &amp; Wiegand</label>
+    </customValue>
+    <customValue>
+        <fullName>31321</fullName>
+        <default>false</default>
+        <label>31321 SBU Food Koenig &amp; Wiegand</label>
+    </customValue>
+    <customValue>
+        <fullName>32000</fullName>
+        <default>false</default>
+        <label>32000 TOMEK INT. S.R.O.</label>
+    </customValue>
+    <customValue>
+        <fullName>32100</fullName>
+        <default>false</default>
+        <label>32100 IMCD Czech Republic a.s.</label>
+    </customValue>
+    <customValue>
+        <fullName>32101</fullName>
+        <default>false</default>
+        <label>32101 Admin. BU IMCD Czech Republic</label>
+    </customValue>
+    <customValue>
+        <fullName>32102</fullName>
+        <default>false</default>
+        <label>32102 Customer Service IMCD CZ</label>
+    </customValue>
+    <customValue>
+        <fullName>32121</fullName>
+        <default>false</default>
+        <label>32121 SBU IMCD CZ</label>
+    </customValue>
+    <customValue>
+        <fullName>32122</fullName>
+        <default>false</default>
+        <label>32122 DO NOT USE (former Pharma)</label>
+    </customValue>
+    <customValue>
+        <fullName>32123</fullName>
+        <default>false</default>
+        <label>32123 DO NOT USE (former Plastic)</label>
+    </customValue>
+    <customValue>
+        <fullName>32124</fullName>
+        <default>false</default>
+        <label>32124 DO NOT USE (former Food)</label>
+    </customValue>
+    <customValue>
+        <fullName>32125</fullName>
+        <default>false</default>
+        <label>32125 DO NOT USE (former Glass)</label>
+    </customValue>
+    <customValue>
+        <fullName>33100</fullName>
+        <default>false</default>
+        <label>33100 IMCD Polska Sp. z o.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>33101</fullName>
+        <default>false</default>
+        <label>33101 Overhead IMCD Polska</label>
+    </customValue>
+    <customValue>
+        <fullName>33121</fullName>
+        <default>false</default>
+        <label>33121 SBU IMCD Polska Life Science</label>
+    </customValue>
+    <customValue>
+        <fullName>33122</fullName>
+        <default>false</default>
+        <label>33122 SBU IMCD Polska Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>33123</fullName>
+        <default>false</default>
+        <label>33123 Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>33124</fullName>
+        <default>false</default>
+        <label>33124 Plastics &amp; Advanced Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>33125</fullName>
+        <default>false</default>
+        <label>33125 Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>33126</fullName>
+        <default>false</default>
+        <label>33126 Personal Care &amp; Detergents</label>
+    </customValue>
+    <customValue>
+        <fullName>33127</fullName>
+        <default>false</default>
+        <label>33127 Food</label>
+    </customValue>
+    <customValue>
+        <fullName>34100</fullName>
+        <default>false</default>
+        <label>34100 IMCD Slovakia s.r.o.</label>
+    </customValue>
+    <customValue>
+        <fullName>34101</fullName>
+        <default>false</default>
+        <label>34101 Overhead IMCD Slovakia</label>
+    </customValue>
+    <customValue>
+        <fullName>34121</fullName>
+        <default>false</default>
+        <label>34121 SBU IMCD SK</label>
+    </customValue>
+    <customValue>
+        <fullName>34122</fullName>
+        <default>false</default>
+        <label>34122 DO NOT USE (former Pharma)</label>
+    </customValue>
+    <customValue>
+        <fullName>34123</fullName>
+        <default>false</default>
+        <label>34123 DO NOT USE (former Plastic)</label>
+    </customValue>
+    <customValue>
+        <fullName>34124</fullName>
+        <default>false</default>
+        <label>34124 DO NOT USE (former Food)</label>
+    </customValue>
+    <customValue>
+        <fullName>34125</fullName>
+        <default>false</default>
+        <label>34125 DO NOT USE (former Glass)</label>
+    </customValue>
+    <customValue>
+        <fullName>35100</fullName>
+        <default>false</default>
+        <label>35100 IMCD Switzerland AG</label>
+    </customValue>
+    <customValue>
+        <fullName>35101</fullName>
+        <default>false</default>
+        <label>35101 Overhead IMCD Switzerland AG</label>
+    </customValue>
+    <customValue>
+        <fullName>35121</fullName>
+        <default>false</default>
+        <label>35121 SBU IMCD Switzerland AG</label>
+    </customValue>
+    <customValue>
+        <fullName>36100</fullName>
+        <default>false</default>
+        <label>36100 IMCD South East Europe GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>36101</fullName>
+        <default>false</default>
+        <label>36101 AdministrationBU IMCD SEE GmbH</label>
+    </customValue>
+    <customValue>
+        <fullName>36102</fullName>
+        <default>false</default>
+        <label>36102 Overhead BU IMCD SERBIA</label>
+    </customValue>
+    <customValue>
+        <fullName>36103</fullName>
+        <default>false</default>
+        <label>36103 Overhead BU IMCD ROMANIA</label>
+    </customValue>
+    <customValue>
+        <fullName>36104</fullName>
+        <default>false</default>
+        <label>36104 Overhead BU IMCD HUNGARY</label>
+    </customValue>
+    <customValue>
+        <fullName>36105</fullName>
+        <default>false</default>
+        <label>36105 Overhead BU IMCD BULGARIA</label>
+    </customValue>
+    <customValue>
+        <fullName>36106</fullName>
+        <default>false</default>
+        <label>36106 Overhead BU IMCD CROATIA</label>
+    </customValue>
+    <customValue>
+        <fullName>36107</fullName>
+        <default>false</default>
+        <label>36107 Overhead BU IMCD SLOVENIA</label>
+    </customValue>
+    <customValue>
+        <fullName>36110</fullName>
+        <default>false</default>
+        <label>36110 Customer Service BU IMCD SEE</label>
+    </customValue>
+    <customValue>
+        <fullName>36121</fullName>
+        <default>false</default>
+        <label>36121 SBU IMCD SEE</label>
+    </customValue>
+    <customValue>
+        <fullName>36122</fullName>
+        <default>false</default>
+        <label>36122 DO NOT USE (former Pharma)</label>
+    </customValue>
+    <customValue>
+        <fullName>36123</fullName>
+        <default>false</default>
+        <label>36123 DO NOT USE (former Plastic)</label>
+    </customValue>
+    <customValue>
+        <fullName>36124</fullName>
+        <default>false</default>
+        <label>36124 DO NOT USE (former Food)</label>
+    </customValue>
+    <customValue>
+        <fullName>36200</fullName>
+        <default>false</default>
+        <label>36200 IMCD SEE GMBH</label>
+    </customValue>
+    <customValue>
+        <fullName>36201</fullName>
+        <default>false</default>
+        <label>36201 Overhead BU IMCD SEE GMBH</label>
+    </customValue>
+    <customValue>
+        <fullName>36221</fullName>
+        <default>false</default>
+        <label>36221 Coating &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>36222</fullName>
+        <default>false</default>
+        <label>36222 Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>36223</fullName>
+        <default>false</default>
+        <label>36223 Plastic &amp; Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>36224</fullName>
+        <default>false</default>
+        <label>36224 Food</label>
+    </customValue>
+    <customValue>
+        <fullName>36300</fullName>
+        <default>false</default>
+        <label>36300 OGRANAK IMCD SEE GMBH BEOGRAD</label>
+    </customValue>
+    <customValue>
+        <fullName>36351</fullName>
+        <default>false</default>
+        <label>36351 SCHENKER D.O.O., NOVI BANOVCI</label>
+    </customValue>
+    <customValue>
+        <fullName>37100</fullName>
+        <default>false</default>
+        <label>37100 IMCD SLOVENIA D.O.O.</label>
+    </customValue>
+    <customValue>
+        <fullName>40100</fullName>
+        <default>false</default>
+        <label>40100 ILURMAN SERVICES SL</label>
+    </customValue>
+    <customValue>
+        <fullName>41100</fullName>
+        <default>false</default>
+        <label>41100 IMCD España esp. Quimicas, S.A</label>
+    </customValue>
+    <customValue>
+        <fullName>41101</fullName>
+        <default>false</default>
+        <label>41101 DIRECCION GENERAL (1000)</label>
+    </customValue>
+    <customValue>
+        <fullName>41102</fullName>
+        <default>false</default>
+        <label>41102 ADMINISTRACION (3000)</label>
+    </customValue>
+    <customValue>
+        <fullName>41103</fullName>
+        <default>false</default>
+        <label>41103 INFORMATICA (3001)</label>
+    </customValue>
+    <customValue>
+        <fullName>41104</fullName>
+        <default>false</default>
+        <label>41104 LOGISTICA</label>
+    </customValue>
+    <customValue>
+        <fullName>41105</fullName>
+        <default>false</default>
+        <label>41105 CALIDAD (6000)</label>
+    </customValue>
+    <customValue>
+        <fullName>41106</fullName>
+        <default>false</default>
+        <label>41106 BCC-BASE CHEMICAL CORPORATIVO</label>
+    </customValue>
+    <customValue>
+        <fullName>41107</fullName>
+        <default>false</default>
+        <label>41107 LOGISTICA BARCELONA (4000)</label>
+    </customValue>
+    <customValue>
+        <fullName>41108</fullName>
+        <default>false</default>
+        <label>41108 COSTES GRUPO</label>
+    </customValue>
+    <customValue>
+        <fullName>41109</fullName>
+        <default>false</default>
+        <label>41109 VARIOUS</label>
+    </customValue>
+    <customValue>
+        <fullName>41121</fullName>
+        <default>false</default>
+        <label>41121 Coatings Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>41122</fullName>
+        <default>false</default>
+        <label>41122 Technical Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>41123</fullName>
+        <default>false</default>
+        <label>41123 LABORATORIO</label>
+    </customValue>
+    <customValue>
+        <fullName>41124</fullName>
+        <default>false</default>
+        <label>41124 Industrial Solutions Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>41125</fullName>
+        <default>false</default>
+        <label>41125 Pharma Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>41126</fullName>
+        <default>false</default>
+        <label>41126 Plastics &amp; Lubs Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>41127</fullName>
+        <default>false</default>
+        <label>41127 Food Spain</label>
+    </customValue>
+    <customValue>
+        <fullName>41128</fullName>
+        <default>false</default>
+        <label>41128 Personal Care &amp; Detergency ES</label>
+    </customValue>
+    <customValue>
+        <fullName>42100</fullName>
+        <default>false</default>
+        <label>42100 IMCD Portugal Prod.Quimic.Lda</label>
+    </customValue>
+    <customValue>
+        <fullName>42101</fullName>
+        <default>false</default>
+        <label>42101 ADMINISTRACION</label>
+    </customValue>
+    <customValue>
+        <fullName>42103</fullName>
+        <default>false</default>
+        <label>42103 INFORMATICA</label>
+    </customValue>
+    <customValue>
+        <fullName>42104</fullName>
+        <default>false</default>
+        <label>42104 LOGISTICA</label>
+    </customValue>
+    <customValue>
+        <fullName>42105</fullName>
+        <default>false</default>
+        <label>42105 CALIDAD</label>
+    </customValue>
+    <customValue>
+        <fullName>42109</fullName>
+        <default>false</default>
+        <label>42109 VARIOS</label>
+    </customValue>
+    <customValue>
+        <fullName>42121</fullName>
+        <default>false</default>
+        <label>42121 Coatings Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>42122</fullName>
+        <default>false</default>
+        <label>42122 Plastics &amp; Lubs Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>42123</fullName>
+        <default>false</default>
+        <label>42123 TEXTILE, RUBBER</label>
+    </customValue>
+    <customValue>
+        <fullName>42124</fullName>
+        <default>false</default>
+        <label>42124 Pharma Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>42125</fullName>
+        <default>false</default>
+        <label>42125 BUILDING CERAMICS</label>
+    </customValue>
+    <customValue>
+        <fullName>42126</fullName>
+        <default>false</default>
+        <label>42126 Advanced Materials Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>42127</fullName>
+        <default>false</default>
+        <label>42127 Food Portugal</label>
+    </customValue>
+    <customValue>
+        <fullName>42128</fullName>
+        <default>false</default>
+        <label>42128 Personal Care &amp; Detergency PT</label>
+    </customValue>
+    <customValue>
+        <fullName>43100</fullName>
+        <default>false</default>
+        <label>43100 IMCD MAROC SARL</label>
+    </customValue>
+    <customValue>
+        <fullName>43101</fullName>
+        <default>false</default>
+        <label>43101 ADMINISTRATION</label>
+    </customValue>
+    <customValue>
+        <fullName>43121</fullName>
+        <default>false</default>
+        <label>43121 OPERATIONAL BUSINESS UNIT</label>
+    </customValue>
+    <customValue>
+        <fullName>44100</fullName>
+        <default>false</default>
+        <label>44100 IMCD Tunisia SARL</label>
+    </customValue>
+    <customValue>
+        <fullName>44200</fullName>
+        <default>false</default>
+        <label>44200 IMCD MANUFACTURING SARL</label>
+    </customValue>
+    <customValue>
+        <fullName>45100</fullName>
+        <default>false</default>
+        <label>45100 IMCD ALGERIA</label>
+    </customValue>
+    <customValue>
+        <fullName>50100</fullName>
+        <default>false</default>
+        <label>50100 IMCD UK Investments Ltd.</label>
+    </customValue>
+    <customValue>
+        <fullName>50200</fullName>
+        <default>false</default>
+        <label>50200 IMCD UK ACQUISITIONS LIMITED</label>
+    </customValue>
+    <customValue>
+        <fullName>51000</fullName>
+        <default>false</default>
+        <label>51000 IMCD Holding UK Ltd.</label>
+    </customValue>
+    <customValue>
+        <fullName>51100</fullName>
+        <default>false</default>
+        <label>51100 IMCD UK Limited</label>
+    </customValue>
+    <customValue>
+        <fullName>51101</fullName>
+        <default>false</default>
+        <label>51101 General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>51102</fullName>
+        <default>false</default>
+        <label>51102 HSEQ</label>
+    </customValue>
+    <customValue>
+        <fullName>51103</fullName>
+        <default>false</default>
+        <label>51103 Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>51104</fullName>
+        <default>false</default>
+        <label>51104 Finance / IT</label>
+    </customValue>
+    <customValue>
+        <fullName>51105</fullName>
+        <default>false</default>
+        <label>51105 Ireland</label>
+    </customValue>
+    <customValue>
+        <fullName>51106</fullName>
+        <default>false</default>
+        <label>51106 MD</label>
+    </customValue>
+    <customValue>
+        <fullName>51107</fullName>
+        <default>false</default>
+        <label>51107 Office</label>
+    </customValue>
+    <customValue>
+        <fullName>51108</fullName>
+        <default>false</default>
+        <label>51108 Group Development</label>
+    </customValue>
+    <customValue>
+        <fullName>51109</fullName>
+        <default>false</default>
+        <label>51109 IPM</label>
+    </customValue>
+    <customValue>
+        <fullName>51121</fullName>
+        <default>false</default>
+        <label>51121 Food</label>
+    </customValue>
+    <customValue>
+        <fullName>51122</fullName>
+        <default>false</default>
+        <label>51122 Pharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>51123</fullName>
+        <default>false</default>
+        <label>51123 Industrials</label>
+    </customValue>
+    <customValue>
+        <fullName>51124</fullName>
+        <default>false</default>
+        <label>51124 Coatings &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>51125</fullName>
+        <default>false</default>
+        <label>51125 Corporate Business Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>51126</fullName>
+        <default>false</default>
+        <label>51126 Personal Care &amp; Detergents</label>
+    </customValue>
+    <customValue>
+        <fullName>51127</fullName>
+        <default>false</default>
+        <label>51127 Advanced Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>51128</fullName>
+        <default>false</default>
+        <label>51128 Egypt Business</label>
+    </customValue>
+    <customValue>
+        <fullName>55000</fullName>
+        <default>false</default>
+        <label>55000 IMCD HOLDING US, INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>55001</fullName>
+        <default>false</default>
+        <label>55001 OVERHEAD IMCD HOLDING US, INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>55100</fullName>
+        <default>false</default>
+        <label>55100 IMCD US, LLC</label>
+    </customValue>
+    <customValue>
+        <fullName>55101</fullName>
+        <default>false</default>
+        <label>55101 US General Management</label>
+    </customValue>
+    <customValue>
+        <fullName>55103</fullName>
+        <default>false</default>
+        <label>55103 US Customer Service</label>
+    </customValue>
+    <customValue>
+        <fullName>55104</fullName>
+        <default>false</default>
+        <label>55104 US Sales Support</label>
+    </customValue>
+    <customValue>
+        <fullName>55105</fullName>
+        <default>false</default>
+        <label>55105 US Supply Chain</label>
+    </customValue>
+    <customValue>
+        <fullName>55106</fullName>
+        <default>false</default>
+        <label>55106 US Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>55107</fullName>
+        <default>false</default>
+        <label>55107 US Human Resources</label>
+    </customValue>
+    <customValue>
+        <fullName>55108</fullName>
+        <default>false</default>
+        <label>55108 US Information Technology</label>
+    </customValue>
+    <customValue>
+        <fullName>55109</fullName>
+        <default>false</default>
+        <label>55109 US Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>551210</fullName>
+        <default>false</default>
+        <label>551210 US Coatings US</label>
+    </customValue>
+    <customValue>
+        <fullName>551211</fullName>
+        <default>false</default>
+        <label>551211 US Coatings Central</label>
+    </customValue>
+    <customValue>
+        <fullName>551212</fullName>
+        <default>false</default>
+        <label>551212 US Coatings Midwest</label>
+    </customValue>
+    <customValue>
+        <fullName>551213</fullName>
+        <default>false</default>
+        <label>551213 US Coatings Northeast</label>
+    </customValue>
+    <customValue>
+        <fullName>551214</fullName>
+        <default>false</default>
+        <label>551214 US Coatings Southeast</label>
+    </customValue>
+    <customValue>
+        <fullName>551215</fullName>
+        <default>false</default>
+        <label>551215 US Coatings Southwest</label>
+    </customValue>
+    <customValue>
+        <fullName>551216</fullName>
+        <default>false</default>
+        <label>551216 US Coatings West</label>
+    </customValue>
+    <customValue>
+        <fullName>551219</fullName>
+        <default>false</default>
+        <label>551219 US Coatings Inside Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>551220</fullName>
+        <default>false</default>
+        <label>551220 US Plastics US</label>
+    </customValue>
+    <customValue>
+        <fullName>551221</fullName>
+        <default>false</default>
+        <label>551221 US Plastics Central</label>
+    </customValue>
+    <customValue>
+        <fullName>551222</fullName>
+        <default>false</default>
+        <label>551222 US Plastics Midwest</label>
+    </customValue>
+    <customValue>
+        <fullName>551223</fullName>
+        <default>false</default>
+        <label>551223 US Plastics Northeast</label>
+    </customValue>
+    <customValue>
+        <fullName>551224</fullName>
+        <default>false</default>
+        <label>551224 US Plastics Southeast</label>
+    </customValue>
+    <customValue>
+        <fullName>551225</fullName>
+        <default>false</default>
+        <label>551225 US Plastics Southwest</label>
+    </customValue>
+    <customValue>
+        <fullName>551226</fullName>
+        <default>false</default>
+        <label>551226 US Plastics West</label>
+    </customValue>
+    <customValue>
+        <fullName>551229</fullName>
+        <default>false</default>
+        <label>551229 US Plastics Inside Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>551230</fullName>
+        <default>false</default>
+        <label>551230 US HPC US</label>
+    </customValue>
+    <customValue>
+        <fullName>551240</fullName>
+        <default>false</default>
+        <label>551240 US Pharma US</label>
+    </customValue>
+    <customValue>
+        <fullName>551250</fullName>
+        <default>false</default>
+        <label>551250 US Food US</label>
+    </customValue>
+    <customValue>
+        <fullName>55129</fullName>
+        <default>false</default>
+        <label>55129 Other Specialties</label>
+    </customValue>
+    <customValue>
+        <fullName>551300</fullName>
+        <default>false</default>
+        <label>551300 US IMCD US Central / IC</label>
+    </customValue>
+    <customValue>
+        <fullName>55200</fullName>
+        <default>false</default>
+        <label>55200 MJS SALES, INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>55201</fullName>
+        <default>false</default>
+        <label>55201 OVERHEAD MJS SALES</label>
+    </customValue>
+    <customValue>
+        <fullName>552210</fullName>
+        <default>false</default>
+        <label>552210 US-MJ Coatings US</label>
+    </customValue>
+    <customValue>
+        <fullName>552220</fullName>
+        <default>false</default>
+        <label>552220 US-MJ Plastics US</label>
+    </customValue>
+    <customValue>
+        <fullName>552300</fullName>
+        <default>false</default>
+        <label>552300 US-MJ IMCD US Central / IC</label>
+    </customValue>
+    <customValue>
+        <fullName>55400</fullName>
+        <default>false</default>
+        <label>55400 IMCD Puerto Rico</label>
+    </customValue>
+    <customValue>
+        <fullName>554230</fullName>
+        <default>false</default>
+        <label>554230 PR HPC PR</label>
+    </customValue>
+    <customValue>
+        <fullName>554240</fullName>
+        <default>false</default>
+        <label>554240 PR Pharma PR</label>
+    </customValue>
+    <customValue>
+        <fullName>554300</fullName>
+        <default>false</default>
+        <label>554300 PR IMCD PR Central / IC</label>
+    </customValue>
+    <customValue>
+        <fullName>55451</fullName>
+        <default>false</default>
+        <label>55451 MUTCHLER OF PUERTO RICO WH</label>
+    </customValue>
+    <customValue>
+        <fullName>55452</fullName>
+        <default>false</default>
+        <label>55452 CAPSR AVS SERVICES</label>
+    </customValue>
+    <customValue>
+        <fullName>55453</fullName>
+        <default>false</default>
+        <label>55453 PR SAMPLE WAREHOUSE</label>
+    </customValue>
+    <customValue>
+        <fullName>55500</fullName>
+        <default>false</default>
+        <label>55500 L.V. LOMAS INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>55521</fullName>
+        <default>false</default>
+        <label>55521 Coatings &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>55522</fullName>
+        <default>false</default>
+        <label>55522 Plastics &amp; Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>55523</fullName>
+        <default>false</default>
+        <label>55523 Lubricants</label>
+    </customValue>
+    <customValue>
+        <fullName>55524</fullName>
+        <default>false</default>
+        <label>55524 Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>55525</fullName>
+        <default>false</default>
+        <label>55525 Food</label>
+    </customValue>
+    <customValue>
+        <fullName>55526</fullName>
+        <default>false</default>
+        <label>55526 Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>55527</fullName>
+        <default>false</default>
+        <label>55527 Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>55528</fullName>
+        <default>false</default>
+        <label>55528 Home Care</label>
+    </customValue>
+    <customValue>
+        <fullName>56100</fullName>
+        <default>false</default>
+        <label>56100 L.V. LOMAS LIMITED</label>
+    </customValue>
+    <customValue>
+        <fullName>56121</fullName>
+        <default>false</default>
+        <label>56121 Coatings &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>56122</fullName>
+        <default>false</default>
+        <label>56122 Plastics &amp; Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>56123</fullName>
+        <default>false</default>
+        <label>56123 Lubricants</label>
+    </customValue>
+    <customValue>
+        <fullName>56124</fullName>
+        <default>false</default>
+        <label>56124 Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>56125</fullName>
+        <default>false</default>
+        <label>56125 Food</label>
+    </customValue>
+    <customValue>
+        <fullName>56126</fullName>
+        <default>false</default>
+        <label>56126 Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>56127</fullName>
+        <default>false</default>
+        <label>56127 Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>56128</fullName>
+        <default>false</default>
+        <label>56128 Home Care</label>
+    </customValue>
+    <customValue>
+        <fullName>56129</fullName>
+        <default>false</default>
+        <label>56129 Other Specialties</label>
+    </customValue>
+    <customValue>
+        <fullName>60200</fullName>
+        <default>false</default>
+        <label>60200 EMMA AUSTRALIA HOLDINGS PTY LT</label>
+    </customValue>
+    <customValue>
+        <fullName>61100</fullName>
+        <default>false</default>
+        <label>61100 IMCD AUSTRALIA LIMITED</label>
+    </customValue>
+    <customValue>
+        <fullName>61121</fullName>
+        <default>false</default>
+        <label>61121 AU Performance Products</label>
+    </customValue>
+    <customValue>
+        <fullName>61122</fullName>
+        <default>false</default>
+        <label>61122 AU Coatings &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>61123</fullName>
+        <default>false</default>
+        <label>61123 AU Food</label>
+    </customValue>
+    <customValue>
+        <fullName>61124</fullName>
+        <default>false</default>
+        <label>61124 AU Lubricants &amp; Petrochemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>61125</fullName>
+        <default>false</default>
+        <label>61125 AU Plastics &amp; Elastomers</label>
+    </customValue>
+    <customValue>
+        <fullName>61126</fullName>
+        <default>false</default>
+        <label>61126 AU Filtration</label>
+    </customValue>
+    <customValue>
+        <fullName>61127</fullName>
+        <default>false</default>
+        <label>61127 AU Nutraceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>61128</fullName>
+        <default>false</default>
+        <label>61128 AU Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>61129</fullName>
+        <default>false</default>
+        <label>61129 AU Muskvale</label>
+    </customValue>
+    <customValue>
+        <fullName>62100</fullName>
+        <default>false</default>
+        <label>62100 NZ IMCD New Zealand Limited</label>
+    </customValue>
+    <customValue>
+        <fullName>62121</fullName>
+        <default>false</default>
+        <label>62121 NZ Performance Products</label>
+    </customValue>
+    <customValue>
+        <fullName>62122</fullName>
+        <default>false</default>
+        <label>62122 NZ Coatings &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>62123</fullName>
+        <default>false</default>
+        <label>62123 NZ Food</label>
+    </customValue>
+    <customValue>
+        <fullName>62125</fullName>
+        <default>false</default>
+        <label>62125 NZ Plastics &amp; Elastomers</label>
+    </customValue>
+    <customValue>
+        <fullName>62128</fullName>
+        <default>false</default>
+        <label>62128 NZ Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>64100</fullName>
+        <default>false</default>
+        <label>64100 IMCD EGYPT LLC</label>
+    </customValue>
+    <customValue>
+        <fullName>64200</fullName>
+        <default>false</default>
+        <label>64200 INTERNATIO SPECIAL PROD.EGYPT</label>
+    </customValue>
+    <customValue>
+        <fullName>65100</fullName>
+        <default>false</default>
+        <label>65100 IMCD Türkiye</label>
+    </customValue>
+    <customValue>
+        <fullName>65101</fullName>
+        <default>false</default>
+        <label>65101 Overhead IMCD Türkiye</label>
+    </customValue>
+    <customValue>
+        <fullName>65102</fullName>
+        <default>false</default>
+        <label>65102 IMCD Türkiye BYK Delegates</label>
+    </customValue>
+    <customValue>
+        <fullName>65121</fullName>
+        <default>false</default>
+        <label>65121 Industrial SBU IMCD Türkiye</label>
+    </customValue>
+    <customValue>
+        <fullName>65122</fullName>
+        <default>false</default>
+        <label>65122 Life Science SBU IMCD Türkiye</label>
+    </customValue>
+    <customValue>
+        <fullName>66100</fullName>
+        <default>false</default>
+        <label>66100 IMCD ARGENTINA SRL</label>
+    </customValue>
+    <customValue>
+        <fullName>67100</fullName>
+        <default>false</default>
+        <label>67100 IMCD SOUTH AFRICA (PTY) LTD.</label>
+    </customValue>
+    <customValue>
+        <fullName>67101</fullName>
+        <default>false</default>
+        <label>67101 Admin/HR/Finance/IT</label>
+    </customValue>
+    <customValue>
+        <fullName>67121</fullName>
+        <default>false</default>
+        <label>67121 Food</label>
+    </customValue>
+    <customValue>
+        <fullName>67122</fullName>
+        <default>false</default>
+        <label>67122 Coatings &amp; Adhesives</label>
+    </customValue>
+    <customValue>
+        <fullName>67123</fullName>
+        <default>false</default>
+        <label>67123 Plastics &amp; Advanced Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>67124</fullName>
+        <default>false</default>
+        <label>67124 Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>67125</fullName>
+        <default>false</default>
+        <label>67125 Pharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>67126</fullName>
+        <default>false</default>
+        <label>67126 New 1 - NOT IN USE</label>
+    </customValue>
+    <customValue>
+        <fullName>67127</fullName>
+        <default>false</default>
+        <label>67127 New 2 - NOT IN USE</label>
+    </customValue>
+    <customValue>
+        <fullName>67131</fullName>
+        <default>false</default>
+        <label>67131 FOOD &amp; NUTRITION</label>
+    </customValue>
+    <customValue>
+        <fullName>67132</fullName>
+        <default>false</default>
+        <label>67132 COATINGS</label>
+    </customValue>
+    <customValue>
+        <fullName>67133</fullName>
+        <default>false</default>
+        <label>67133 CONSTRUCTION,INKS, ADHESIVES</label>
+    </customValue>
+    <customValue>
+        <fullName>67134</fullName>
+        <default>false</default>
+        <label>67134 PLASTICS</label>
+    </customValue>
+    <customValue>
+        <fullName>67135</fullName>
+        <default>false</default>
+        <label>67135 RUBBER,ASPHALT, LUBRICANTS</label>
+    </customValue>
+    <customValue>
+        <fullName>67136</fullName>
+        <default>false</default>
+        <label>67136 Commodity Plastics</label>
+    </customValue>
+    <customValue>
+        <fullName>67137</fullName>
+        <default>false</default>
+        <label>67137 PHARMA, PERSONAL CARE (PPC)</label>
+    </customValue>
+    <customValue>
+        <fullName>67145</fullName>
+        <default>false</default>
+        <label>67145 CONSIGNMENT BRUEGGEMANN</label>
+    </customValue>
+    <customValue>
+        <fullName>67152</fullName>
+        <default>false</default>
+        <label>67152 FREIGHTPAK C.T.</label>
+    </customValue>
+    <customValue>
+        <fullName>67153</fullName>
+        <default>false</default>
+        <label>67153 VALUE LOGIST.-FREIGHTPAK DBN</label>
+    </customValue>
+    <customValue>
+        <fullName>67158</fullName>
+        <default>false</default>
+        <label>67158 FREIGHTPAK PE</label>
+    </customValue>
+    <customValue>
+        <fullName>67159</fullName>
+        <default>false</default>
+        <label>67159 VALUE LOGIST.-FREIGHTPAK SPART</label>
+    </customValue>
+    <customValue>
+        <fullName>67164</fullName>
+        <default>false</default>
+        <label>67164 STOCK JOBURG OFFICE</label>
+    </customValue>
+    <customValue>
+        <fullName>67165</fullName>
+        <default>false</default>
+        <label>67165 STOCK DURBAN OFFICE</label>
+    </customValue>
+    <customValue>
+        <fullName>67168</fullName>
+        <default>false</default>
+        <label>67168 STOCK CULTURES OFFICE</label>
+    </customValue>
+    <customValue>
+        <fullName>67171</fullName>
+        <default>false</default>
+        <label>67171 CARBORON (PTY) LTD (BLENDING)</label>
+    </customValue>
+    <customValue>
+        <fullName>67173</fullName>
+        <default>false</default>
+        <label>67173 EXPANCEL PRODUCTION PLANT</label>
+    </customValue>
+    <customValue>
+        <fullName>67175</fullName>
+        <default>false</default>
+        <label>67175 PORT OF DEPARTURE</label>
+    </customValue>
+    <customValue>
+        <fullName>67176</fullName>
+        <default>false</default>
+        <label>67176 PORT OF ARRIVAL DBN</label>
+    </customValue>
+    <customValue>
+        <fullName>67177</fullName>
+        <default>false</default>
+        <label>67177 DURBAN PORT</label>
+    </customValue>
+    <customValue>
+        <fullName>67178</fullName>
+        <default>false</default>
+        <label>67178 VALUE JHB</label>
+    </customValue>
+    <customValue>
+        <fullName>67179</fullName>
+        <default>false</default>
+        <label>67179 JUDD CHEMICAL IND. CC</label>
+    </customValue>
+    <customValue>
+        <fullName>67200</fullName>
+        <default>false</default>
+        <label>67200 IMCD KENYA LIMITED</label>
+    </customValue>
+    <customValue>
+        <fullName>67221</fullName>
+        <default>false</default>
+        <label>67221 IMCD Kenya BU (67221)</label>
+    </customValue>
+    <customValue>
+        <fullName>68100</fullName>
+        <default>false</default>
+        <label>68100 IMCD CHILE SPA</label>
+    </customValue>
+    <customValue>
+        <fullName>68500</fullName>
+        <default>false</default>
+        <label>68500 IMCD URUGUAY SA</label>
+    </customValue>
+    <customValue>
+        <fullName>69000</fullName>
+        <default>false</default>
+        <label>69000 IMCD HOLDING BRAZIL LTDA</label>
+    </customValue>
+    <customValue>
+        <fullName>69100</fullName>
+        <default>false</default>
+        <label>69100 IMCD BRAZIL LTDA</label>
+    </customValue>
+    <customValue>
+        <fullName>691102</fullName>
+        <default>false</default>
+        <label>691102 PH - NESTLE CONSIGNMENT STOCK</label>
+    </customValue>
+    <customValue>
+        <fullName>69121</fullName>
+        <default>false</default>
+        <label>69121 BR Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>69122</fullName>
+        <default>false</default>
+        <label>69122 BR Food</label>
+    </customValue>
+    <customValue>
+        <fullName>69123</fullName>
+        <default>false</default>
+        <label>69123 BR Personal care</label>
+    </customValue>
+    <customValue>
+        <fullName>69125</fullName>
+        <default>false</default>
+        <label>69125 BR Lubricants</label>
+    </customValue>
+    <customValue>
+        <fullName>69126</fullName>
+        <default>false</default>
+        <label>69126 BR Detergents &amp; Cleaners</label>
+    </customValue>
+    <customValue>
+        <fullName>69127</fullName>
+        <default>false</default>
+        <label>69127 BR Plastics &amp; Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>69128</fullName>
+        <default>false</default>
+        <label>69128 BR Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>69129</fullName>
+        <default>false</default>
+        <label>69129 BR Other Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>69200</fullName>
+        <default>false</default>
+        <label>69200 IMCD BRASIL FARMA</label>
+    </customValue>
+    <customValue>
+        <fullName>69221</fullName>
+        <default>false</default>
+        <label>69221 BR Pharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>702298</fullName>
+        <default>false</default>
+        <label>702298 AKZO NOBEL PAINTS TH - CONSI</label>
+    </customValue>
+    <customValue>
+        <fullName>71100</fullName>
+        <default>false</default>
+        <label>71100 IMCD (SHANGHAI) TRADING CO. LT</label>
+    </customValue>
+    <customValue>
+        <fullName>71121</fullName>
+        <default>false</default>
+        <label>71121 CN Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>71122</fullName>
+        <default>false</default>
+        <label>71122 CN Detergents</label>
+    </customValue>
+    <customValue>
+        <fullName>71123</fullName>
+        <default>false</default>
+        <label>71123 CN Food &amp; Nutrition</label>
+    </customValue>
+    <customValue>
+        <fullName>71124</fullName>
+        <default>false</default>
+        <label>71124 CN Lubricants</label>
+    </customValue>
+    <customValue>
+        <fullName>71125</fullName>
+        <default>false</default>
+        <label>71125 CN Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>71126</fullName>
+        <default>false</default>
+        <label>71126 CN Pharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>71127</fullName>
+        <default>false</default>
+        <label>71127 CN Plastics</label>
+    </customValue>
+    <customValue>
+        <fullName>71128</fullName>
+        <default>false</default>
+        <label>71128 CN Sourcing &amp; Export</label>
+    </customValue>
+    <customValue>
+        <fullName>71129</fullName>
+        <default>false</default>
+        <label>71129 CN Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>71130</fullName>
+        <default>false</default>
+        <label>71130 CN Other Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>72100</fullName>
+        <default>false</default>
+        <label>72100 IMCD INDIA PVT LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>73000</fullName>
+        <default>false</default>
+        <label>73000 IMCD ASIA PACIFIC SDN BHD</label>
+    </customValue>
+    <customValue>
+        <fullName>73100</fullName>
+        <default>false</default>
+        <label>73100 IMCD MALAYSIA SDN BHD</label>
+    </customValue>
+    <customValue>
+        <fullName>73101</fullName>
+        <default>false</default>
+        <label>73101 OVERHEAD IMCD MALAYSIA SDN BHD</label>
+    </customValue>
+    <customValue>
+        <fullName>73121</fullName>
+        <default>false</default>
+        <label>73121 SBU IMCD MALAYSIA SDN BHD</label>
+    </customValue>
+    <customValue>
+        <fullName>74100</fullName>
+        <default>false</default>
+        <label>74100 IMCD ASIA PTE LTD.</label>
+    </customValue>
+    <customValue>
+        <fullName>74200</fullName>
+        <default>false</default>
+        <label>74200 IMCD SINGAPORE PTE LTD.</label>
+    </customValue>
+    <customValue>
+        <fullName>74201</fullName>
+        <default>false</default>
+        <label>74201 OVERH. IMCD SINGAPORE PTE LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>74221</fullName>
+        <default>false</default>
+        <label>74221 SBU IMCD SINGAPORE PTE LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>75000</fullName>
+        <default>false</default>
+        <label>75000 PT IMCD INDONESIA</label>
+    </customValue>
+    <customValue>
+        <fullName>75100</fullName>
+        <default>false</default>
+        <label>75100 PT IMCD INDONESIA</label>
+    </customValue>
+    <customValue>
+        <fullName>75101</fullName>
+        <default>false</default>
+        <label>75101 PT IMCD INDONESIA</label>
+    </customValue>
+    <customValue>
+        <fullName>75121</fullName>
+        <default>false</default>
+        <label>75121 SBU PLASTICS</label>
+    </customValue>
+    <customValue>
+        <fullName>75122</fullName>
+        <default>false</default>
+        <label>75122 SBU LUBRICANTS</label>
+    </customValue>
+    <customValue>
+        <fullName>75123</fullName>
+        <default>false</default>
+        <label>75123 SBU COATINGS</label>
+    </customValue>
+    <customValue>
+        <fullName>75124</fullName>
+        <default>false</default>
+        <label>75124 SBU PHARMA</label>
+    </customValue>
+    <customValue>
+        <fullName>75125</fullName>
+        <default>false</default>
+        <label>75125 SBU NUTRITION</label>
+    </customValue>
+    <customValue>
+        <fullName>75126</fullName>
+        <default>false</default>
+        <label>75126 SBU PERSONAL &amp; HOME CARE</label>
+    </customValue>
+    <customValue>
+        <fullName>75127</fullName>
+        <default>false</default>
+        <label>75127 SBU FOOD 1</label>
+    </customValue>
+    <customValue>
+        <fullName>75128</fullName>
+        <default>false</default>
+        <label>75128 SBU FOOD 2</label>
+    </customValue>
+    <customValue>
+        <fullName>75129</fullName>
+        <default>false</default>
+        <label>75129 SBU FOOD 3</label>
+    </customValue>
+    <customValue>
+        <fullName>75200</fullName>
+        <default>false</default>
+        <label>75200 PT SAPTA PERMATA</label>
+    </customValue>
+    <customValue>
+        <fullName>75201</fullName>
+        <default>false</default>
+        <label>75201 PT SAPTA PERMATA</label>
+    </customValue>
+    <customValue>
+        <fullName>75221</fullName>
+        <default>false</default>
+        <label>75221 PT SAPTA PERMATA</label>
+    </customValue>
+    <customValue>
+        <fullName>76100</fullName>
+        <default>false</default>
+        <label>76100 IMCD (THAILAND) CO. LTD.</label>
+    </customValue>
+    <customValue>
+        <fullName>76121</fullName>
+        <default>false</default>
+        <label>76121 IMCD (THAILAND) CO. LTD.</label>
+    </customValue>
+    <customValue>
+        <fullName>76151</fullName>
+        <default>false</default>
+        <label>76151 MITS LOGISTICS (THAILAND) CO.</label>
+    </customValue>
+    <customValue>
+        <fullName>76152</fullName>
+        <default>false</default>
+        <label>76152 GRAND EMPORIUM LOGISTICS CO.</label>
+    </customValue>
+    <customValue>
+        <fullName>76153</fullName>
+        <default>false</default>
+        <label>76153 IMCD (THAILAND)  - OFFICE WH</label>
+    </customValue>
+    <customValue>
+        <fullName>76154</fullName>
+        <default>false</default>
+        <label>76154 BANGKOK COLD STORAGE SERVICE</label>
+    </customValue>
+    <customValue>
+        <fullName>77100</fullName>
+        <default>false</default>
+        <label>77100 IMCD PHILIPPINES CORPORATION</label>
+    </customValue>
+    <customValue>
+        <fullName>77200</fullName>
+        <default>false</default>
+        <label>77200 IMCD PHILIPPINES CORP. INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>77221</fullName>
+        <default>false</default>
+        <label>77221 IMCD PHILIPPINES CORP. INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>77251</fullName>
+        <default>false</default>
+        <label>77251 IMCD PH - CTSI LOGISTICS</label>
+    </customValue>
+    <customValue>
+        <fullName>77252</fullName>
+        <default>false</default>
+        <label>77252 IMCD PH - CONS. DAIRY&amp;FROZEN F</label>
+    </customValue>
+    <customValue>
+        <fullName>77253</fullName>
+        <default>false</default>
+        <label>77253 IMCD PH - JENTEC STORAGE INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>77254</fullName>
+        <default>false</default>
+        <label>77254 IMCD PH - TECHNOFREEZE INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>77255</fullName>
+        <default>false</default>
+        <label>77255 IMCD PH - OFFICE WAREHOUSE</label>
+    </customValue>
+    <customValue>
+        <fullName>77256</fullName>
+        <default>false</default>
+        <label>77256 IMCD PH - UTI GLOBAL LOGISTICS</label>
+    </customValue>
+    <customValue>
+        <fullName>78100</fullName>
+        <default>false</default>
+        <label>78100 IMCD VIETNAM COMPANY LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>78121</fullName>
+        <default>false</default>
+        <label>78121 IMCD VIETNAM COMPANY LTD</label>
+    </customValue>
+    <customValue>
+        <fullName>79100</fullName>
+        <default>false</default>
+        <label>79100 IMCD JAPAN</label>
+    </customValue>
+    <customValue>
+        <fullName>79121</fullName>
+        <default>false</default>
+        <label>79121 IMCD JAPAN</label>
+    </customValue>
+    <customValue>
+        <fullName>80100</fullName>
+        <default>false</default>
+        <label>80100 IMCD Italy S.r.l.</label>
+    </customValue>
+    <customValue>
+        <fullName>80101</fullName>
+        <default>false</default>
+        <label>80101 General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>81000</fullName>
+        <default>false</default>
+        <label>81000 IMCD Italy</label>
+    </customValue>
+    <customValue>
+        <fullName>81001</fullName>
+        <default>false</default>
+        <label>81001 General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>81100</fullName>
+        <default>false</default>
+        <label>81100 IMCD Italia SpA</label>
+    </customValue>
+    <customValue>
+        <fullName>81101</fullName>
+        <default>false</default>
+        <label>81101 General Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>81121</fullName>
+        <default>false</default>
+        <label>81121 Plastics &amp; Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>81122</fullName>
+        <default>false</default>
+        <label>81122 Coatings,Building,Adhes.&amp; Inks</label>
+    </customValue>
+    <customValue>
+        <fullName>81123</fullName>
+        <default>false</default>
+        <label>81123 Pharma &amp; Cosmetics</label>
+    </customValue>
+    <customValue>
+        <fullName>81124</fullName>
+        <default>false</default>
+        <label>81124 Detergency, Lubric. &amp; Textile</label>
+    </customValue>
+    <customValue>
+        <fullName>81125</fullName>
+        <default>false</default>
+        <label>81125 Intercompany Business</label>
+    </customValue>
+    <customValue>
+        <fullName>81126</fullName>
+        <default>false</default>
+        <label>81126 Food &amp; Instruments</label>
+    </customValue>
+    <customValue>
+        <fullName>82100</fullName>
+        <default>false</default>
+        <label>82100 NEUVENDIS S.P.A.</label>
+    </customValue>
+    <customValue>
+        <fullName>82101</fullName>
+        <default>false</default>
+        <label>82101 NEUVENDIS S.P.A.</label>
+    </customValue>
+    <customValue>
+        <fullName>82121</fullName>
+        <default>false</default>
+        <label>82121 NEUVENDIS S.P.A.</label>
+    </customValue>
+    <customValue>
+        <fullName>90100</fullName>
+        <default>false</default>
+        <label>90100 BS IMCD France SNC</label>
+    </customValue>
+    <customValue>
+        <fullName>90101</fullName>
+        <default>false</default>
+        <label>90101 General OH IMCD France SNCF</label>
+    </customValue>
+    <customValue>
+        <fullName>90200</fullName>
+        <default>false</default>
+        <label>90200 IMCD FRANCE INVESTMENTS SAS</label>
+    </customValue>
+    <customValue>
+        <fullName>91000</fullName>
+        <default>false</default>
+        <label>91000 BS IM France SA</label>
+    </customValue>
+    <customValue>
+        <fullName>91001</fullName>
+        <default>false</default>
+        <label>91001 General OH IM France SA</label>
+    </customValue>
+    <customValue>
+        <fullName>91100</fullName>
+        <default>false</default>
+        <label>91100 IMCD France SAS</label>
+    </customValue>
+    <customValue>
+        <fullName>91101</fullName>
+        <default>false</default>
+        <label>91101 Direction Commercial</label>
+    </customValue>
+    <customValue>
+        <fullName>91102</fullName>
+        <default>false</default>
+        <label>91102 Developement</label>
+    </customValue>
+    <customValue>
+        <fullName>91103</fullName>
+        <default>false</default>
+        <label>91103 Fabrication</label>
+    </customValue>
+    <customValue>
+        <fullName>91104</fullName>
+        <default>false</default>
+        <label>91104 Direction Generale</label>
+    </customValue>
+    <customValue>
+        <fullName>91105</fullName>
+        <default>false</default>
+        <label>91105 Service Personnel</label>
+    </customValue>
+    <customValue>
+        <fullName>91106</fullName>
+        <default>false</default>
+        <label>91106 Logistique</label>
+    </customValue>
+    <customValue>
+        <fullName>91107</fullName>
+        <default>false</default>
+        <label>91107 Frais Generaux LPSD</label>
+    </customValue>
+    <customValue>
+        <fullName>91108</fullName>
+        <default>false</default>
+        <label>91108 Informatique</label>
+    </customValue>
+    <customValue>
+        <fullName>91109</fullName>
+        <default>false</default>
+        <label>91109 Qualite</label>
+    </customValue>
+    <customValue>
+        <fullName>91110</fullName>
+        <default>false</default>
+        <label>91110 Finance Comptabilite</label>
+    </customValue>
+    <customValue>
+        <fullName>91111</fullName>
+        <default>false</default>
+        <label>91111 Frais Generaux Lyon</label>
+    </customValue>
+    <customValue>
+        <fullName>91112</fullName>
+        <default>false</default>
+        <label>91112 Overhead SPCI Additifs</label>
+    </customValue>
+    <customValue>
+        <fullName>91113</fullName>
+        <default>false</default>
+        <label>91113 LABORATORY JAN DEKKER</label>
+    </customValue>
+    <customValue>
+        <fullName>91121</fullName>
+        <default>false</default>
+        <label>91121 Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>91122</fullName>
+        <default>false</default>
+        <label>91122 Lubricans, Synthesis, Deterge</label>
+    </customValue>
+    <customValue>
+        <fullName>91123</fullName>
+        <default>false</default>
+        <label>91123 Plastics &amp; rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>91124</fullName>
+        <default>false</default>
+        <label>91124 Food</label>
+    </customValue>
+    <customValue>
+        <fullName>91125</fullName>
+        <default>false</default>
+        <label>91125 Agro</label>
+    </customValue>
+    <customValue>
+        <fullName>91126</fullName>
+        <default>false</default>
+        <label>91126 Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>91127</fullName>
+        <default>false</default>
+        <label>91127 Textile, Paper, Water Treatmen</label>
+    </customValue>
+    <customValue>
+        <fullName>91128</fullName>
+        <default>false</default>
+        <label>91128 IMCD France Additifs Direct</label>
+    </customValue>
+    <customValue>
+        <fullName>91129</fullName>
+        <default>false</default>
+        <label>91129 Pharmaceutical</label>
+    </customValue>
+    <customValue>
+        <fullName>91200</fullName>
+        <default>false</default>
+        <label>91200 SPCI  ADDITIFS</label>
+    </customValue>
+    <customValue>
+        <fullName>91201</fullName>
+        <default>false</default>
+        <label>91201 Overhead SPCI Additifs</label>
+    </customValue>
+    <customValue>
+        <fullName>91221</fullName>
+        <default>false</default>
+        <label>91221 SPCI ADDITIFS</label>
+    </customValue>
+    <customValue>
+        <fullName>99900</fullName>
+        <default>false</default>
+        <label>99900 IMCD TEST Company - TEST</label>
+    </customValue>
+    <customValue>
+        <fullName>99901</fullName>
+        <default>false</default>
+        <label>99901 IMCD TEST - Gen. Overhead</label>
+    </customValue>
+    <customValue>
+        <fullName>99925</fullName>
+        <default>false</default>
+        <label>99925 IMCD TEST Pharma&amp;Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>99926</fullName>
+        <default>false</default>
+        <label>99926 IMCD TEST Food / Feed</label>
+    </customValue>
+    <customValue>
+        <fullName>99927</fullName>
+        <default>false</default>
+        <label>99927 IMCD TEST Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>99998</fullName>
+        <default>false</default>
+        <label>99998 CoA model BU limited subset</label>
+    </customValue>
+    <customValue>
+        <fullName>99999</fullName>
+        <default>false</default>
+        <label>99999 IMCD European COA Company</label>
+    </customValue>
+    <customValue>
+        <fullName>1</fullName>
+        <default>false</default>
+        <label>1 Default Business Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>100</fullName>
+        <default>false</default>
+        <label>100 IMCD (Master Company)</label>
+    </customValue>
+    <customValue>
+        <fullName>110</fullName>
+        <default>false</default>
+        <label>110 IMCD Services BV</label>
+    </customValue>
+    <customValue>
+        <fullName>111</fullName>
+        <default>false</default>
+        <label>111 IMCD Participations II B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>112</fullName>
+        <default>false</default>
+        <label>112 IMCD Group B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>113</fullName>
+        <default>false</default>
+        <label>113 IMCD HOLDING B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>114</fullName>
+        <default>false</default>
+        <label>114 WILHELMINA FINCO B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>115</fullName>
+        <default>false</default>
+        <label>115 INTERNATIO SPECIAL PRODUCTS BV</label>
+    </customValue>
+    <customValue>
+        <fullName>120</fullName>
+        <default>false</default>
+        <label>120 IMCD FINANCE B.V.</label>
+    </customValue>
+    <customValue>
+        <fullName>81127</fullName>
+        <default>false</default>
+        <label>81127 - Pharma</label>
+    </customValue>
+    <customValue>
+        <fullName>55300</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>55300 MUTCHLER INC.</label>
+    </customValue>
+    <customValue>
+        <fullName>55353</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>55353 BROOK LINDEN WAREHOUSE</label>
+    </customValue>
+    <customValue>
+        <fullName>55352</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>55352 US SAMPLE WAREHOUSE</label>
+    </customValue>
+    <customValue>
+        <fullName>55351</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>55351 BROOK WAREHOUSE MUTCHLER</label>
+    </customValue>
+    <description>IMCD Business Unit and Numbers</description>
+    <masterLabel>IMCD Business Unit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

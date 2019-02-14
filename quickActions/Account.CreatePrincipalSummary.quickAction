@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This flow starts a (Screen) Flow to create a Principal Summary Report / Report Lines construct. Used to create a Principal Summary (Webmerge) document.</description>
+    <flowDefinition>Create_Principal_Summary_Flow</flowDefinition>
+    <label>Create Principal Summary</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

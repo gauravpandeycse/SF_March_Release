@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>BE Refineries, Lubricants, Water (22126)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>BE Refineries, Lubricants, Water (22126)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>BE_Refineries_Lubricants_Water_Manager</parentRole>
+</Role>

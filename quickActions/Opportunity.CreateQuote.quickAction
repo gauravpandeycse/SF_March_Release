@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>QuoteType__c</field>
+        <literalValue>Customer</literalValue>
+    </fieldOverrides>
+    <label>Create Customer Quote</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns/>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>SBQQ__Quote__c</targetObject>
+    <targetParentField>SBQQ__Opportunity2__c</targetParentField>
+    <targetRecordType>SBQQ__Quote__c.CustomerQuote</targetRecordType>
+    <type>Create</type>
+</QuickAction>

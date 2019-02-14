@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Adhesives &amp; Sealants</fullName>
+        <default>false</default>
+        <label>Adhesives &amp; Sealants</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors</fullName>
+        <default>false</default>
+        <label>Distributors</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Coatings</fullName>
+        <default>false</default>
+        <label>Industrial Coatings</label>
+    </customValue>
+    <customValue>
+        <fullName>Inks</fullName>
+        <default>false</default>
+        <label>Inks</label>
+    </customValue>
+    <customValue>
+        <fullName>Paints</fullName>
+        <default>false</default>
+        <label>Paints</label>
+    </customValue>
+    <customValue>
+        <fullName>Animal Nutrition</fullName>
+        <default>false</default>
+        <label>Animal Nutrition</label>
+    </customValue>
+    <customValue>
+        <fullName>Bakery</fullName>
+        <default>false</default>
+        <label>Bakery</label>
+    </customValue>
+    <customValue>
+        <fullName>Beverage</fullName>
+        <default>false</default>
+        <label>Beverage</label>
+    </customValue>
+    <customValue>
+        <fullName>Confectionery</fullName>
+        <default>false</default>
+        <label>Confectionery</label>
+    </customValue>
+    <customValue>
+        <fullName>Dairy</fullName>
+        <default>false</default>
+        <label>Dairy</label>
+    </customValue>
+    <customValue>
+        <fullName>Edible Oils &amp; Fats</fullName>
+        <default>false</default>
+        <label>Edible Oils &amp; Fats</label>
+    </customValue>
+    <customValue>
+        <fullName>Fruits &amp; Vegetables</fullName>
+        <default>false</default>
+        <label>Fruits &amp; Vegetables</label>
+    </customValue>
+    <customValue>
+        <fullName>Ingredients Manufacturers</fullName>
+        <default>false</default>
+        <label>Ingredients Manufacturers</label>
+    </customValue>
+    <customValue>
+        <fullName>Nutrition</fullName>
+        <default>false</default>
+        <label>Nutrition</label>
+    </customValue>
+    <customValue>
+        <fullName>Savoury</fullName>
+        <default>false</default>
+        <label>Savoury</label>
+    </customValue>
+    <customValue>
+        <fullName>Distributors &amp; Traders</fullName>
+        <default>false</default>
+        <label>Distributors &amp; Traders</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Care</fullName>
+        <default>false</default>
+        <label>Home Care</label>
+    </customValue>
+    <customValue>
+        <fullName>I&amp;I</fullName>
+        <default>false</default>
+        <label>I&amp;I</label>
+    </customValue>
+    <customValue>
+        <fullName>Drilling fluids</fullName>
+        <default>false</default>
+        <label>Drilling fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>Driveline fluids</fullName>
+        <default>false</default>
+        <label>Driveline fluids</label>
+    </customValue>
+    <customValue>
+        <fullName>Engine oils</fullName>
+        <default>false</default>
+        <label>Engine oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Fuel Additives</fullName>
+        <default>false</default>
+        <label>Fuel Additives</label>
+    </customValue>
+    <customValue>
+        <fullName>Fuels</fullName>
+        <default>false</default>
+        <label>Fuels</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial oils</fullName>
+        <default>false</default>
+        <label>Industrial oils</label>
+    </customValue>
+    <customValue>
+        <fullName>Lubricants</fullName>
+        <default>false</default>
+        <label>Lubricants</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Electronics</fullName>
+        <default>false</default>
+        <label>Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>High Temperature Products</fullName>
+        <default>false</default>
+        <label>High Temperature Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Lab Instruments</fullName>
+        <default>false</default>
+        <label>Lab Instruments</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining</fullName>
+        <default>false</default>
+        <label>Mining</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil &amp; Gas Processing</fullName>
+        <default>false</default>
+        <label>Oil &amp; Gas Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Pulp Paper &amp; Board</fullName>
+        <default>false</default>
+        <label>Pulp Paper &amp; Board</label>
+    </customValue>
+    <customValue>
+        <fullName>Textile</fullName>
+        <default>false</default>
+        <label>Textile</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Treatment</fullName>
+        <default>false</default>
+        <label>Water Treatment</label>
+    </customValue>
+    <customValue>
+        <fullName>Cosmetics</fullName>
+        <default>false</default>
+        <label>Cosmetics</label>
+    </customValue>
+    <customValue>
+        <fullName>Fragrances</fullName>
+        <default>false</default>
+        <label>Fragrances</label>
+    </customValue>
+    <customValue>
+        <fullName>Agrochemicals Formulation</fullName>
+        <default>false</default>
+        <label>Agrochemicals Formulation</label>
+    </customValue>
+    <customValue>
+        <fullName>Agrochemicals Synthesis</fullName>
+        <default>false</default>
+        <label>Agrochemicals Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>Lab. &amp; Medical</fullName>
+        <default>false</default>
+        <label>Lab. &amp; Medical</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals Formulation</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals Formulation</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals Synthesis</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals Synthesis</label>
+    </customValue>
+    <customValue>
+        <fullName>Composites</fullName>
+        <default>false</default>
+        <label>Composites</label>
+    </customValue>
+    <customValue>
+        <fullName>Converters</fullName>
+        <default>false</default>
+        <label>Converters</label>
+    </customValue>
+    <customValue>
+        <fullName>Plastic Compounders</fullName>
+        <default>false</default>
+        <label>Plastic Compounders</label>
+    </customValue>
+    <customValue>
+        <fullName>Polyurethane</fullName>
+        <default>false</default>
+        <label>Polyurethane</label>
+    </customValue>
+    <customValue>
+        <fullName>Rubber</fullName>
+        <default>false</default>
+        <label>Rubber</label>
+    </customValue>
+    <customValue>
+        <fullName>Polymerization</fullName>
+        <default>false</default>
+        <label>Polymerization</label>
+    </customValue>
+    <customValue>
+        <fullName>Synthesis Industrial</fullName>
+        <default>false</default>
+        <label>Synthesis Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Biopharmaceuticals</fullName>
+        <default>false</default>
+        <label>Biopharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>Coatings &amp; Construction Distributors</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Coatings &amp; Construction Distributors</label>
+    </customValue>
+    <masterLabel>LOB2</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

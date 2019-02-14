@@ -1,0 +1,15 @@
+<design:component>
+
+    <!-- required -->
+    <design:attribute name="objectName" label="Object API Name" required="true" description="Required. Object API Name for the specified bject API Field Name field."/>
+    <design:attribute name="fieldName" label="Object API Field Name" required="true" description="Required. Object API Field Name for the Picklist field"/>
+    <design:attribute name="value" label="Input/Output Picklist Value" required="true" description="The value of the select, also used as the default value to select the right option during init. If no value is provided, the first option will be selected."/>
+
+    <!-- optional -->
+    <design:attribute name="recordId" label="Record ID" required="false" description="Optional. Record ID of sObject for which to get the Picklist value defaulted"/>
+    <design:attribute name="label" label="Label" required="false" description="Optional. Text that describes the desired select input. Default is the field's label."/>
+    <design:attribute name="class" label="Outer CSS Class" required="false" description="Optiobnal. A CSS class that will be applied to the outer element. This style is in addition to base classes associated with the component."/>
+    <design:attribute name="required" label="Required" required="false" description="Optional. Is this picklist required?"/>
+    <design:attribute name="disabled" label="Disabled" required="false" description="Optional. Disable the picklist."/>
+
+</design:component>

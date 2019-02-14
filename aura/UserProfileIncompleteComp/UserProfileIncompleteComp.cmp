@@ -1,0 +1,47 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="userRecord" type="Object"/>
+    <aura:attribute name="url" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+	<force:recordData aura:id="userDataService"
+		recordId="{!$SObjectType.CurrentUser.Id}"
+		layoutType="FULL"
+		targetFields="{!v.userRecord}"
+	/>
+    
+	<aura:if isTrue="{!or(empty(v.userRecord.ImcdCompany__c), empty(v.userRecord.ImcdBusinessUnit__c), empty(v.userRecord.TF_Role__c), empty(v.userRecord.MobilePhone))}">
+        <article class="slds-card">
+            <div class="slds-grid slds-einstein-header slds-card__header">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <div class="slds-grid slds-grid_vertical-align-center slds-size_3-of-4 slds-medium-size_2-of-3">
+                        <div class="slds-media__body">
+                            <h2 class="slds-truncate">
+                                <a href="{!v.url +'/'+ $SObjectType.CurrentUser.Id}" class="slds-card__header-link">
+                                    <span class="slds-text-heading_small">Some key user details are missing!</span>
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="slds-einstein-header__figure slds-size_1-of-4 slds-medium-size_1-of-3"></div>
+                </header>
+            </div>
+        
+            <div class="slds-card__body slds-card__body_inner">
+                <div class="slds-tile__detail">
+                    <dl class="slds-list_horizontal slds-wrap">
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate">User</dt>
+                        <dd class="slds-item_detail slds-truncate">{!v.userRecord.Name}</dd>
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate">Company:</dt>
+                        <dd class="slds-item_detail slds-truncate">{!v.userRecord.ImcdCompany__c}</dd>
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate" >Business Unit:</dt>
+                        <dd class="slds-item_detail slds-truncate">{!v.userRecord.ImcdBusinessUnit__c}</dd>
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate" >Role:</dt>
+                        <dd class="slds-item_detail slds-truncate">{!v.userRecord.TF_Role__c}</dd>            
+                        <dt class="slds-item_label slds-text-color_weak slds-truncate" >Mobile Phone:</dt>
+                        <dd class="slds-item_detail slds-truncate">{!v.userRecord.MobilePhone}</dd>                   
+                    </dl>
+                </div>            
+            </div>
+        </article>
+	</aura:if>    
+</aura:component>

@@ -1,0 +1,83 @@
+<aura:component implements="force:LightningQuickActionWithoutHeader,force:hasRecordId" controller="CloneQuoteCompController">
+
+	<aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+	<aura:attribute name="numQuotes" type="integer" default="0"/>
+    <aura:attribute name="toggleSpinner" type="boolean" default="{!false}"/>
+    <aura:attribute name="formValid" type="boolean" default="{!false}"/>
+	<aura:attribute name="opptyQuoteRecord" type="Object"/>
+    
+	<force:recordData aura:id="opptyQuoteDataService"
+		recordId="{!v.recordId}"
+		targetFields="{!v.opptyQuoteRecord}"
+		fields="Name,OppLocked__c,SBQQ__Opportunity2__r.Name,SBQQ__Opportunity2__r.NrOfQuotes__c,SBQQ__LineItemCount__c"
+	/>
+        
+    <div class="modal-header slds-modal__header">
+		<h2 class="title slds-text-heading--medium">{!$Label.c.IMCD_LC_Title_CloneCustomerQuote}</h2>
+	</div>
+	<div class="slds-m-bottom_medium"/> <!-- spacer -->
+	
+    <!--loading spinner start -->
+ 	<aura:if isTrue="{!v.toggleSpinner}">
+		<div class="slds-spinner--brand  slds-spinner slds-spinner--large" role="alert">
+			<span class="slds-assistive-text">Loading</span>
+			<div class="slds-spinner__dot-a"></div>
+			<div class="slds-spinner__dot-b"></div>
+		</div>
+ 	</aura:if>   
+	<!-- Loading spinner end -->    
+
+    <aura:if isTrue="{!v.opptyQuoteRecord.OppLocked__c}">
+        <ui:message title="Warning" severity="warning" closable="false">
+            {!format($Label.c.IMCD_LC_MSG_CannotCloneQuoteOpptyLocked, v.opptyQuoteRecord.SBQQ__Opportunity2__r.Name)}
+        </ui:message>
+    </aura:if>
+
+    <aura:if isTrue="{!v.numQuotes gt 1}">
+        <ui:message title="Warning" severity="warning" closable="false">
+            {!format($Label.c.IMCD_LC_MSG_CannotCloneQuote, v.opptyQuoteRecord.Name, v.opptyQuoteRecord.SBQQ__Opportunity2__r.Name)}
+        </ui:message>
+    </aura:if>
+
+    <aura:if isTrue="{!and(v.numQuotes eq 1, !v.opptyQuoteRecord.OppLocked__c)}">
+        <ui:message title="Info" severity="info" closable="false">
+            {!format($Label.c.IMCD_LC_MSG_CanCloneQuote, v.opptyQuoteRecord.SBQQ__LineItemCount__c, v.opptyQuoteRecord.Name)}
+            <lightning:layout>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    <c:PicklistSelect
+                            aura:id="incoTerms"
+                            objectName="SBQQ__Quote__c"
+                            fieldName="IncoTerms2__c"
+                            required="true"
+                            onblur="{!c.validateInput}"
+                    />
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-large">
+                    <lightning:input type="toggle" aura:id="cloneLines" name="cloneLines" label="Same Currency?" messageToggleActive="Same Currency" messageToggleInactive="Different Currency" checked="true" required="false"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <lightning:layout>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    <lightning:input type="date" aura:id="quoteExpiration" name="quoteExpiration" label="Quote Expiration Date" required="true" onchange="{!c.validateInput}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    <lightning:input type="date" aura:id="validityFrom" name="validityFrom" label="Validity From" required="true" onchange="{!c.validateInput}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto" padding="around-small">
+                    <lightning:input type="date" aura:id="validityTo" name="validityTo" label="Validity To" required="true" onblur="{!c.validateInput}"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </ui:message>
+</aura:if>
+    
+    <div class="slds-m-bottom_medium"/> <!-- spacer -->
+	<div class="modal-footer slds-modal__footer">
+        <lightning:button variant="neutral" disabled="{!!v.formValid}" onclick="{!c.cloneQuoteAction}" label="{!$Label.c.IMCD_LC_CloneQuote}" />
+		<lightning:button variant="neutral" onclick="{!c.closeAction}" label="{!$Label.c.IMCD_LC_CloseWindow}" /> 
+	</div>
+  
+</aura:component>

@@ -1,0 +1,3 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="global" >
+	<lightning:buttonIcon class="slds-size_1-of-1" iconName="utility:refresh"  variant="border-filled" disabled="false" alternativeText="Refresh page" onclick="{!c.handleRefresh}"/>
+</aura:component>

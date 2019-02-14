@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This flow starts a (Screen) Flow to create a Customer Summary Report / Report Lines construct. Used to create a Customer Summary (Webmerge) document.</description>
+    <flowDefinition>Create_Customer_Summary_Flow</flowDefinition>
+    <icon>V5Icon</icon>
+    <label>Create Customer Summary</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

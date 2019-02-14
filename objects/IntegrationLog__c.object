@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Integration_Log_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object stores records which require integration. The object triggers in turn Outbound Messages when required. The object also acts as mechanism to track records requiring ETL-based integrations for non-group ERP countries.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Integration Logs</relationshipLabel>
+        <relationshipName>Integration_Logs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Integration Logs</relationshipLabel>
+        <relationshipName>Integration_Logs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractedPrice__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Target = SBQQ__ContractedPrice__c</description>
+        <externalId>false</externalId>
+        <label>Contracted Price</label>
+        <referenceTo>SBQQ__ContractedPrice__c</referenceTo>
+        <relationshipLabel>Integration Logs</relationshipLabel>
+        <relationshipName>Integration_Logs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Event__c</fullName>
+        <description>Field storing the type of integration event such as &quot;Create Account&quot;, &quot;Create Principal&quot;, &quot;Create Price&quot;.</description>
+        <externalId>false</externalId>
+        <label>Event</label>
+        <length>100</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ImcdCompany__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( !ISBLANK(Product__r.Id), TEXT(Product__r.CreatedBy.ImcdCompany__c),
+			IF ( !ISBLANK(ContractedPrice__r.Id), TEXT(ContractedPrice__r.SBQQ__Account__r.IMCDCompany__c),
+						IF ( !ISBLANK(Case__r.Id), TEXT(Case__r.Account.IMCDCompany__c),
+         IF ( !ISBLANK(Account__r.Id), TEXT(Account__r.IMCDCompany__c), &apos;Undefined&apos;
+							  )
+      )
+   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IMCD Company</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IntegrationId__c</fullName>
+        <description>This fields contains the IntegrationId__c from the triggering record, if available. This field will be null for new records.</description>
+        <externalId>false</externalId>
+        <label>Integration Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IntegrationMessage__c</fullName>
+        <externalId>false</externalId>
+        <label>Integration Message</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ObjectIdCs__c</fullName>
+        <externalId>false</externalId>
+        <formula>ObjectId__c &amp;
+MID( 
+    &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;, 
+    MIN(FIND(MID(Id, 5, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 16 + 
+    MIN(FIND(MID(Id, 4, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 8 + 
+    MIN(FIND(MID(Id, 3, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 4 + 
+    MIN(FIND(MID(Id, 2, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 2 + 
+    MIN(FIND(MID(Id, 1, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 1 + 1, 
+    1) &amp; 
+MID( 
+    &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;, 
+    MIN(FIND(MID(Id, 10, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 16 + 
+    MIN(FIND(MID(Id, 9, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 8 + 
+    MIN(FIND(MID(Id, 8, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 4 + 
+    MIN(FIND(MID(Id, 7, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 2 + 
+    MIN(FIND(MID(Id, 6, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 1 + 1, 
+    1) &amp; 
+MID( 
+    &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;, 
+    MIN(FIND(MID(Id, 15, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 16 + 
+    MIN(FIND(MID(Id, 14, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 8 + 
+    MIN(FIND(MID(Id, 13, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 4 + 
+    MIN(FIND(MID(Id, 12, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 2 + 
+    MIN(FIND(MID(Id, 11, 1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;), 1) * 1 + 1, 
+    1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Object Id (Case-safe)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ObjectId__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( !ISBLANK(Product__r.Id), Product__r.Id,
+				IF ( !ISBLANK(ContractedPrice__r.Id), ContractedPrice__r.Id, 
+								IF ( !ISBLANK(Case__r.Id), Case__r.Id, 
+           IF ( !ISBLANK(Account__r.Id), Account__r.Id, &apos;Undefined&apos;
+								)
+      )
+   )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Object Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( !ISBLANK(Product__r.Id), &apos;Product2&apos;,
+			IF ( !ISBLANK(ContractedPrice__r.Id), &apos;SBQQ__ContractedPrice__c&apos;,
+						IF ( !ISBLANK(Case__r.Id), &apos;Case&apos;,
+         IF ( !ISBLANK(Account__r.Id), &apos;Account&apos;, &apos;Undefined&apos;
+         )
+						)
+ 		)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Object</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Full_Segment_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.FullSegmentsNumber__c</formula>
+        <label>Product Full Segment Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Integration Logs</relationshipLabel>
+        <relationshipName>Integration_Logs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Queued is the initial status. When the Workflow has submitted the Outbound message the status will be set to Message Triggered. Message Delivered will be updated by Talend once the Outbound message is received and queued on the ESB but before being processed. Integration Completed is updated by Talend or the status is set to Integration Failed. Delivery Failed is updated by Salesforce in case a record remained Queued for &gt; 24 hours.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Queued</fullName>
+                    <default>true</default>
+                    <label>Queued</label>
+                </value>
+                <value>
+                    <fullName>Message Triggered</fullName>
+                    <default>false</default>
+                    <label>Message Triggered</label>
+                </value>
+                <value>
+                    <fullName>Message Delivered</fullName>
+                    <default>false</default>
+                    <label>Message Delivered</label>
+                </value>
+                <value>
+                    <fullName>Integration Completed</fullName>
+                    <default>false</default>
+                    <label>Integration Completed</label>
+                </value>
+                <value>
+                    <fullName>Integration Failed</fullName>
+                    <default>false</default>
+                    <label>Integration Failed</label>
+                </value>
+                <value>
+                    <fullName>Delivery Failed</fullName>
+                    <default>false</default>
+                    <label>Delivery Failed</label>
+                </value>
+                <value>
+                    <fullName>Integration Completed (Country not Active)</fullName>
+                    <default>false</default>
+                    <label>Integration Completed (Country not Active)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>isError__c</fullName>
+        <description>Report Field: Use Case Scenarios to be excluded as errors from the Integration Error Dashboard.</description>
+        <externalId>false</externalId>
+        <formula>NOT(AND(Event__c = &apos;CREATE_CONTRACTED_PRICE&apos;,ImcdCompany__c = &apos;91100&apos;))</formula>
+        <label>is Error</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isGroupErp__c</fullName>
+        <description>Previously : NOT ( CONTAINS ( $Setup.IntegrationSettings__c.LocalErpComps__c, ImcdCompany__c ) )</description>
+        <externalId>false</externalId>
+        <formula>IF ( Event__c = &apos;CREATE_TEMP_PRODUCT&apos; , 
+NOT ( CONTAINS ( $Setup.IntegrationSettings__c.LocalProductCompanies__c, TEXT(Product__r.CreatedBy.ImcdCompany__c) ) ),
+NOT ( CONTAINS ( $Setup.IntegrationSettings__c.LocalErpComps__c, ImcdCompany__c ) )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Group ERP</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Integration Log</label>
+    <nameField>
+        <displayFormat>INT{000000000}</displayFormat>
+        <label>Sequence</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Integration Logs</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

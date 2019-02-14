@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Principal_Report_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>DefaultCompactLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>DefaultCompactLayout</fullName>
+        <fields>Name</fields>
+        <fields>Account__c</fields>
+        <fields>ReportDate__c</fields>
+        <label>Default Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>https://imcdgroup.atlassian.net/browse/SFDP-1972 - Principal Report functionality</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Summary Reports</relationshipLabel>
+        <relationshipName>SummaryReports</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>DebugInfo__c</fullName>
+        <externalId>false</externalId>
+        <label>Debug Info</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Purpose__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose of Call</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ReportDate__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Default to Today&apos;s date.</inlineHelpText>
+        <label>Report Date</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TF_AccountIMCDCompany__c</fullName>
+        <description>Formula field to retrieve a text version of IMCDCompany on the Account</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.IMCDCompany__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TF_Account IMCDCompany</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Summary Report</label>
+    <nameField>
+        <displayFormat>PR-{00000000}</displayFormat>
+        <label>Report Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Summary Reports</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Customer_Report</fullName>
+        <active>true</active>
+        <label>Customer Report</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>PrincipalReport</fullName>
+        <active>true</active>
+        <label>Principal Report</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Create_Summary_Document</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Summary Document</masterLabel>
+        <openType>sidebar</openType>
+        <page>WebmergeSummaryReport</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactEmail__c</fullName>
+        <description>Contact&apos; Email</description>
+        <externalId>false</externalId>
+        <formula>Contact.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Contact.AccountId</field>
+                <operation>notEqual</operation>
+                <valueField>$Source.AccountId</valueField>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactName__c</fullName>
+        <description>Contact&apos;s full name</description>
+        <externalId>false</externalId>
+        <formula>Contact.LastName + &apos;, &apos; + Contact.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>IsDirect</fullName>
+    </fields>
+    <fields>
+        <fullName>IsPrimary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to indicate if this contact is a primary for accounts, different from isDirect as isDirect indicates only direct relationships between a contact and an account, where as in IMCD, a contact can be the primary for more than one account</description>
+        <externalId>false</externalId>
+        <label>Is Primary</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Roles</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+</CustomObject>

@@ -1,0 +1,18 @@
+<apex:page sidebar="false" showHeader="false" standardStylesheets="true" controller="AccountSummaryController" >
+
+    <apex:includeLightning />
+
+    <div id="AccountSummaryAppDiv"/>
+
+    <script>
+        $Lightning.use("c:AccountSummaryApp", function() {
+            $Lightning.createComponent("c:AccountSummaryComp"
+                , {"recordId" : "{!accountId}", "numrows" : "{!numrows}"}
+                , "AccountSummaryAppDiv"
+                , function(cmp) {
+                    console.log('[Account360Page] Printable Account 360 initialized');
+                });
+            });
+    </script>
+
+</apex:page>

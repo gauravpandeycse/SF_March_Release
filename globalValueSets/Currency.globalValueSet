@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>DZD</fullName>
+        <default>false</default>
+        <label>Algerian Dinar</label>
+    </customValue>
+    <customValue>
+        <fullName>AUD</fullName>
+        <default>false</default>
+        <label>Australian Dollar</label>
+    </customValue>
+    <customValue>
+        <fullName>BRL</fullName>
+        <default>false</default>
+        <label>Brazilian Real</label>
+    </customValue>
+    <customValue>
+        <fullName>GBP</fullName>
+        <default>false</default>
+        <label>British Pound</label>
+    </customValue>
+    <customValue>
+        <fullName>BGN</fullName>
+        <default>false</default>
+        <label>Bulgaria Lev</label>
+    </customValue>
+    <customValue>
+        <fullName>CAD</fullName>
+        <default>false</default>
+        <label>Canadian Dollar</label>
+    </customValue>
+    <customValue>
+        <fullName>CNY</fullName>
+        <default>false</default>
+        <label>Chinese Yuan</label>
+    </customValue>
+    <customValue>
+        <fullName>HRK</fullName>
+        <default>false</default>
+        <label>Croatian Kuna</label>
+    </customValue>
+    <customValue>
+        <fullName>CZK</fullName>
+        <default>false</default>
+        <label>Czech Koruna</label>
+    </customValue>
+    <customValue>
+        <fullName>DKK</fullName>
+        <default>false</default>
+        <label>Danish Krone</label>
+    </customValue>
+    <customValue>
+        <fullName>EGP</fullName>
+        <default>false</default>
+        <label>Egyptian Pound</label>
+    </customValue>
+    <customValue>
+        <fullName>EEK</fullName>
+        <default>false</default>
+        <label>Estonian Kroon</label>
+    </customValue>
+    <customValue>
+        <fullName>EUR</fullName>
+        <default>false</default>
+        <label>Euro</label>
+    </customValue>
+    <customValue>
+        <fullName>HUF</fullName>
+        <default>false</default>
+        <label>Hungarian Forint</label>
+    </customValue>
+    <customValue>
+        <fullName>INR</fullName>
+        <default>false</default>
+        <label>Indian Rupee</label>
+    </customValue>
+    <customValue>
+        <fullName>IDR</fullName>
+        <default>false</default>
+        <label>Indonesian Rupiah</label>
+    </customValue>
+    <customValue>
+        <fullName>ILS</fullName>
+        <default>false</default>
+        <label>Israeli Shekel</label>
+    </customValue>
+    <customValue>
+        <fullName>JPY</fullName>
+        <default>false</default>
+        <label>Japanese Yen</label>
+    </customValue>
+    <customValue>
+        <fullName>KES</fullName>
+        <default>false</default>
+        <label>Kenyan Shilling</label>
+    </customValue>
+    <customValue>
+        <fullName>KRW</fullName>
+        <default>false</default>
+        <label>Korean Won</label>
+    </customValue>
+    <customValue>
+        <fullName>MYR</fullName>
+        <default>false</default>
+        <label>Malaysian Ringgit</label>
+    </customValue>
+    <customValue>
+        <fullName>MAD</fullName>
+        <default>false</default>
+        <label>Moroccan Dirham</label>
+    </customValue>
+    <customValue>
+        <fullName>NZD</fullName>
+        <default>false</default>
+        <label>New Zealand Dollar</label>
+    </customValue>
+    <customValue>
+        <fullName>NOK</fullName>
+        <default>false</default>
+        <label>Norwegian Krone</label>
+    </customValue>
+    <customValue>
+        <fullName>PHP</fullName>
+        <default>false</default>
+        <label>Philippine Peso</label>
+    </customValue>
+    <customValue>
+        <fullName>PLN</fullName>
+        <default>false</default>
+        <label>Polish Zloty</label>
+    </customValue>
+    <customValue>
+        <fullName>RON</fullName>
+        <default>false</default>
+        <label>Romanian Leu (New)</label>
+    </customValue>
+    <customValue>
+        <fullName>RUB</fullName>
+        <default>false</default>
+        <label>Russian Rouble</label>
+    </customValue>
+    <customValue>
+        <fullName>RSD</fullName>
+        <default>false</default>
+        <label>Serbian Dinar</label>
+    </customValue>
+    <customValue>
+        <fullName>SGD</fullName>
+        <default>false</default>
+        <label>Singapore Dollar</label>
+    </customValue>
+    <customValue>
+        <fullName>ZAR</fullName>
+        <default>false</default>
+        <label>South African Rand</label>
+    </customValue>
+    <customValue>
+        <fullName>SEK</fullName>
+        <default>false</default>
+        <label>Swedish Krona</label>
+    </customValue>
+    <customValue>
+        <fullName>CHF</fullName>
+        <default>false</default>
+        <label>Swiss Franc</label>
+    </customValue>
+    <customValue>
+        <fullName>THB</fullName>
+        <default>false</default>
+        <label>Thai Baht</label>
+    </customValue>
+    <customValue>
+        <fullName>TND</fullName>
+        <default>false</default>
+        <label>Tunisian Dinar</label>
+    </customValue>
+    <customValue>
+        <fullName>TRY</fullName>
+        <default>false</default>
+        <label>Turkish Lira (New)</label>
+    </customValue>
+    <customValue>
+        <fullName>USD</fullName>
+        <default>false</default>
+        <label>U.S. Dollar</label>
+    </customValue>
+    <customValue>
+        <fullName>UAH</fullName>
+        <default>false</default>
+        <label>Ukraine Hryvnia</label>
+    </customValue>
+    <customValue>
+        <fullName>VND</fullName>
+        <default>false</default>
+        <label>Vietnam Dong</label>
+    </customValue>
+    <description>Currency picklist - based on https://help.salesforce.com/articleView?id=admin_supported_currencies.htm</description>
+    <masterLabel>Currency</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

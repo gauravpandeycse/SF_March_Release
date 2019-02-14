@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>IT BUM Detergency, Lubric. &amp; Textile (81124)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>IT BUM Detergency, Lubric. &amp; Textile (81124)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>IT_BUM_Manager</parentRole>
+</Role>

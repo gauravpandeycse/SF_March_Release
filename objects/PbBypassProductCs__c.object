@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>PB Bypass Settings for &lt;Object&gt; allows to selectively disable (parts of) process builders. Every object will have a single process builder.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>BypassIntegration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bypass Enabled for Integration</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BypassTempProductCase__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bypass Enabled for Temp Product Case</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Bypass__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Bypass Enabled for Object</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>PB Bypass Settings for Product</label>
+    <visibility>Public</visibility>
+</CustomObject>

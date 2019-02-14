@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>fake@example.com</email>
+    <name>France Direct from Supplier Samples</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Sample_France</publicGroup>
+        </publicGroups>
+        <users>
+            <user>aurelie.blanchet@imcd.fr.prod</user>
+            <user>echantillons.dsv@imcd.fr</user>
+            <user>virginie.isambert@imcd.fr</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

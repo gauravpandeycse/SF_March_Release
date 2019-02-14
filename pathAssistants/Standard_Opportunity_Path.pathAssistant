@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Standard Opportunity Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Key_Opportunity__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>LOB1__c</fieldNames>
+        <fieldNames>LOB2__c</fieldNames>
+        <fieldNames>LOB3__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Determine what we think the compelling reason to change is &lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Determine trade grade with volume &amp;amp; price &amp;amp; estimate start&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Determine decision maker(s)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Sample shipment &lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Technical request&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Project started&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Analysis</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Key_Opportunity__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Margin__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;First commercial sale&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Agreement on sales and supply terms&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Key_Opportunity__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Margin__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Did the customer validate the compelling reason to change ?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Products in general working and customer validates benefits and confirms value proposition&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Customer is committed to change&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Update/sharpen volume &amp;amp; price &amp;amp; estimate start&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Large scale trials may follow&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Engagement</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CampaignId</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>LOB1__c</fieldNames>
+        <fieldNames>LOB2__c</fieldNames>
+        <fieldNames>LOB3__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Business Opportunity identified, determine problem, clarify needs&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Identified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Key_Opportunity__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Margin__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Project/product(s) technically approved&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Commercial discussions, negotiations&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Launch</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 10pt; font-family: Arial;&quot;&gt;Opportunity lost for technical and/or commercial reasons&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 10pt;&quot;&gt;Second commercial sale &lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Won</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Standard</recordTypeName>
+</PathAssistant>

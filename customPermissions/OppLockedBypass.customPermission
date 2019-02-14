@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Bypass for OppLocked on quote. Enables to do extra recalculation</description>
+    <label>OppLockedBypass</label>
+</CustomPermission>

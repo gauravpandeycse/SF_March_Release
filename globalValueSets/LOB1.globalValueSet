@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Materials</fullName>
+        <default>false</default>
+        <label>Advanced Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Coatings &amp; Construction</fullName>
+        <default>false</default>
+        <label>Coatings &amp; Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Food</fullName>
+        <default>false</default>
+        <label>Food</label>
+    </customValue>
+    <customValue>
+        <fullName>Home Care and I&amp;I</fullName>
+        <default>false</default>
+        <label>Home Care and I&amp;I</label>
+    </customValue>
+    <customValue>
+        <fullName>Lubricants</fullName>
+        <default>false</default>
+        <label>Lubricants</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Specialties</fullName>
+        <default>false</default>
+        <label>Other Specialties</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Care</fullName>
+        <default>false</default>
+        <label>Personal Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>Synthesis</fullName>
+        <default>false</default>
+        <label>Synthesis</label>
+    </customValue>
+    <masterLabel>LOB1</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

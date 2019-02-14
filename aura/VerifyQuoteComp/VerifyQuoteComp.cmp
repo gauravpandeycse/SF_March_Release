@@ -1,0 +1,42 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" description="VerifyQuoteComp" controller="VerifyQuoteCompController">
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="data" type="object"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="targetRecord" type="Object"/>
+    <aura:attribute name="toggleSpinner" type="boolean" default="{!false}"/>
+    <aura:registerEvent name="showBannerEvent" type="c:showBannerEvent"/>
+
+    <force:recordData aura:id="dataService"
+                      recordId="{!v.recordId}"
+                      fields="IncoTerms2__c,ShipToAdressId__c"
+                      targetRecord="{!v.targetRecord}"
+                      recordUpdated="{!c.recordUpdated}" />
+
+    <!--loading spinner start -->
+    <aura:if isTrue="{!v.toggleSpinner}">
+        <div class="slds-spinner--brand  slds-spinner slds-spinner--large" role="alert">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </aura:if>
+    <!-- Loading spinner end -->
+
+    <aura:if isTrue="{!!empty(v.data)}">
+        <article class="slds-card results-wrap ">
+            <div class="slds-card__body slds-card__body_inner">
+                <div class="slds-tile__detail">
+                    <div aura:id="datatable-container">
+                        <lightning:datatable aura:id="datatable" columns="{!v.columns}"
+                                             data="{!v.data}"
+                                             keyField="Id"
+                                             showRowNumberColumn="{!true}"
+                                             hideCheckboxColumn="{!true}"
+                        />
+                    </div>
+                </div>
+            </div>
+        </article>
+    </aura:if>
+
+</aura:component>

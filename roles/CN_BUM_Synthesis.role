@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>CN BUM Synthesis  (71129)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>CN BUM Synthesis  (71129)</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>CN_BUM_Manager</parentRole>
+</Role>
